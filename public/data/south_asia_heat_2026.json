@@ -9,7 +9,7 @@
       "lat": 28.6,
       "lng": 77.2
     },
-    "summary": "From mid-April into May 2026, extreme pre-monsoon heat hit India and Pakistan, with many cities above 46°C. World Weather Attribution found human-caused climate change roughly tripled the chance of a comparable 15-day heatwave and made it about 0.9°C hotter.",
+    "summary": "From mid-April into May 2026, extreme pre-monsoon heat hit India and Pakistan. Many cities rose above 46°C. Outdoor workers and people in poor housing took the first harm. World Weather Attribution found human-caused climate change roughly tripled the chance of a comparable 15-day heatwave. It also made the heat about 0.9°C hotter.",
     "hero": "Hundreds of millions faced a longer, deadlier heat season.",
     "retrieved_at": "2026-09-21"
   },
@@ -18,13 +18,13 @@
       "id": "warming",
       "type": "climate_driver",
       "title": "Greenhouse gases are stretching the heat season earlier",
-      "description": "World Weather Attribution finds April heat rising faster than May heat across South Asia. Dangerous temperatures now arrive earlier and last longer. That is a seasonal shift, not a single hot afternoon."
+      "description": "Greenhouse gases trap extra heat over South Asia. World Weather Attribution finds April heat rising faster than May heat across the region. Dangerous temperatures now arrive earlier and last longer. That is a seasonal shift, not a single hot afternoon."
     },
     {
       "id": "heatwave",
       "type": "hazard",
       "title": "A 15-day extreme heat spell gripped the region",
-      "description": "From mid-April into May 2026, many Indian cities saw daily maxima above 46°C. The analysed 15-day event was made about 3 times more likely, and about 0.9°C hotter, by human-caused climate change. Northwestern India and Pakistan sat inside that spell together."
+      "description": "From mid-April into May 2026, many Indian cities saw daily maxima above 46°C. The analysed 15-day event was made about 3 times more likely by human-caused climate change. It was also about 0.9°C hotter. Northwestern India and Pakistan sat inside that spell together."
     },
     {
       "id": "humid_heat",
@@ -36,7 +36,7 @@
       "id": "health",
       "type": "human_system",
       "title": "Heat killed and hospitalised the most exposed",
-      "description": "Reporting cited by WWA included at least 37 heat-related deaths in India and 10 in Karachi during the episode. Outdoor workers and people in poor housing face the highest risk. Those counts are preliminary, not a full excess-mortality estimate."
+      "description": "Reporting cited by World Weather Attribution included at least 37 heat-related deaths in India. Ten more were reported in Karachi during the episode. Outdoor workers and people in poor housing face the highest risk. Those counts are preliminary, not a full excess-mortality estimate."
     },
     {
       "id": "power",
@@ -66,7 +66,7 @@
       "id": "economy",
       "type": "economy",
       "title": "Macroeconomic loss is not yet pinned to one figure here",
-      "description": "Productivity and power-system costs are real pressures. This build does not treat a single GDP loss number as verified. What is counted is the heat, the deaths reported, and the demand spike."
+      "description": "Productivity and power-system costs are real pressures. A single GDP loss number is not treated as verified here. What is counted is the heat, the deaths reported, and the demand spike."
     }
   ],
   "edges": [
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "claim_tripling",
-      "text": "Combining observations and 19 validated climate models, WWA concludes human-caused climate change approximately tripled the probability of a 15-day heatwave like April 2026 and made a comparable event about 0.9°C hotter than in a pre-industrial climate.",
+      "text": "A study measured how much more likely climate change made this. Combining observations and 19 validated climate models, World Weather Attribution found human-caused climate change roughly tripled the chance of a 15-day heatwave like April 2026. A comparable event was also about 0.9°C hotter than in a pre-industrial climate.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -168,7 +168,7 @@
     },
     {
       "id": "claim_humidity",
-      "text": "Aerosols and irrigation partially offset greenhouse warming but raise humidity, so dangerous humid heat continues to increase rapidly in the region.",
+      "text": "Aerosols and irrigation partially offset greenhouse warming at the thermometer. They also raise humidity. Dangerous humid heat continues to increase rapidly in the region.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -181,7 +181,7 @@
     },
     {
       "id": "claim_deaths",
-      "text": "Contemporaneous reporting cited by WWA recorded at least 37 heat-related deaths in India and ten in Karachi during the episode; outdoor workers and people in poor-quality housing are disproportionately exposed.",
+      "text": "Reporting cited by World Weather Attribution recorded at least 37 heat-related deaths in India. Ten heat-related deaths were reported in Karachi during the same episode. Outdoor workers and people in poor-quality housing are disproportionately exposed.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "claim_ag",
-      "text": "Agricultural drought conditions affecting over 1 million km² were reported (GDACS, as cited by WWA), compounding risks to food production and livelihoods.",
+      "text": "Agricultural drought conditions affecting over 1 million km² were reported by GDACS, as cited by World Weather Attribution. That stress compounded risks to food production and livelihoods.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "claim_haps",
-      "text": "Heat Action Plans prevent deaths but often lack context-specific guidelines; because heatwaves are frequently not notified disasters, victims may be ineligible for disaster relief funding.",
+      "text": "Heat Action Plans prevent deaths. They often lack context-specific guidelines. Because heatwaves are frequently not notified disasters, victims may be ineligible for disaster relief funding.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -233,7 +233,7 @@
     },
     {
       "id": "claim_livelihoods",
-      "text": "Daily-wage and outdoor workers lose income when extreme heat stops work, a scientifically reasonable pathway not quantified as a national income loss here.",
+      "text": "This is a reasonable link, but no study has confirmed a national income-loss total yet. Daily-wage and outdoor workers lose income when extreme heat stops work.",
       "claim_type": "inference",
       "evidence_level": "plausible",
       "sources": [
@@ -246,7 +246,7 @@
     },
     {
       "id": "claim_economy",
-      "text": "No single verified macroeconomic loss figure for this 2026 South Asia heat episode is used in this build. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "text": "Researchers are still studying the economic cost. No single verified macroeconomic loss figure for this 2026 South Asia heat episode is used here. Similar past events have disrupted livelihoods and local markets for months even when national GDP prints look small.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -319,7 +319,7 @@
       "id": "t_day0",
       "bucket": "DAY 0",
       "label": "Heat intensifies",
-      "detail": "Mid-April 2026 onward, maxima above 46°C in many Indian cities; 15-day spell analysed by WWA.",
+      "detail": "From mid-April 2026, maxima above 46°C were recorded in many Indian cities. World Weather Attribution analysed a 15-day spell.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_deaths"
@@ -329,7 +329,7 @@
       "id": "t_days",
       "bucket": "DAYS",
       "label": "Power and health stress",
-      "detail": "Record electricity demand; heat-related deaths and hospital pressure reported.",
+      "detail": "India saw record electricity demand. Heat-related deaths and hospital pressure were reported.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_power",
@@ -340,7 +340,7 @@
       "id": "t_weeks",
       "bucket": "WEEKS",
       "label": "Attribution published",
-      "detail": "WWA: ~3× more likely and ~0.9°C hotter due to human-caused warming.",
+      "detail": "World Weather Attribution found the event about 3 times more likely. It was also about 0.9°C hotter because of human-caused warming.",
       "evidence_level": "attribution",
       "claim_ids": [
         "claim_tripling"
@@ -360,7 +360,7 @@
       "id": "t_years",
       "bucket": "YEARS",
       "label": "Longer heat seasons ahead",
-      "detail": "With further warming, similar events become still more likely and hotter, HAPs alone are not enough.",
+      "detail": "With further warming, similar events become still more likely and hotter. Heat Action Plans alone are not enough.",
       "evidence_level": "attribution",
       "claim_ids": [
         "claim_tripling"
@@ -369,8 +369,8 @@
   ],
   "knowledge_summary": {
     "what_we_know": [
-      "April–May 2026 brought extreme pre-monsoon heat across northwestern India and Pakistan.",
-      "Climate change roughly tripled the odds of a comparable 15-day event and added about 0.9°C.",
+      "April-May 2026 brought extreme pre-monsoon heat across northwestern India and Pakistan.",
+      "Climate change roughly tripled the odds of a comparable 15-day event. It also added about 0.9°C.",
       "Health impacts, power demand spikes, and agricultural drought stress were documented during the episode."
     ],
     "what_remains_uncertain": [

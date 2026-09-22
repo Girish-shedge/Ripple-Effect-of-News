@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import type { Claim, Edge, MediaItem, Source, Story } from '../types'
+import type { Claim, Edge, EvidenceLevel, MediaItem, Source, Story } from '../types'
 import { formatImpact } from '../lib/format'
 import { StoryReachCharts } from './StoryReachCharts'
 import { SourceIndex } from './SourceIndex'
@@ -10,6 +10,8 @@ import { EvidenceBadge } from './EvidenceBadge'
 export type StorySectionDef = {
   id: string
   kicker: string
+  /** Shown in the kicker as `label · Evidence` + info icon. */
+  evidence?: { level: EvidenceLevel; meaning?: string }
   title: string
   lead?: string
   /** Single prose paragraph after the heading. May include <strong>. Omit instead of writing UI instructions. */
@@ -292,19 +294,25 @@ function emphasize(text: string, extra: Array<string | undefined | null> = []): 
   return withBold(text, [...pickBoldFrom(text), ...extra.filter(Boolean) as string[]])
 }
 
+function asSentence(text: string) {
+  const t = plain(text)
+  if (!t) return ''
+  return /[.!?]$/.test(t) ? t : `${t}.`
+}
+
 function reachTeaser(story: Story): string {
   const bars = story.chart?.impact_bars ?? []
-  if (bars.length) {
-    const bits = bars.slice(0, 3).map((b) => `${plain(b.label)}: ${formatImpact(b.value, b.unit)}`)
-    return `Named sources report ${bits.join('; ')}.`
+  const bits = bars.length
+    ? bars.slice(0, 3).map((b) => `${plain(b.label)} is ${formatImpact(b.value, b.unit)}`)
+    : story.impacts
+        .slice(0, 3)
+        .map((i) => `${plain(i.metric.replace(/_/g, ' '))} is ${formatImpact(i.value, i.unit)}`)
+  if (!bits.length) return plain(story.event.summary)
+  if (bits.length === 1) return asSentence(`Named sources report that ${bits[0]}`)
+  if (bits.length === 2) {
+    return `${asSentence(`Named sources report that ${bits[0]}`)} ${asSentence(`They also report that ${bits[1]}`)}`
   }
-  if (story.impacts.length) {
-    const bits = story.impacts
-      .slice(0, 3)
-      .map((i) => `${plain(i.metric.replace(/_/g, ' '))}: ${formatImpact(i.value, i.unit)}`)
-    return `Named sources report ${bits.join('; ')}.`
-  }
-  return plain(story.event.summary)
+  return `${asSentence(`Named sources report that ${bits[0]}`)} ${asSentence(`They also report that ${bits[1]}`)} ${asSentence(`A third figure is that ${bits[2]}`)}`
 }
 
 function timelineTeaser(story: Story): string {
@@ -312,15 +320,17 @@ function timelineTeaser(story: Story): string {
   if (!items.length) return plain(story.event.summary)
   const first = items[0]
   const last = items[items.length - 1]
-  if (items.length === 1) return plain(`${first.bucket}: ${first.detail}`)
-  return plain(`${first.bucket}: ${first.detail} ${last.bucket}: ${last.detail}`)
+  if (items.length === 1) return asSentence(`${first.bucket}: ${first.detail}`)
+  return `${asSentence(`${first.bucket}: ${first.detail}`)} ${asSentence(`${last.bucket}: ${last.detail}`)}`
 }
 
 function predictionsTeaser(story: Story): string {
   const list = story.predictions ?? []
   if (!list.length) return ''
-  const titles = list.map((p) => plain(p.title)).slice(0, 2)
-  return `${titles.join(' ')} These ranges are labelled emerging, not counted facts.`
+  const first = list[0]
+  const second = list[1]
+  if (!second) return plain(`${first.title}.`)
+  return plain(`${first.title}. ${second.title}.`)
 }
 
 function primarySources(story: Story): Source[] {
@@ -414,7 +424,7 @@ export function buildStorySections(story: Story): StorySectionDef[] {
     sections.push({
       id: 'predictions',
       kicker: 'Looking ahead',
-      title: 'Where meters are missing, we estimate carefully',
+      title: 'What may still unfold',
       teaser: emphasize(predictionsTeaser(story)),
       image: sectionImage(story, usedImageKeys, {
         placements: ['predictions'],
@@ -448,10 +458,12 @@ export function buildStorySections(story: Story): StorySectionDef[] {
           : 'Next link'
 
     const claimPhrases = nodeClaims.flatMap((c) => pickBoldFrom(c.text))
+    const evidenceMeaningText = plain(legendMeaning(story, evidence) ?? '') || undefined
 
     sections.push({
       id: `chain-${node.id}`,
       kicker,
+      evidence: { level: evidence, meaning: evidenceMeaningText },
       title: plain(node.title),
       teaser: emphasize(node.description, [...claimPhrases, inbound?.relationship_label]),
       image: nodeImage,
@@ -459,15 +471,7 @@ export function buildStorySections(story: Story): StorySectionDef[] {
       body: (
         <div className="doc-detail">
           {nodeClaims.length === 0 ? (
-            <div className="doc-claims doc-claims--empty">
-              <EvidenceBadge
-                level={evidence}
-                meaning={plain(legendMeaning(story, evidence) ?? '') || undefined}
-              />
-              <p className="doc-quiet">
-                No verified claim is attached to this link yet.
-              </p>
-            </div>
+            <p className="doc-quiet">No verified claim is attached to this link yet.</p>
           ) : (
             <div className="doc-claims">
               {nodeClaims.map((claim) => (
@@ -477,6 +481,7 @@ export function buildStorySections(story: Story): StorySectionDef[] {
                   meaning={
                     plain(legendMeaning(story, claim.evidence_level) ?? '') || undefined
                   }
+                  hideBadge={claim.evidence_level === evidence}
                 />
               ))}
             </div>
@@ -490,7 +495,7 @@ export function buildStorySections(story: Story): StorySectionDef[] {
     {
       id: 'knowledge',
       kicker: 'What we can say',
-      title: 'What holds up, and what still doesn’t',
+      title: 'What we know, and what remains uncertain',
       image: sectionImage(story, usedImageKeys, {
         placements: ['knowledge'],
         sourceIds: primary.map((s) => s.id),
@@ -522,7 +527,7 @@ export function buildStorySections(story: Story): StorySectionDef[] {
     {
       id: 'sources',
       kicker: 'Source index',
-      title: 'Every claim points to a named source',
+      title: 'Named sources for this story',
       image: sectionImage(story, usedImageKeys, {
         placements: ['sources'],
         sourceIds: story.sources.map((s) => s.id),
@@ -569,15 +574,19 @@ function ensureEverySectionHasImage(
 function ClaimDetail({
   claim,
   meaning,
+  hideBadge = false,
 }: {
   claim: Claim
   meaning?: string
+  hideBadge?: boolean
 }) {
   return (
     <div className="doc-claim">
-      <div className="doc-claim-head">
-        <EvidenceBadge level={claim.evidence_level} meaning={meaning} />
-      </div>
+      {hideBadge ? null : (
+        <div className="doc-claim-head">
+          <EvidenceBadge level={claim.evidence_level} meaning={meaning} />
+        </div>
+      )}
       <p className="doc-claim-text">{plain(claim.text)}</p>
       {claim.caveat ? <p className="doc-claim-caveat">{plain(claim.caveat)}</p> : null}
     </div>

@@ -25,7 +25,7 @@ Also read:
 Each section, in order:
 
 1. **Image** (content-width **16:9** AI watercolor; every section must have one)
-2. **UPPERCASE** kicker (Geist Mono, **≈10px**)
+2. **UPPERCASE** kicker (Geist Mono, **≈10px**). Chain sections: **`relationship · evidence`** + info icon.
 3. **Heading** (Geist, ≈32px section titles)
 4. **One prose paragraph** (may **bold** complete important phrases: full dates, full numbers with units, full names). Never wrap a fragment or a lone digit. Omit the paragraph if the section is a list or index.
 5. Widgets if needed (reach numbers, 2-col timeline, simplified claims)
@@ -34,17 +34,18 @@ Each section, in order:
 Hard constraints:
 - Sections separated by a **horizontal line** with **64px** vertical padding (8-point scale: 8 / 16 / 24 / 32 / 40 / 48 / 56 / 64 / 80…).
 - **Typography:** Geist for headings/body; Geist Mono for UPPERCASE; perfect-fourth scale ≈**10 / 13.5 / 18 / 24 / 32px**; body line-height **1.55**.
-- **No em dashes** in copy. **No** pastel heading highlights. **No** corner radius.
-- **Images:** 16:9, `object-fit: cover`, content-width. **All** imagery is AI **watercolor + light film grain** (`scripts/watercolor-media.mjs`). Source/Commons photos must be **converted** to this style before display (never show raw photos). Subject must match the section content. **No duplicate** image identities on one page. Never attach Place B imagery to a Place A story.
+- **No em dashes** in copy. **No** pastel heading highlights. Corner radius **4px** (`--radius`).
+- **Images:** 16:9, `object-fit: cover`, content-width. Later sections stay AI **watercolor + light film grain**. **Hero (first section only):** a short, muted, autoplaying YouTube clip from a named trusted outlet (BBC, Reuters, AP, DW, France 24, USCSB, UNEP). No AI badge on the hero video.
 - Detail images only: bottom-right badge — Hugeicons info + **“AI generated”**, white fill **25% opacity**, **16px** from bottom and right. **No** image credits / credit links under images.
-- Scroll: sections use **blur → reveal** (`.is-revealed`). **Back** is **sticky** below the stock ticker and **aligned to the same 66ch column** as the article.
-- Reach = **numbers + subheadings** (no bar/pie charts). Over time = **2-column** timeline grid.
-- Claims = evidence badge + claim text + optional caveat only (no geographic/temporal/last-verified grids).
+- Scroll: sections use **blur → reveal** (`.is-revealed`).
+- Reach = **numbers + subheadings** only (no evidence-count tiles). Over time = **2-column** timeline grid.
+- Chain kickers: **`relationship · evidence`** (e.g. `The chain begins · Unknown`) plus the Hugeicons info control. Claims = text + optional caveat (no duplicate boxed badge when the kicker already shows the level).
 - Evidence badges: Hugeicons **info** control; click opens plain-language meaning tooltip.
 - **Icons:** Hugeicons only (`src/components/icons.tsx`).
 - Neutral ink/paper greys. No purple/glow chrome. **Dark / light** via `data-theme` and the ticker toggle.
-- Responsive: same single column; timeline/reach collapse to 1 column on small screens.
-- Site chrome: **yellow stock marquee** (India: Nifty 50, Sensex; USA: S&P 500, Dow, Nasdaq) + **theme toggle** on the right of that bar.
+- Responsive across viewports (same single column; no side rails). Breakpoints: **640** phone (1-col home, full-width filters, icon-only theme toggle), **720** story padding + 1-col reach/timeline, **900** reach 2-col, **1100** tablet home (2-col, featured tiles full width), **1280+** desktop bento (4-col). Safe-area insets, 44px tap targets, 16px selects on small screens.
+- Site chrome: **yellow stock marquee** (Nifty 50, Sensex, S&P 500, Dow, Nasdaq — **no India/USA labels**) + **home icon** on the left + **theme toggle** on the right of that bar. Quotes are **dot-separated**, **seamless loop**, **live-polled**.
+- **No Back button** on detail pages. Home is the ticker home icon (no uppercase RIPPLE wordmark).
 
 ---
 
@@ -80,9 +81,10 @@ Hero, reach, and timeline teasers must be **story-specific facts**. Chain paragr
 
 ## 4. News list page (`/`)
 
-- Heading **“Ripple Effects of News”** + short subheading.
-- Cards in a **4-column grid** (responsive 3 → 2 → 1): image → date → heading → subheading → location.
-- **Dropdown filters:** Region · Theme · Year. Options derived from catalog (prefer explicit `region` / `theme` on each `stories.json` entry; fallbacks exist in code). **Clear** resets; count shows matches.
+- Heading **“Ripple Effects of News”** + short subheading. **No** extra uppercase “Ripple” wordmark above the heading.
+- Cards in a **ranked bento grid** (4 columns on desktop): two featured tiles (rank 1 top-left 2×2, rank 2 bottom-right 2×2) plus smaller cells. Rank comes from explicit `rank` on each `stories.json` item (lower = higher); fallback scores recency + theme. Responsive 2 → 1, featured tiles go full width.
+- Card: image → date → heading → subheading → location.
+- **Dropdown filters:** Region · Theme · Year. The **label lives inside the closed dropdown** (`Region: All`). Options derived from catalog. **Clear** resets. Filters are **center-aligned**. **No** “N of N” match count.
 - **No** horizontal auto-scroll. **No** AI badge on home card images.
 - Card click → `/story/:id`.
 
@@ -132,16 +134,17 @@ npm run pipeline           # news → media → verify
 - [ ] `npm run build` passes
 - [ ] Every detail section + home card has a unique place-correct watercolor
 - [ ] Verified sources expand **all** section sources; no sticky rails
-- [ ] Home: 4-col grid + Region/Theme/Year dropdowns; no AI badges on cards
-- [ ] Detail: “AI generated” badge at 25% white fill; no image credits
+- [ ] Home: ranked bento grid + Region/Theme/Year dropdowns with labels inside (`Region: All`), centered; no AI badges; no “N of N”; no extra Ripple wordmark
+- [ ] Detail: “AI generated” badge at 25% white fill; no image credits; no Back button
 - [ ] Prose ≈66ch; uppercase ≈10px; 16:9; 2-col timeline; simplified claims
-- [ ] Scroll blur→reveal; sticky Back aligned to 66ch; section lines; Hugeicons only
-- [ ] Yellow India/USA stock marquee + dark/light toggle
-- [ ] No heading highlights; no radius; no em dashes; 8-pt spacing
+- [ ] Scroll blur→reveal; section lines; Hugeicons only
+- [ ] Yellow stock marquee (dot-separated, no India/USA labels, seamless loop, live quotes) + home icon + dark/light toggle
+- [ ] Responsive: phone / tablet / desktop; no horizontal overflow; filters and ticker usable on 360px
+- [ ] No heading highlights; **4px** radius; no em dashes; 8-pt spacing
 - [ ] No banned boilerplate teasers; honesty lists stacked; causes written in detail
 - [ ] Claims cite Tier 1 (or documented Tier 2); copy follows content style guide
 - [ ] These rules were not silently reversed
 
 ---
 
-*Last updated: 2026-09-22 — public repo `Girish-shedge/Ripple-Effect-of-News`; Vercel deploy; stock marquee + theme; stricter detail copy.*
+*Last updated: 2026-09-22 — responsive viewports; ranked bento home; 4px radius; marquee without region labels.*

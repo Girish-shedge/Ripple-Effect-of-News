@@ -19,6 +19,8 @@ export interface StoryCatalogItem {
   region?: string
   /** Optional theme tag for filters; derived from headline/id when absent. */
   theme?: string
+  /** Editorial rank. Lower number appears first and can take a featured tile. */
+  rank?: number
 }
 
 export interface Source {

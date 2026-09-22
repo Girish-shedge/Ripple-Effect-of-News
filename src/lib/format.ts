@@ -53,6 +53,7 @@ export function formatImpact(value: number, unit: string): string {
 
 export function formatNewsDate(iso: string) {
   const parts = iso.split('-')
+  if (parts.length === 1) return parts[0]
   if (parts.length === 2) {
     return new Date(`${iso}-01T12:00:00`).toLocaleDateString('en-GB', {
       month: 'short',

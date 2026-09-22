@@ -9,8 +9,8 @@
       "lat": 40.4,
       "lng": -3.7
     },
-    "summary": "In August 2025, extreme fire weather during Spain’s most intense recorded heatwave drove the country’s worst wildfires in about 30 years. World Weather Attribution found the meteorological fire conditions roughly 40 times more likely in today’s climate than in a 1.3°C cooler world.",
-    "hero": "Record heat turned forests into tinder.",
+    "summary": "Spain's 2025 fires were the worst in 30 years. They burned nearly four times the recent annual average. Portugal's burned area ran about 2.3 times its average since 1980. Together the two countries lost more than 1% of Iberia to fire. The fires ran during Spain's most intense recorded heatwave. World Weather Attribution found the fire-weather conditions about 40 times more likely in today's climate than in a 1.3°C cooler world.",
+    "hero": "More than 1% of the Iberian Peninsula burned in one season.",
     "retrieved_at": "2026-09-21"
   },
   "nodes": [
@@ -18,13 +18,13 @@
       "id": "warming",
       "type": "climate_driver",
       "title": "Human warming loaded the dice for fire weather",
-      "description": "The world is about 1.3°C warmer than a pre-industrial baseline. In that climate, extreme fire-weather conditions like those behind the Iberian fires are about 40 times more likely than in a cooler world. World Weather Attribution measured that shift for this season, not as a slogan."
+      "description": "The world is about 1.3°C warmer than a pre-industrial baseline. Extra heat dries fuels faster and makes extreme fire weather more common. In that climate, conditions like those behind the Iberian fires are about 40 times more likely than in a cooler world. They are also about 30% more intense. World Weather Attribution measured that shift for this season."
     },
     {
       "id": "heatwave",
       "type": "hazard",
       "title": "Spain’s most intense heatwave on record dried the fuels",
-      "description": "A 16-day heatwave from 3–18 August carried a +4.6°C anomaly. It included the hottest ten-day stretch since at least 1950. Vegetation dried under that heat until it was ready to burn."
+      "description": "A 16-day heatwave from 3 to 18 August carried a +4.6°C anomaly. It included the hottest ten-day stretch since at least 1950. Vegetation dried under that heat until it was ready to burn."
     },
     {
       "id": "fire_weather",
@@ -36,7 +36,7 @@
       "id": "wildfires",
       "type": "hazard",
       "title": "Fires spread across Spain and Portugal",
-      "description": "Spain’s burned area almost quadrupled its recent annual average. Portugal burned about 2.3 times its long-term average. Together the fires covered more than 1% of Iberia’s surface during the country’s worst wildfire season in about 30 years."
+      "description": "Spain's burned area almost quadrupled its recent annual average. Portugal burned about 2.3 times its long-term average. Together the fires covered more than 1% of Iberia's surface. It was the country's worst wildfire season in about 30 years."
     },
     {
       "id": "ecosystems",
@@ -60,7 +60,7 @@
       "id": "livelihoods",
       "type": "human_system",
       "title": "Rural livelihoods and tourism can take years to recover",
-      "description": "Burned farmland, forestry, and visitor economies are typical knock-ons after a fire season of this size. Specific 2025 national loss totals are not locked in this build. Recovery for rural households can outlast the flames by years."
+      "description": "Burned farmland, forestry, and visitor economies are typical knock-ons after a fire season of this size. Specific 2025 national loss totals are not locked to a primary ledger here. Recovery for rural households can outlast the flames by years."
     },
     {
       "id": "economy",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "claim_warming_fireweather",
-      "text": "Extreme fire-weather conditions that drove the recent Iberian wildfires are about 40 times more likely in today’s ~1.3°C warmer climate, and about 30% more intense, than in a pre-industrial climate, implying less than once per 500 years without climate change.",
+      "text": "A study measured how much more likely climate change made this. Extreme fire-weather conditions that drove the Iberian wildfires are about 40 times more likely in today’s 1.3°C warmer climate than in a pre-industrial climate. They are also about 30% more intense. Without climate change, conditions like these would be expected less than once per 500 years.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -168,7 +168,7 @@
     },
     {
       "id": "claim_heatwave_record",
-      "text": "The fires coincided with Spain’s most intense heatwave on record: 16 days (3–18 August) with a +4.6°C anomaly and the hottest ten-day period since at least 1950.",
+      "text": "The fires coincided with Spain's most intense heatwave on record. It lasted 16 days, from 3 to 18 August, with a +4.6°C anomaly. It included the hottest ten-day period since at least 1950.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -181,7 +181,7 @@
     },
     {
       "id": "claim_burned_area",
-      "text": "Spain’s 2025 fires were the worst in 30 years, almost quadrupling the average annual area burned over the prior period; Portugal’s burned area was about 2.3× its average since 1980; together more than 1% of the Iberian Peninsula burned.",
+      "text": "Spain's 2025 fires were the worst in 30 years. They burned nearly four times the average annual area of the prior period. Portugal's burned area ran about 2.3 times its average since 1980. Together, the two countries lost more than 1% of the entire Iberian Peninsula to fire.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -194,7 +194,7 @@
     },
     {
       "id": "claim_ecosystems",
-      "text": "Large burned extents remove forest cover and alter recovery pathways; WWA notes elevated Mediterranean fire danger under heat and drought compounding.",
+      "text": "Large burned extents remove forest cover and alter how landscapes recover. World Weather Attribution notes elevated Mediterranean fire danger when heat and drought compound.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "claim_response",
-      "text": "Simultaneous European wildfires repeatedly activated the EU Civil Protection Mechanism, illustrating strain on shared firefighting capacity at 1.3°C warming.",
+      "text": "Simultaneous European wildfires repeatedly activated the EU Civil Protection Mechanism. Shared firefighting capacity was already strained at 1.3°C of warming.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "claim_communities",
-      "text": "Heat plus wildfire smoke creates compounded health hazards; evacuations and local destruction were part of the season’s documented impacts.",
+      "text": "Heat plus wildfire smoke creates compounded health hazards. Evacuations and local destruction were part of the season’s documented impacts.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -233,7 +233,7 @@
     },
     {
       "id": "claim_livelihoods",
-      "text": "Rural forestry, farming, and tourism livelihoods are typically hit after megafires, but a verified livelihood-loss ledger for 2025 Iberia is not attached in this build.",
+      "text": "This is a reasonable link, but no study has confirmed a national livelihood-loss total for 2025 Iberia yet. Rural forestry, farming, and tourism livelihoods are typically hit after fires of this size.",
       "claim_type": "inference",
       "evidence_level": "plausible",
       "sources": [
@@ -246,7 +246,7 @@
     },
     {
       "id": "claim_economy",
-      "text": "No primary, verified macroeconomic loss total for the 2025 Iberian fire season is used in this story. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "text": "Researchers are still studying the economic cost. No primary, verified macroeconomic loss total for the 2025 Iberian fire season is used here. Similar past events have disrupted livelihoods and local markets for months even when national GDP prints look small.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -308,7 +308,7 @@
       "id": "t_day0",
       "bucket": "DAY 0",
       "label": "Heatwave peaks",
-      "detail": "3–18 August 2025, Spain’s most intense heatwave on record coincides with extreme fire weather.",
+      "detail": "From 3 to 18 August 2025, Spain's most intense heatwave on record coincided with extreme fire weather.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_heatwave_record"
@@ -318,7 +318,7 @@
       "id": "t_days",
       "bucket": "DAYS",
       "label": "Fires expand",
-      "detail": "Large burned areas across Spain and Portugal; emergency response escalates.",
+      "detail": "Large burned areas spread across Spain and Portugal. Emergency response escalated.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_burned_area"
@@ -328,7 +328,7 @@
       "id": "t_weeks",
       "bucket": "WEEKS",
       "label": "Attribution study",
-      "detail": "WWA: fire weather ~40× more likely; ~30% more intense vs pre-industrial.",
+      "detail": "World Weather Attribution found fire weather about 40 times more likely. It was also about 30% more intense than in a pre-industrial climate.",
       "evidence_level": "attribution",
       "claim_ids": [
         "claim_warming_fireweather"

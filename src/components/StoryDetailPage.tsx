@@ -1,11 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import type { Source, Story } from '../types'
+import { heroVideoForStory } from '../lib/heroVideos'
 import { buildStorySections } from './buildStorySections'
-import { IconArrowRight, IconBack, IconChevronDown, IconInfo } from './icons'
+import { EvidenceBadge } from './EvidenceBadge'
+import { StoryHeroMedia } from './StoryHeroMedia'
+import { IconArrowRight, IconChevronDown, IconInfo } from './icons'
 
 export function StoryDetailPage({ story }: { story: Story }) {
   const sections = useMemo(() => buildStorySections(story), [story])
+  const heroVideo = heroVideoForStory(story.event.id)
   const mainRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -29,15 +32,6 @@ export function StoryDetailPage({ story }: { story: Story }) {
 
   return (
     <div className="story-doc">
-      <div className="story-doc-top">
-        <div className="story-doc-top-inner">
-          <Link className="story-doc-back" to="/">
-            <IconBack size={18} />
-            <span>Back</span>
-          </Link>
-        </div>
-      </div>
-
       <main className="story-doc-main" ref={mainRef}>
         {sections.map((section, index) => (
           <section
@@ -46,7 +40,9 @@ export function StoryDetailPage({ story }: { story: Story }) {
             className="story-doc-section"
             data-first={index === 0 || undefined}
           >
-            {section.image ? (
+            {index === 0 && heroVideo ? (
+              <StoryHeroMedia video={heroVideo} />
+            ) : section.image ? (
               <figure className="story-doc-hero-image">
                 <div className="story-doc-hero-frame">
                   <img
@@ -62,7 +58,21 @@ export function StoryDetailPage({ story }: { story: Story }) {
               </figure>
             ) : null}
 
-            <p className="story-doc-eyebrow">{section.kicker}</p>
+            <p className="story-doc-eyebrow">
+              <span>{section.kicker}</span>
+              {section.evidence ? (
+                <>
+                  <span className="story-doc-eyebrow-dot" aria-hidden="true">
+                    ·
+                  </span>
+                  <EvidenceBadge
+                    level={section.evidence.level}
+                    meaning={section.evidence.meaning}
+                    plain
+                  />
+                </>
+              ) : null}
+            </p>
             <h2 className="story-doc-title">{section.title}</h2>
             {section.teaser ? <p className="story-doc-prose">{section.teaser}</p> : null}
 

@@ -26,20 +26,22 @@ It is **not**:
 | `/story/:id` | `StoryDetailRoute` → `StoryDetailPage` | Single-column article reader |
 
 ### Home (`NewsListPage.tsx`)
-- Cards newest-first in a **4-column CSS grid** (3 / 2 / 1 responsive).
+- Cards in a **ranked bento grid** (4-col desktop ≥1100px; 2-col tablet with featured tiles full width; 1-col below 640px). Rank 1 is the top-left featured tile; rank 2 is the bottom-right featured tile.
+- Sort by explicit `rank` on each catalog item (fallback: recency + theme). Helpers: `catalogRank` / `rankStories` / `catalogSlot`.
 - Card: image → date → heading → subheading → location.
-- **Filters (dropdowns):** Region · Theme · Year — options from catalog; optional `region` / `theme` on each `stories.json` item; Clear + match count.
+- **Filters (dropdowns):** Region · Theme · Year — **label inside the control** (`Region: All`); Clear. Row is **centered**. **No** match count. **No** extra uppercase Ripple wordmark.
 - **No** AI badge on home images. Click → `/story/:id`.
 - Helpers: `catalogRegion` / `catalogTheme` / `catalogYear` in the same file.
 
 ### Detail (`StoryDetailPage.tsx` + `buildStorySections.tsx`)
-- Column **≈66ch**. Sticky Back **in that same column**. Yellow **India/USA stock marquee** + **dark/light toggle** above everything (`MarketMarquee.tsx`).
+- Column **≈66ch**. Yellow **stock marquee** (Nifty 50, Sensex, S&P 500, Dow, Nasdaq; no India/USA labels; dot-separated, seamless loop, live quotes) with a **Ripple** home link and **dark/light toggle** above everything (`MarketMarquee.tsx`). **No Back button** on detail pages.
 - Per section: 16:9 watercolor → 10px UPPERCASE → heading → one factual paragraph (complete-phrase bold only; skip boilerplate) → widgets → blue Verified sources (**all** sources).
+- **Hero exception:** first section media is a short muted autoplaying YouTube player (`StoryHeroMedia` + `src/lib/heroVideos.ts`), from a named trusted outlet. Later sections stay watercolor.
 - Hero teaser = event summary only. Reach/timeline teasers from this story’s figures and dates.
 - Chain paragraphs carry mechanistic detail, especially causes. No “this page walks…” or “Open Verified sources…” copy.
 - Honesty: **What we know** then **What remains uncertain**, stacked point lists (`.knowledge-stack`).
 - Detail AI badge: **“AI generated”**, 25% white fill, 16px inset. **No** credits under images.
-- Reach: numbers (`StoryReachCharts`). Over time: 2-col `TimelineStrip`. Claims: badge + text + caveat.
+- Reach: numbers (`StoryReachCharts`) only; no evidence-count tiles. Over time: 2-col `TimelineStrip`. Chain kicker: `relationship · evidence` + info. Claims: text + optional caveat.
 - Evidence badge tooltips via Hugeicons info (`EvidenceBadge.tsx`).
 
 ### Section order
@@ -108,11 +110,13 @@ Phenology 101/          (folder name historical; product is Ripple)
     ├── styles.css
     ├── lib/format.ts
     ├── lib/theme.tsx
+    ├── lib/heroVideos.ts
     └── components/
         ├── NewsListPage.tsx
         ├── MarketMarquee.tsx
         ├── StoryDetailPage.tsx
         ├── StoryDetailRoute.tsx
+        ├── StoryHeroMedia.tsx
         ├── buildStorySections.tsx
         ├── icons.tsx
         ├── EvidenceBadge.tsx
@@ -130,7 +134,7 @@ Phenology 101/          (folder name historical; product is Ripple)
 Types: `src/types.ts`.
 
 ### Catalog (`public/data/stories.json`)
-`StoryCatalogItem`: `id`, `data_file`, `date`, `headline`, `subheading`, `location`, `image_url`, `image_alt`, optional **`region`**, **`theme`**.
+`StoryCatalogItem`: `id`, `data_file`, `date`, `headline`, `subheading`, `location`, `image_url`, `image_alt`, optional **`region`**, **`theme`**, **`rank`**.
 
 ### Story JSON
 `event`, `nodes[]`, `edges[]`, `claims[]`, `sources[]`, `impacts[]`, `timeline[]`, `knowledge_summary`, `evidence_legend`, `media[]`, `chart`, `predictions[]`, optional `news[]` / `provenance`.
@@ -182,17 +186,19 @@ Types: `src/types.ts`.
 
 - CSS vars in `src/styles.css` (`--paper`, `--ink`, evidence colors, `--image-ratio: 16 / 9`).
 - Perfect-fourth type; 8-pt spacing; section padding 64px with border-top.
-- Avoid purple-on-white clichés, heavy hero chrome, em dashes, corner radius.
+- Avoid purple-on-white clichés, heavy hero chrome, and em dashes. Corner radius **4px**.
 
 ---
 
 ## 10. Decisions already made (don’t reopen unless asked)
 
 - Single reading column (no Timeline / TOC / sources rails).
-- Home = 4-col grid + Region/Theme/Year dropdowns (not horizontal scroll).
+- Home = ranked bento grid + Region/Theme/Year dropdowns with labels inside the control (`Region: All`), centered (not horizontal scroll).
 - Watercolor-only imagery + “AI generated” badge on detail only (25% fill); no image credits.
 - 66ch reading measure; 10px uppercase; 16:9; 2-col timeline; number reach; simplified claims.
-- Sticky Back; section lines; scroll blur→reveal; Hugeicons only.
+- No Back button on detail; section lines; scroll blur→reveal; Hugeicons only.
+- Corner radius **4px**.
+- Responsive: 640 / 720 / 900 / 1100 / 1280+; phone 1-col home; icon-only theme toggle under 720px; 44px tap targets; safe-area insets.
 - Unknown evidence stays visible; predictions labeled `emerging`.
 - Standing rules in `rules.md` — do not reverse without an explicit user ask.
 
@@ -233,11 +239,12 @@ Or connect the GitHub repo in the Vercel dashboard so pushes to `main` auto-depl
 ## 13. Quick agent checklist
 
 - [ ] Followed `rules.md` + content style guide
-- [ ] Home: 4-col grid, filters work, no AI badges on cards
+- [ ] Home: ranked bento, filters work, no AI badges on cards, no extra Ripple wordmark, no match count
 - [ ] Detail: every section has unique watercolor; AI badge; no credits
 - [ ] 66ch prose; 10px uppercase; 16:9; 2-col timeline; simplified claims
-- [ ] Sticky Back aligned to 66ch; blur-reveal; Hugeicons; no em dashes / radius / heading highlights
-- [ ] Yellow India/USA ticker + dark/light toggle
+- [ ] No Back button on detail; blur-reveal; Hugeicons; no em dashes / heading highlights; 4px radius
+- [ ] Yellow ticker (dots, no India/USA labels, seamless loop, live) + home icon + dark/light toggle
+- [ ] Responsive on phone / tablet / desktop; no horizontal overflow
 - [ ] Detail copy has no banned boilerplate; honesty lists are stacked
 - [ ] `npm run build` passes
 - [ ] New stories have `region`/`theme` + `wc-*` media wired
@@ -245,4 +252,4 @@ Or connect the GitHub repo in the Vercel dashboard so pushes to `main` auto-depl
 
 ---
 
-*Last updated: 2026-09-22 — public GitHub repo + Vercel deploy notes for new chats.*
+*Last updated: 2026-09-22 — responsive viewports; ranked bento home; 4px radius; marquee without region labels.*

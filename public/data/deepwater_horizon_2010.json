@@ -9,7 +9,7 @@
       "lat": 28.74,
       "lng": -88.37
     },
-    "summary": "On 20 April 2010 the Deepwater Horizon rig exploded, releasing about 490,000 m³ of oil into the Gulf. Fifteen years later NOAA and peer-reviewed studies still track injured dolphin populations, Barataria Bay bottlenose dolphins fell ~45% and may need ~35 years to recover.",
+    "summary": "On 20 April 2010 the Deepwater Horizon rig exploded. About 490,000 m³ of oil poured into the Gulf. Fifteen years later NOAA and peer-reviewed studies still track injured dolphin populations. Barataria Bay bottlenose dolphins fell about 45%. Models say recovery may take about 35 years.",
     "hero": "One spill. Decades of sick lungs in the Gulf.",
     "retrieved_at": "2026-09-21"
   },
@@ -42,7 +42,7 @@
       "id": "recovery_clock",
       "type": "environment",
       "title": "Recovery may take ~35 years",
-      "description": "The same models estimate about 35 years, with a range of 18–67, to return to 95% of baseline numbers. Fifteen years after the spill, the clock is still running. Recovery is a generation of dolphins, not a cleanup season."
+      "description": "The same models estimate about 35 years, with a range of 18 to 67, to return to 95% of baseline numbers. Fifteen years after the spill, the clock is still running. Recovery is a generation of dolphins, not a cleanup season."
     },
     {
       "id": "offshore",
@@ -167,7 +167,7 @@
     },
     {
       "id": "d2",
-      "text": "Frontiers in Marine Science (2022): Barataria Bay bottlenose dolphins showed chronic and potentially progressive respiratory injury eight years after the spill.",
+      "text": "A 2022 Frontiers in Marine Science study found that Barataria Bay bottlenose dolphins showed chronic and potentially progressive respiratory injury eight years after the spill.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -180,7 +180,7 @@
     },
     {
       "id": "d3",
-      "text": "Conservation Biology (2022): Barataria Bay dolphin population declined ~45% (95% CI 14–74) relative to baseline; 78% of assessed 2018 dolphins had guarded/poor/grave prognosis.",
+      "text": "A 2022 Conservation Biology study estimated that the Barataria Bay dolphin population declined about 45% relative to baseline, with a 95% confidence interval of 14 to 74%. Of assessed 2018 dolphins, 78% had a guarded, poor, or grave prognosis.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -193,7 +193,7 @@
     },
     {
       "id": "d4",
-      "text": "Same study: estimated 35 years (18–67) to recover to 95% of baseline; ~30,148 lost cetacean-years.",
+      "text": "The same study estimated 35 years, with a range of 18 to 67, to recover to 95% of baseline. It also estimated about 30,148 lost cetacean-years.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "d5",
-      "text": "NOAA Fisheries: exposure fractions and lost cetacean-years quantified across sperm whales, beaked whales, and 11 delphinid species.",
+      "text": "NOAA Fisheries quantified exposure fractions and lost cetacean-years across sperm whales, beaked whales, and 11 dolphin species.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "d6",
-      "text": "NOAA 15-year science update: acoustic declines include sperm whales (up to 31%), beaked whales (up to 83%), small delphinids (up to 43%); some declines exceed early injury-model predictions and are not all conclusively linked to oil alone.",
+      "text": "NOAA’s 15-year science update reports acoustic declines of up to 31% for sperm whales. Beaked whales declined by up to 83%. Small dolphins declined by up to 43%. Some declines exceed early injury-model predictions. NOAA notes they are not all conclusively linked to oil alone.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -233,7 +233,7 @@
     },
     {
       "id": "d7",
-      "text": "Dolphin respiratory findings are consistent with human oil-exposure lung literature cited in the studies, a plausible shared toxic pathway.",
+      "text": "This is a reasonable link, but no study has confirmed a completed human lung-injury tally from this spill. Dolphin respiratory findings are consistent with human oil-exposure lung literature cited in the studies.",
       "claim_type": "inference",
       "evidence_level": "plausible",
       "sources": [
@@ -379,7 +379,7 @@
       "id": "t0",
       "bucket": "DAY 0",
       "label": "Blowout",
-      "detail": "20 April 2010, Deepwater Horizon explosion; months of oil release.",
+      "detail": "On 20 April 2010 the Deepwater Horizon exploded. Oil poured for months.",
       "evidence_level": "observed",
       "claim_ids": [
         "d1"
@@ -399,7 +399,7 @@
       "id": "t2",
       "bucket": "TODAY",
       "label": "Still below baseline",
-      "detail": "Population ~45% down; NOAA still monitoring 15 years on.",
+      "detail": "The local dolphin population is about 45% down. NOAA is still monitoring 15 years on.",
       "evidence_level": "observed",
       "claim_ids": [
         "d3",

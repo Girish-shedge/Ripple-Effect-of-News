@@ -6,6 +6,7 @@ import {
   Cancel01Icon,
   CheckmarkCircle02Icon,
   ChevronDownIcon,
+  Home01Icon,
   InformationCircleIcon,
   Moon02Icon,
   Sun03Icon,
@@ -37,6 +38,10 @@ function Icon({
 
 export function IconBack(props: IconProps) {
   return <Icon icon={ArrowLeft01Icon} {...props} />
+}
+
+export function IconHome(props: IconProps) {
+  return <Icon icon={Home01Icon} size={props.size ?? 16} {...props} />
 }
 
 export function IconArrowRight(props: IconProps) {

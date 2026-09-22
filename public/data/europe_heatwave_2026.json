@@ -9,8 +9,8 @@
       "lat": 48.8,
       "lng": 2.3
     },
-    "summary": "From about 18–29 June 2026, a severe heatwave gripped Western Europe. World Weather Attribution found heat like this would have been virtually impossible in 1976 and tens to hundreds of times less likely in 2003, driven by fossil-fuel warming.",
-    "hero": "Fossil-fuel heat is rewriting Europe’s summers.",
+    "summary": "From about 18 to 29 June 2026, Western Europe sat under a familiar high-pressure pattern. Days ran hot. Nights stayed warm enough that bodies could not recover. World Weather Attribution found heat like this would have been virtually impossible in 1976. It would have been tens to hundreds of times less likely in 2003. Fossil-fuel warming drove that shift.",
+    "hero": "Western Europe's June nights stopped cooling people down.",
     "retrieved_at": "2026-09-21"
   },
   "nodes": [
@@ -18,25 +18,25 @@
       "id": "warming",
       "type": "climate_driver",
       "title": "Fossil fuels raised the climate baseline",
-      "description": "About 1.4°C of human-caused global warming made the same weather pattern deliver far more heat than it did decades ago. World Weather Attribution found heat like this would have been virtually impossible in 1976, and tens to hundreds of times less likely in 2003. Fossil-fuel warming is the driver of that shift."
+      "description": "About 1.4°C of human-caused global warming made the same weather pattern deliver far more heat than it did decades ago. Extra greenhouse gases trap outgoing energy. The same southerly flow now rides a warmer ocean and a warmer land surface. World Weather Attribution found heat like this would have been virtually impossible in 1976. It would have been tens to hundreds of times less likely in 2003."
     },
     {
       "id": "circulation",
       "type": "environment",
       "title": "A familiar weather pattern now runs hotter",
-      "description": "Southerly flow like past analogues still arrived over Western Europe. It now sits on a warmer baseline, so temperatures spiked higher than mid-20th-century matches. The map of the high looks familiar. The thermometer does not."
+      "description": "Southerly flow like past analogues still arrived over Western Europe. It now sits on a warmer baseline. Temperatures spiked higher than mid-20th-century matches. The map of the high looks familiar. The thermometer does not."
     },
     {
       "id": "heatwave",
       "type": "hazard",
       "title": "Day and night heat broke seasonal limits",
-      "description": "From about 18–29 June 2026, multi-day maxima and tropical nights stressed bodies that need cool nights to recover. June is warming fastest in the study region. People could not dump the day’s heat overnight."
+      "description": "From about 18 to 29 June 2026, multi-day maxima and tropical nights stressed bodies that need cool nights to recover. June is warming fastest in the study region. People could not dump the day’s heat overnight."
     },
     {
       "id": "heat_stress",
       "type": "hazard",
       "title": "Humid heat pushed cities past safe indoor thresholds",
-      "description": "Wet Bulb Globe Temperature analysis found about 45% of European cities breaking indoor-WBGT thresholds during the event. Indoor rooms stopped being a reliable refuge. That is a different kind of heat than a brief outdoor peak."
+      "description": "Wet Bulb Globe Temperature analysis found about 45% of European cities breaking indoor heat-stress thresholds during the event. Indoor rooms stopped being a reliable refuge. That is a different kind of heat than a brief outdoor peak."
     },
     {
       "id": "health_systems",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "claim_warming_baseline",
-      "text": "Human-caused warming made a June heat event of this intensity virtually impossible in a 1976-like climate (~1.1°C cooler) and tens to hundreds of times more likely than in 2003 (~0.6°C cooler).",
+      "text": "A study measured how much more likely climate change made this. Human-caused warming made a June heat event of this intensity virtually impossible in a 1976-like climate, about 1.1°C cooler. The same heat was tens to hundreds of times more likely than in 2003, about 0.6°C cooler.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -168,7 +168,7 @@
     },
     {
       "id": "claim_pattern_heat",
-      "text": "The June 2026 heatwave was the most severe ever recorded over the WWA study region for the indices analysed, with daytime heat about 3.5°C warmer than a similar June event in 1976.",
+      "text": "The June 2026 heatwave was the most severe ever recorded over the World Weather Attribution study region for the indices analysed. Daytime heat was about 3.5°C warmer than a similar June event in 1976.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -181,7 +181,7 @@
     },
     {
       "id": "claim_wbgt",
-      "text": "During the heatwave, about 45% of European cities broke indoor Wet Bulb Globe Temperature thresholds in the WWA analysis.",
+      "text": "During the heatwave, about 45% of European cities broke indoor Wet Bulb Globe Temperature thresholds in the World Weather Attribution analysis.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -194,7 +194,7 @@
     },
     {
       "id": "claim_health_infra",
-      "text": "Reporting during the heatwave documented hospital critical incidents, rail disruptions, school closures, and elevated emergency medical demand in affected countries.",
+      "text": "Reporting during the heatwave documented hospital critical incidents. Rail disruptions, school closures, and elevated emergency medical demand were also recorded in affected countries.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "claim_energy",
-      "text": "Extreme heat raised cooling demand and raised concerns about reduced output from river-cooled nuclear plants in France, with knock-on effects for regional power markets.",
+      "text": "Extreme heat raised cooling demand. It also raised concerns about reduced output from river-cooled nuclear plants in France, with knock-on effects for regional power markets.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "claim_eco",
-      "text": "The same heat season raised wildfire danger and produced reports of heat-stressed wildlife, while soil moisture approached seasonal lows in places.",
+      "text": "The same heat season raised wildfire danger. Rescue centres reported heat-stressed wildlife. Soil moisture approached seasonal lows in places.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -233,7 +233,7 @@
     },
     {
       "id": "claim_mortality",
-      "text": "Heatwaves cause more deaths in Europe than all other natural hazards combined; prior extreme summers (e.g. 2022) recorded tens of thousands of heat-related deaths, with a large share attributable to climate change in peer-reviewed work.",
+      "text": "Scientists broadly agree that heatwaves cause more deaths in Europe than all other natural hazards combined. Prior extreme summers, including 2022, recorded tens of thousands of heat-related deaths. A large share of those deaths has been attributed to climate change in peer-reviewed work. Event-specific death totals for June 2026 were not final in the rapid report used here.",
       "claim_type": "context",
       "evidence_level": "strongly_supported",
       "sources": [
@@ -246,7 +246,7 @@
     },
     {
       "id": "claim_economy",
-      "text": "A single verified macroeconomic loss figure for the June 2026 heatwave is not established in the sources used for this build. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "text": "Researchers are still studying the economic cost. A single verified macroeconomic loss figure for the June 2026 heatwave is not established. Similar past events have disrupted livelihoods and local markets for months even when national GDP prints look small.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -327,7 +327,7 @@
       "id": "t_day0",
       "bucket": "DAY 0",
       "label": "Heatwave intensifies",
-      "detail": "Mid–late June 2026, multi-day extreme daytime and nighttime heat across Western Europe.",
+      "detail": "Mid to late June 2026 brought multi-day extreme daytime and nighttime heat across Western Europe.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_pattern_heat"
@@ -337,7 +337,7 @@
       "id": "t_days",
       "bucket": "DAYS",
       "label": "Health and infrastructure strain",
-      "detail": "Hospital, transport, school, and power-system stress reported during the peak period.",
+      "detail": "Hospitals, transport, schools, and power systems reported strain during the peak period.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_health_infra"
@@ -347,7 +347,7 @@
       "id": "t_weeks",
       "bucket": "WEEKS",
       "label": "Attribution published",
-      "detail": "WWA report No. 85: virtually impossible in 1976; tens–hundreds× more likely than 2003.",
+      "detail": "World Weather Attribution report No. 85 found heat like this virtually impossible in 1976. It was tens to hundreds of times more likely than in 2003.",
       "evidence_level": "attribution",
       "claim_ids": [
         "claim_warming_baseline"
@@ -357,7 +357,7 @@
       "id": "t_months",
       "bucket": "MONTHS",
       "label": "Mortality accounting",
-      "detail": "Full excess-death accounting for June 2026 was not final in the rapid report used here.",
+      "detail": "Full excess-death accounting for June 2026 was not final in the rapid report.",
       "evidence_level": "emerging",
       "claim_ids": [
         "claim_mortality"
@@ -367,7 +367,7 @@
       "id": "t_years",
       "bucket": "YEARS",
       "label": "Adaptation limits",
-      "detail": "WWA warns extreme heat at ~1.4°C warming already tests social coping capacity.",
+      "detail": "World Weather Attribution warns that extreme heat at about 1.4°C of warming already tests social coping capacity.",
       "evidence_level": "strongly_supported",
       "claim_ids": [
         "claim_warming_baseline"
@@ -377,7 +377,7 @@
   "knowledge_summary": {
     "what_we_know": [
       "The June 2026 Western Europe heatwave was exceptionally severe for the World Weather Attribution study region.",
-      "Human-caused warming made comparable heat virtually impossible about 50 years ago, and far more likely than in 2003.",
+      "Human-caused warming made comparable heat virtually impossible about 50 years ago. It also made it far more likely than in 2003.",
       "Cities, health systems, transport, and energy networks showed acute strain during the event."
     ],
     "what_remains_uncertain": [

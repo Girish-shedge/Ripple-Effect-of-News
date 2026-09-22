@@ -1,7 +1,7 @@
 {
   "event": {
     "id": "bhopal_1984",
-    "title": "Bhopal 1984, the gas cleared; the poison didn’t",
+    "title": "Bhopal 1984, the gas cleared, the poison did not",
     "date": "1984-12-03",
     "location": {
       "country": "India",
@@ -9,7 +9,7 @@
       "lat": 23.28,
       "lng": 77.41
     },
-    "summary": "On the night of 2–3 December 1984, methyl isocyanate leaked from the Union Carbide pesticide plant in Bhopal. Forty years on, Amnesty and Indian regulators still document toxic waste and groundwater contamination around the abandoned site.",
+    "summary": "On the night of 2-3 December 1984, methyl isocyanate leaked from the Union Carbide pesticide plant in Bhopal. Thousands were killed or injured within hours. Forty years on, Amnesty and Indian regulators still document toxic waste and groundwater contamination around the abandoned site.",
     "hero": "A night of gas. Four decades of poisoned water.",
     "retrieved_at": "2026-09-21"
   },
@@ -18,7 +18,7 @@
       "id": "leak",
       "type": "hazard",
       "title": "MIC gas flooded neighbourhoods overnight",
-      "description": "On the night of 2–3 December 1984, methyl isocyanate leaked from the Union Carbide India Limited pesticide plant in Bhopal. The gas moved into nearby neighbourhoods. Amnesty International records this as one of the worst industrial catastrophes and corporate negligence cases in living memory. Thousands were killed or injured within hours."
+      "description": "On the night of 2-3 December 1984, methyl isocyanate leaked from the Union Carbide India Limited pesticide plant in Bhopal. The gas moved into nearby neighbourhoods. Amnesty International records this as one of the worst industrial catastrophes and corporate negligence cases in living memory. Thousands were killed or injured within hours."
     },
     {
       "id": "acute",
@@ -30,7 +30,7 @@
       "id": "dumping",
       "type": "hazard",
       "title": "The plant had already been poisoning soil and water",
-      "description": "Before the night of the leak, the plant had already been releasing dangerous chemicals. Amnesty documents spillages, accidents, and dumping into air, soil, and groundwater during operations. That slower poisoning is what Amnesty calls the second catastrophe, and it began while the factory was still running."
+      "description": "Before the night of the leak, the plant had already been releasing dangerous chemicals. Amnesty documents spillages, accidents, and dumping into air, soil, and groundwater during operations. That slower poisoning is what Amnesty calls the second catastrophe. It began while the factory was still running."
     },
     {
       "id": "abandonment",
@@ -42,7 +42,7 @@
       "id": "groundwater",
       "type": "environment",
       "title": "Groundwater contamination persists into the 2020s",
-      "description": "Central Ground Water Authority sampling for the National Green Tribunal in 2023–24 took 72 groundwater samples within 5 km of the plant. Nitrate exceeded BIS limits at 7 sites, iron at 11, and manganese at 3. Other WHO and BIS exceedances showed up for phosphate, sodium, potassium, and hardness. Most tested heavy metals were within limits."
+      "description": "Central Ground Water Authority sampling for the National Green Tribunal in 2023-24 took 72 groundwater samples within 5 km of the plant. Nitrate exceeded BIS limits at 7 sites. Iron exceeded limits at 11 sites. Manganese exceeded limits at 3 sites. Other WHO and BIS exceedances showed up for phosphate, sodium, potassium, and hardness. Most tested heavy metals were within limits."
     },
     {
       "id": "drinking",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "b1",
-      "text": "Amnesty International (2024): the December 1984 MIC leak in Bhopal was one of the worst industrial catastrophes and corporate negligence cases in living memory.",
+      "text": "Amnesty International (2024) records that the December 1984 methyl isocyanate leak in Bhopal was one of the worst industrial catastrophes and corporate negligence cases in living memory.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -167,7 +167,7 @@
     },
     {
       "id": "b2",
-      "text": "Amnesty: during plant operation, spillages, accidents, and dumping released dangerous chemicals into air, soil, and groundwater.",
+      "text": "Amnesty finds that during plant operation, spillages, accidents, and dumping released dangerous chemicals into air, soil, and groundwater.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -180,7 +180,7 @@
     },
     {
       "id": "b3",
-      "text": "Amnesty: after the site was abandoned without adequate disposal, thousands of tonnes of toxic waste remained buried in and around the plant.",
+      "text": "Amnesty finds that after the site was abandoned without adequate disposal, thousands of tonnes of toxic waste remained buried in and around the plant.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -193,7 +193,7 @@
     },
     {
       "id": "b4",
-      "text": "CGWA investigation for NGT (OA 03/2024): 72 groundwater samples within 5 km; nitrate exceeded BIS at 7 sites, iron at 11, manganese at 3; other WHO/BIS exceedances for phosphate/sodium/potassium/hardness; most tested heavy metals within limits.",
+      "text": "A Central Ground Water Authority investigation for the National Green Tribunal (OA 03/2024) took 72 groundwater samples within 5 km of the plant. Nitrate exceeded BIS limits at 7 sites. Iron exceeded limits at 11 sites. Manganese exceeded limits at 3 sites. Other WHO and BIS exceedances showed up for phosphate, sodium, potassium, and hardness. Most tested heavy metals were within limits.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -207,7 +207,7 @@
     },
     {
       "id": "b5",
-      "text": "Amnesty 40-year review: survivors still face incomplete remediation and justice gaps decades after the leak.",
+      "text": "Amnesty’s 40-year review finds that survivors still face incomplete remediation and justice gaps decades after the leak.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "b6",
-      "text": "NGT took suo motu cognizance after Dec 2023 reporting on toxic waste and water risk, prompting the fresh CGWA study.",
+      "text": "The National Green Tribunal took suo motu cognizance after December 2023 reporting on toxic waste and water risk. That action prompted the fresh CGWA study.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -234,7 +234,7 @@
     },
     {
       "id": "b7",
-      "text": "Until permanent waste removal and water remediation finish, exposure pathways remain an emerging multi-decade cost.",
+      "text": "Researchers and regulators are still measuring the remaining cost. Until permanent waste removal and water remediation finish, exposure pathways remain open.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -374,7 +374,7 @@
       "id": "t1",
       "bucket": "YEARS",
       "label": "Site abandoned with waste",
-      "detail": "Toxic stockpiles remain; groundwater pathway continues.",
+      "detail": "Toxic stockpiles remain. The groundwater pathway continues.",
       "evidence_level": "observed",
       "claim_ids": [
         "b3"
@@ -404,9 +404,9 @@
   ],
   "knowledge_summary": {
     "what_we_know": [
-      "Methyl isocyanate leaked from the UCIL plant on 2–3 December 1984, killing and injuring thousands.",
-      "Toxic waste and groundwater contamination around the abandoned site still show up in CGWA sampling in the 2020s.",
-      "Amnesty’s 40-year review finds clean-up and justice still incomplete."
+      "The December 1984 methyl isocyanate leak killed and injured thousands in Bhopal.",
+      "Amnesty documents a second catastrophe of dumped waste and incomplete clean-up.",
+      "2023-24 CGWA sampling still found selected groundwater exceedances within 5 km of the plant."
     ],
     "what_remains_uncertain": [
       "How far the contamination plume extends, and how it has moved over time.",

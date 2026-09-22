@@ -9,8 +9,8 @@
       "lat": 28.29,
       "lng": 85.53
     },
-    "summary": "On 26 August 2026, ice and rock broke from Langtang Lirung on the Nepal–China border. Within minutes the surge became a debris flood, then a flash flood racing down the Bhote Koshi–Trishuli rivers, destroying towns, farms, and power plants, and leaving thousands dead or missing.",
-    "hero": "A mountain collapsed. The flood that followed reshaped lives downstream.",
+    "summary": "On 26 August 2026, ice and rock broke from Langtang Lirung on the Nepal-China border. Within minutes the surge became a debris flood. It then raced down the Bhote Koshi-Trishuli rivers. Towns, farms, and power plants were destroyed. Thousands of people were killed or left missing.",
+    "hero": "A wall of ice and rock let go above a river in Nepal.",
     "retrieved_at": "2026-09-21"
   },
   "nodes": [
@@ -18,19 +18,19 @@
       "id": "warming",
       "type": "climate_driver",
       "title": "The Himalaya is warming because of us",
-      "description": "Human greenhouse gases made the July–August warmth around the failure site about 1.5°C hotter than a pre-industrial climate would have. That extra heat sits on a longer Himalayan warming trend that thins glaciers and degrades permafrost. Climate change is a destabilising factor on a slope that already had geological weaknesses, not the sole cause of the collapse."
+      "description": "Human greenhouse gases trapped extra heat in the high Himalaya. A World Weather Attribution study found the July-August warmth around the failure site was about 1.5°C hotter than a pre-industrial climate would have been. That extra heat sits on a longer warming trend. Glaciers thin. Frozen ground thaws. Ice that once glued rock fractures together weakens. Climate change is a destabilising factor on a slope that already had geological weaknesses. It is not the sole cause of the collapse."
     },
     {
       "id": "mountain_instability",
       "type": "environment",
       "title": "Ice and frozen ground were already loosening the slope",
-      "description": "Glaciers in the region have been thinning by more than half a metre of ice-equivalent a year. Permafrost thaw and a rising rain–snow line weaken ice-bonded fractures in the rock. The 2015 Gorkha earthquake may also have preconditioned the slope, though its specific role in the 2026 failure is not confirmed."
+      "description": "Glaciers in the region have been thinning by more than half a metre of ice-equivalent a year. Permafrost thaw and a rising rain-snow line weaken ice-bonded fractures in the rock. The 2015 Gorkha earthquake may also have loosened the slope. Its specific role in the 2026 failure is not confirmed."
     },
     {
       "id": "collapse",
       "type": "hazard",
       "title": "A slab of mountain broke free",
-      "description": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung, around 5,150 m. The mass fell about 1,400 m and produced seismic waves first mistaken for an earthquake. It slammed into the Lhende catchment and became a debris flood."
+      "description": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung, around 5,150 m. The mass fell about 1,400 m. It produced seismic waves first mistaken for an earthquake. It slammed into the Lhende catchment and became a debris flood."
     },
     {
       "id": "debris_cascade",
@@ -42,7 +42,7 @@
       "id": "flood",
       "type": "hazard",
       "title": "A flash flood tore down the river corridor",
-      "description": "The surge reached the Nepal–China border in minutes and kept destroying towns, bridges, and power sites far down the Bhote Koshi–Trishuli system. WWA, citing government and UNDP figures, reports over 1,300 confirmed deaths in Nepal, over 5,000 missing, and about 84,270 people affected across six districts."
+      "description": "The surge reached the Nepal-China border in minutes. It kept destroying towns, bridges, and power sites far down the Bhote Koshi-Trishuli system. World Weather Attribution, citing government and UNDP figures, reports over 1,300 confirmed deaths in Nepal. Over 5,000 people were missing. About 84,270 people were affected across six districts."
     },
     {
       "id": "infrastructure_ag_damage",
@@ -54,7 +54,7 @@
       "id": "food_production_loss",
       "type": "human_system",
       "title": "Rice and other crops were wiped out",
-      "description": "FAO’s preliminary assessment found about 1,800 hectares of crops damaged, mostly paddy, with production losses approaching 7,700 tonnes. Livestock, fishponds, food stocks, and farm infrastructure were also hit. Restoring land, irrigation, and seeds before the next planting season is the immediate agricultural task."
+      "description": "FAO’s preliminary assessment found about 1,800 hectares of crops damaged, mostly paddy. Production losses approached 7,700 tonnes. Livestock, fishponds, food stocks, and farm infrastructure were also hit. Restoring land, irrigation, and seeds before the next planting season is the immediate agricultural task."
     },
     {
       "id": "livelihoods",
@@ -66,7 +66,7 @@
       "id": "economic_effects",
       "type": "economy",
       "title": "Wider economic fallout is still unproven",
-      "description": "National GDP or market-wide losses from this specific flood have not been established in a verified primary assessment used here. Documented damage to power, crops, and homes is already large. The next economic layer is still being counted."
+      "description": "National GDP or market-wide losses from this specific flood have not been established in a verified primary assessment. Documented damage to power, crops, and homes is already large. The next economic layer is still being counted. We do not yet have evidence either way for a national total."
     }
   ],
   "edges": [
@@ -152,7 +152,7 @@
   "claims": [
     {
       "id": "claim_warming_instability",
-      "text": "Human-caused climate change made the July–August warmth at and around the failure site about 1.5°C hotter than a pre-industrial baseline would have, part of a longer Himalayan warming trend that thins glaciers and degrades permafrost.",
+      "text": "A study measured how much extra heat climate change added. Human-caused warming made the July-August warmth at and around the failure site about 1.5°C hotter than a pre-industrial baseline would have. That extra heat sits on a longer Himalayan warming trend that thins glaciers and degrades permafrost.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -166,7 +166,7 @@
     },
     {
       "id": "claim_instability_collapse",
-      "text": "Glacier thinning (more than half a metre of ice-equivalent loss per year regionally), accelerated Langtang–Lirung glacier recession, permafrost thaw, and a rising rain–snow line likely weakened ice-bonded fractures and rock–ice contacts before the collapse. The 2015 Gorkha earthquake may also have preconditioned the slope, though its specific contribution to the 2026 failure is not confirmed.",
+      "text": "Glaciers in the region have been thinning by more than half a metre of ice-equivalent a year. Permafrost thaw and a rising rain-snow line likely weakened ice-bonded fractures before the collapse. The 2015 Gorkha earthquake may also have preconditioned the slope. Its specific contribution to the 2026 failure is not confirmed.",
       "claim_type": "attribution",
       "evidence_level": "attribution",
       "sources": [
@@ -181,7 +181,7 @@
     },
     {
       "id": "claim_collapse_debris",
-      "text": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung (~5,150 m), fell ~1,400 m, and produced seismic waves initially mistaken for an earthquake. The mass flow entered the Lhende catchment and became a debris flood.",
+      "text": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung, around 5,150 m. The mass fell about 1,400 m. It produced seismic waves first mistaken for an earthquake. The flow entered the Lhende catchment and became a debris flood.",
       "claim_type": "observed",
       "evidence_level": "observed",
       "sources": [
@@ -196,7 +196,7 @@
     },
     {
       "id": "claim_debris_flood",
-      "text": "The debris flood / flood surge reached Rasuwagadhi within about seven minutes (~188 km/h average in early reconstructions) and continued as a destructive flood far down the Bhote Koshi–Trishuli system. HiRisk notes the Lhende Khola may have been dammed only for minutes; independent open-data work finds a sustained dam-and-breach sequence inconsistent with arrival timing, while a blockage lasting only minutes cannot be ruled out.",
+      "text": "The debris flood reached Rasuwagadhi within about seven minutes. Early reconstructions put the average speed near 188 km/h. HiRisk notes the Lhende Khola may have been dammed only for minutes. Independent open-data work finds a sustained dam-and-breach sequence inconsistent with arrival timing.",
       "claim_type": "observed",
       "evidence_level": "observed",
       "sources": [
@@ -212,7 +212,7 @@
     },
     {
       "id": "claim_flood_damage",
-      "text": "UNDP’s preliminary RAPIDA assessment estimated at least 2.2 million tonnes of debris in analysed areas, with ~556,200 tonnes from building debris across 2,359 assessed buildings. Eleven hydropower stations and one solar plant totalling 431.1 MW stopped operating; 15 projects under construction (470 MW planned) were also damaged. About 10,451 people had been rescued at the time of the 1 September press release. WWA (citing government and UNDP figures as of mid-September) reports over 1,300 confirmed deaths in Nepal, over 5,000 missing, and an estimated 84,270 people affected across six districts.",
+      "text": "UNDP’s preliminary RAPIDA assessment estimated at least 2.2 million tonnes of debris in analysed areas. About 556,200 tonnes of that came from building debris across 2,359 assessed buildings. Eleven hydropower stations and one solar plant totalling 431.1 MW stopped operating. Fifteen projects under construction, totalling 470 MW planned, were also damaged. About 10,451 people had been rescued by 1 September. World Weather Attribution, citing government and UNDP figures as of mid-September, reports over 1,300 confirmed deaths in Nepal. Over 5,000 people were missing. An estimated 84,270 people were affected across six districts.",
       "claim_type": "observed",
       "evidence_level": "observed",
       "sources": [
@@ -228,7 +228,7 @@
     },
     {
       "id": "claim_damage_food_loss",
-      "text": "FAO’s preliminary assessment indicated around 1,800 hectares of crops, mostly paddy, damaged, with production losses approaching 7,700 tonnes, plus livestock losses and damage to farmland, fisheries, food stocks, and agricultural infrastructure.",
+      "text": "FAO’s preliminary assessment found about 1,800 hectares of crops damaged, mostly paddy. Production losses approached 7,700 tonnes. Livestock, farmland, fisheries, food stocks, and agricultural infrastructure were also hit.",
       "claim_type": "observed",
       "evidence_level": "observed",
       "sources": [
@@ -243,7 +243,7 @@
     },
     {
       "id": "claim_food_loss_livelihoods",
-      "text": "FAO stated that damage to crops, livestock, fishponds, food stocks, and agricultural infrastructure threatens food security and incomes of farming families well beyond the immediate emergency, and that restoring farmland, irrigation, seeds, and veterinary support before the next planting season is critical.",
+      "text": "This is a reasonable link, but no study has confirmed household income losses for this specific event yet. FAO stated that damage to crops, livestock, fishponds, food stocks, and farm infrastructure threatens food security well beyond the immediate emergency. Restoring farmland, irrigation, seeds, and veterinary support before the next planting season is critical.",
       "claim_type": "plausible",
       "evidence_level": "plausible",
       "sources": [
@@ -497,7 +497,7 @@
       "id": "t_day0",
       "bucket": "DAY 0",
       "label": "Flash flood occurs",
-      "detail": "26 August 2026 ~08:37 NPT, Langtang Lirung rock–ice collapse; debris flood reaches Rasuwagadhi within minutes.",
+      "detail": "On 26 August 2026 at about 08:37 NPT, the Langtang Lirung rock-ice collapse began. The debris flood reached Rasuwagadhi within minutes.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_collapse_debris",
@@ -508,7 +508,7 @@
       "id": "t_day1_7",
       "bucket": "DAY 1–7",
       "label": "Infrastructure disruption",
-      "detail": "Hydropower stations offline (431.1 MW cited by UNDP); search and rescue ongoing; debris and access constraints.",
+      "detail": "Hydropower stations totalling 431.1 MW went offline, according to UNDP. Search and rescue continued under debris and blocked roads.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_flood_damage"
@@ -518,7 +518,7 @@
       "id": "t_weeks",
       "bucket": "WEEKS",
       "label": "Damage assessments published",
-      "detail": "UNDP RAPIDA debris/energy figures (1 Sep); FAO agricultural assessment (~10 Sep); WWA climate–hazard synthesis (17 Sep).",
+      "detail": "UNDP published RAPIDA debris and energy figures on 1 September. FAO published its agricultural assessment around 10 September. World Weather Attribution published its climate-hazard synthesis on 17 September.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_flood_damage",
@@ -530,7 +530,7 @@
       "id": "t_months",
       "bucket": "MONTHS",
       "label": "Supply-chain / local economy",
-      "detail": "Not yet established with a verified primary macroeconomic assessment for this event in this build.",
+      "detail": "A verified primary macroeconomic assessment for this flood is not yet available.",
       "evidence_level": "unknown",
       "claim_ids": []
     },
@@ -538,19 +538,19 @@
       "id": "t_years",
       "bucket": "YEARS",
       "label": "Long-term ecosystem / recovery",
-      "detail": "Not yet established, recovery and ecosystem trajectories remain open questions.",
+      "detail": "Recovery and ecosystem trajectories remain open questions. We do not yet have evidence either way.",
       "evidence_level": "unknown",
       "claim_ids": []
     }
   ],
   "knowledge_summary": {
     "what_we_know": [
-      "A rock–ice avalanche on Langtang Lirung on 26 August 2026 triggered a debris flood down the Bhote Koshi–Trishuli corridor.",
-      "Human-caused warming made the surrounding season about 1.5°C hotter and is a contributing factor alongside geology, not the sole cause.",
+      "A rock-ice avalanche on Langtang Lirung on 26 August 2026 triggered a debris flood down the Bhote Koshi-Trishuli corridor.",
+      "Human-caused warming made the surrounding season about 1.5°C hotter. Scientists treat that extra heat as a contributing factor alongside geology, not the sole cause.",
       "Preliminary assessments document major debris volumes, hydropower outages, crop damage, and large humanitarian impacts."
     ],
     "what_remains_uncertain": [
-      "Whether a short-lived river choke lasted only minutes versus a purely continuous debris-flood pulse.",
+      "Whether a short-lived river choke lasted only minutes, versus a purely continuous debris-flood pulse.",
       "Whether this exact avalanche would have occurred without human-induced warming.",
       "Household livelihood outcomes and broader economic effects beyond documented damage.",
       "Final death, missing, and debris totals, which were still being revised."

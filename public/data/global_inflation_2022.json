@@ -9,7 +9,7 @@
       "lat": 0,
       "lng": 0
     },
-    "summary": "Russia’s full-scale invasion of Ukraine in February 2022 hit two of the world’s major grain and energy exporters. FAO’s food price index and IMF analyses show a sharp jump in food and energy prices that pushed up consumer inflation, interest rates, and hunger risks, with poorer households still absorbing the aftershocks years later.",
+    "summary": "Russia's full-scale invasion of Ukraine in February 2022 hit two of the world's major grain and energy exporters. FAO's food price index jumped to a record annual average. IMF analyses show that food and energy prices then pushed up consumer inflation, interest rates, and hunger risks. Poorer households are still absorbing the aftershocks years later.",
     "hero": "A war inland moved the price of bread on every shelf.",
     "retrieved_at": "2026-09-21"
   },
@@ -18,13 +18,13 @@
       "id": "shock",
       "type": "hazard",
       "title": "War hit major grain and energy exporters",
-      "description": "Russia’s full-scale invasion of Ukraine in February 2022 hit two of the world’s major grain and energy exporters. Ukraine and Russia were pivotal to global wheat, maize, sunflower oil, and fossil-fuel trade. A war inland moved the price of bread and fuel on shelves far from the front."
+      "description": "Russia's full-scale invasion of Ukraine in February 2022 hit two of the world's major grain and energy exporters. Ukraine and Russia were pivotal to global wheat, maize, sunflower oil, and fossil-fuel trade. A war inland moved the price of bread and fuel on shelves far from the front."
     },
     {
       "id": "commodities",
       "type": "economy",
       "title": "Commodity prices spiked on world markets",
-      "description": "FAO’s Food Price Index and energy benchmarks jumped as Black Sea trade and energy flows were disrupted. Those are wholesale signals, not rumours. The shock showed up first in commodities, then in shops."
+      "description": "FAO's Food Price Index and energy benchmarks jumped as Black Sea trade and energy flows were disrupted. Those are wholesale signals, not rumours. The shock showed up first in commodities, then in shops."
     },
     {
       "id": "goods",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "p1",
-      "text": "FAO: the FAO Food Price Index averaged 143.7 points in 2022, the highest annual average on record in the series, after rising sharply around the onset of the war in Ukraine.",
+      "text": "FAO recorded that the FAO Food Price Index averaged 143.7 points in 2022. That was the highest annual average on record in the series. The index rose sharply around the onset of the war in Ukraine.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -167,7 +167,7 @@
     },
     {
       "id": "p2",
-      "text": "World Bank / commodity monitors documented simultaneous spikes in energy and food prices in 2022 as Black Sea exports and energy markets were disrupted.",
+      "text": "World Bank commodity monitors documented simultaneous spikes in energy and food prices in 2022. Black Sea exports and energy markets were disrupted.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -180,7 +180,7 @@
     },
     {
       "id": "p3",
-      "text": "IMF analyses of 2022 inflation attribute a large share of the surge in many economies to food and energy price shocks cascading into headline CPI.",
+      "text": "IMF analyses of 2022 inflation attribute a large share of the surge in many economies to food and energy price shocks cascading into headline consumer prices.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -193,7 +193,7 @@
     },
     {
       "id": "p4",
-      "text": "Major central banks (Fed, ECB, and peers) delivered rapid policy-rate hiking cycles in 2022–2023 in response to elevated inflation.",
+      "text": "Major central banks, including the Federal Reserve and the European Central Bank, delivered rapid policy-rate hiking cycles in 2022-2023 in response to elevated inflation.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -206,7 +206,7 @@
     },
     {
       "id": "p5",
-      "text": "FAO/WFP reporting linked high food prices and conflict to elevated acute food insecurity for tens of millions, especially in import-dependent countries.",
+      "text": "FAO and WFP reporting linked high food prices and conflict to elevated acute food insecurity for tens of millions of people. Import-dependent countries were hit hardest.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -220,7 +220,7 @@
     },
     {
       "id": "p6",
-      "text": "Equity and fixed-income markets experienced sharp 2022 drawdowns as inflation and rate expectations were repriced (widely documented in IMF Global Financial Stability discussions).",
+      "text": "Equity and fixed-income markets experienced sharp 2022 drawdowns as inflation and rate expectations were repriced. IMF Global Financial Stability discussions documented that shift.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -233,7 +233,7 @@
     },
     {
       "id": "p7",
-      "text": "Even after the FAO index retreated from its 2022 peak, food price levels stayed historically elevated and real incomes for poorer households recovered unevenly, a lasting cost-of-living ripple.",
+      "text": "Even after the FAO index retreated from its 2022 peak, food price levels stayed historically elevated. Real incomes for poorer households recovered unevenly.",
       "claim_type": "context",
       "evidence_level": "strongly_supported",
       "sources": [
@@ -247,7 +247,7 @@
     },
     {
       "id": "p8",
-      "text": "Geopolitical risk to food and energy corridors remains an emerging structural inflation factor in IMF/World Bank risk discussions.",
+      "text": "Researchers are still studying how lasting this risk is. Geopolitical risk to food and energy corridors remains a structural inflation factor in IMF and World Bank risk discussions.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -373,7 +373,7 @@
       "id": "t1",
       "bucket": "2022",
       "label": "Record food price index",
-      "detail": "FAO Food Price Index hits record annual average; energy prices spike.",
+      "detail": "The FAO Food Price Index hits a record annual average. Energy prices spike.",
       "evidence_level": "observed",
       "claim_ids": [
         "p1",
@@ -384,7 +384,7 @@
       "id": "t2",
       "bucket": "2022–23",
       "label": "Inflation → rate hikes",
-      "detail": "CPI surges; central banks hike; markets reprice.",
+      "detail": "Consumer prices surge. Central banks hike rates. Markets reprice.",
       "evidence_level": "observed",
       "claim_ids": [
         "p3",

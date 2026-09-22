@@ -9,8 +9,8 @@
       "lat": 22.35,
       "lng": 69.87
     },
-    "summary": "In June 2026 Reliance announced hyperscale AI compute at Jamnagar: a 168 MW Meta-leased AI data centre (renewable power, desalinated-seawater cooling) and, at its AGM, a separate Reliance Intelligence sovereign AI backbone targeting a first 120 MW by end-2026 on Kutch solar power.",
-    "hero": "A coastal industrial hub is being wired for hyperscale AI.",
+    "summary": "In June 2026, Reliance announced two AI projects at Jamnagar. The company says it will build a 168 MW data centre for Meta. Reliance Intelligence says a first 120 MW sovereign AI phase will be ready by the end of 2026. Those figures come from the company, not from an independent audit.",
+    "hero": "Reliance says it will plant hundreds of megawatts of AI compute on the Gujarat coast.",
     "retrieved_at": "2026-09-21"
   },
   "nodes": [
@@ -18,13 +18,13 @@
       "id": "announcement",
       "type": "human_system",
       "title": "Reliance commits to Jamnagar AI compute",
-      "description": "In June 2026 Reliance announced hyperscale AI compute at Jamnagar. Primary company disclosures set capacity, partners, power, and cooling claims for the new facilities. Those disclosures are the observed starting point, not an independent audit."
+      "description": "In June 2026 Reliance announced hyperscale AI compute at Jamnagar. Company disclosures set capacity, partners, power, and cooling claims for the new facilities. Those disclosures are the observed starting point. They are not an independent audit."
     },
     {
       "id": "compute_build",
       "type": "human_system",
       "title": "Hundreds of megawatts of AI load are planned",
-      "description": "A 168 MW Meta-leased AI data centre plus a first 120 MW Reliance Intelligence phase, using an NVIDIA GB300 fleet, put Jamnagar among the largest AI sites under construction. The numbers come from company announcements. They describe planned load, not metered use."
+      "description": "Reliance says a 168 MW Meta-leased AI data centre is planned. Reliance Intelligence says a first 120 MW phase will use an NVIDIA GB300 fleet. Together those figures would put Jamnagar among the largest AI sites under construction. The numbers describe planned load, not metered use."
     },
     {
       "id": "renewable_power",
@@ -36,7 +36,7 @@
       "id": "cooling_water",
       "type": "environment",
       "title": "Cooling shifts stress from freshwater to the sea",
-      "description": "Meta’s Jamnagar centre is to use desalinated seawater for cooling. That cuts freshwater draw. It adds desalination energy and brine-discharge questions that are not settled by the announcement itself."
+      "description": "Reliance says Meta’s Jamnagar centre will use desalinated seawater for cooling. That would cut freshwater draw. It adds desalination energy and brine-discharge questions that are not settled by the announcement itself."
     },
     {
       "id": "grid_pressure",
@@ -48,7 +48,7 @@
       "id": "water_energy_nexus",
       "type": "environment",
       "title": "Trend models estimate the hidden water–energy cost",
-      "description": "Where facility water-use effectiveness is undisclosed, peer-reviewed and IEA intensities let us bound likely footprints. Those bounds are labelled as verified trend estimates, not meter readings from Jamnagar."
+      "description": "Facility water-use figures for Jamnagar are not public. Peer-reviewed and IEA intensities let us bound likely footprints. Those bounds are trend estimates, not meter readings from the site."
     },
     {
       "id": "connectivity",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "claim_capacities",
-      "text": "RIL’s 10 June 2026 press release: a 168 MW AI-enabled data centre for Meta in Jamnagar within two years, with option to scale. At the June 2026 AGM, Reliance Intelligence said the first 120 MW of sovereign AI infrastructure in Jamnagar is targeted by end-2026, with NVIDIA GB300 capacity described as >75,000 H100-equivalent for inference, scaling beyond 200,000 at full first-phase operation.",
+      "text": "Reliance says it will build a 168 MW AI-enabled data centre for Meta in Jamnagar within two years, with an option to scale. At its June 2026 AGM, Reliance Intelligence said the first 120 MW of sovereign AI infrastructure in Jamnagar is targeted by the end of 2026. The company described NVIDIA GB300 capacity as more than 75,000 H100-equivalent for inference, scaling beyond 200,000 at full first-phase operation. Those compute-equivalence figures are company statements, not a third-party audited inventory.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -169,7 +169,7 @@
     },
     {
       "id": "claim_renewables",
-      "text": "RIL states the Meta Jamnagar data centre will be powered by renewable energy; Reliance Intelligence states its Jamnagar backbone will be powered entirely by clean energy from Reliance’s Kutch renewable/solar platform.",
+      "text": "Reliance says the Meta data centre in Jamnagar will run on renewable energy. The company also says its own Jamnagar AI backbone will run entirely on clean power from its Kutch solar platform. Neither claim has been independently audited. Details like hourly grid matching and import shares are not public yet.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -183,7 +183,7 @@
     },
     {
       "id": "claim_desal_cooling",
-      "text": "RIL states the Meta Jamnagar data centre will be cooled with desalinated seawater.",
+      "text": "Reliance says the Meta Jamnagar data centre will be cooled with desalinated seawater. Desalination energy use, recovery rate, and brine management plans are not quantified in the press release.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -196,7 +196,7 @@
     },
     {
       "id": "claim_iea_load",
-      "text": "IEA Energy and AI (2025): data centres used ~415 TWh globally in 2024 (~1.5% of electricity); consumption has grown ~12%/year since 2017; a typical AI-focused data centre uses as much electricity as ~100,000 households, and the largest under construction can use ~20× that.",
+      "text": "Scientists broadly agree on the global scale of data-centre electricity use, based on IEA accounting. Data centres used about 415 TWh globally in 2024, about 1.5% of electricity. Consumption has grown about 12% a year since 2017. The IEA says a typical AI-focused data centre uses as much electricity as about 100,000 households. The largest sites under construction can use about 20 times that.",
       "claim_type": "context",
       "evidence_level": "strongly_supported",
       "sources": [
@@ -209,7 +209,7 @@
     },
     {
       "id": "claim_water_estimate",
-      "text": "Trend-based bound: peer-reviewed synthesis citing IEA finds global data centres used ~560 billion L of water in 2023; direct cooling WUE often ~0.1–0.6 L/kWh for many facilities, while electricity-generation water can dominate. For a seawater-desal cooled site, freshwater WUE for cooling may be near zero, but desalination typically costs on the order of a few kWh per m³, so water stress shifts toward marine discharge and electricity, not municipal freshwater. Facility-specific litres are not disclosed, this is an emerging, literature-verified bound.",
+      "text": "Researchers are still studying facility-level water use. A peer-reviewed synthesis citing the IEA finds global data centres used about 560 billion litres of water in 2023. Direct cooling often uses about 0.1 to 0.6 litres per kWh at many facilities. Electricity-generation water can dominate the total. For a seawater-desal cooled site, freshwater use for cooling may be near zero. Desalination typically costs a few kWh per cubic metre, so stress shifts toward marine discharge and electricity. Facility-specific litres for Jamnagar are not disclosed.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -225,7 +225,7 @@
     },
     {
       "id": "claim_location",
-      "text": "RIL cites Gujarat advantages: renewable energy, water availability, proximity to western submarine cable landings, and Jio’s fibre network.",
+      "text": "Reliance cites Gujarat advantages: renewable energy, water availability, proximity to western submarine cable landings, and Jio’s fibre network.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -238,7 +238,7 @@
     },
     {
       "id": "claim_jobs",
-      "text": "Hyperscale data-centre construction historically creates temporary construction employment and smaller permanent operations headcount; Jamnagar-specific job tallies are not in the cited primary releases.",
+      "text": "This is a reasonable link, but no study has confirmed Jamnagar job tallies yet. Hyperscale data-centre construction historically creates temporary construction employment and a smaller permanent operations headcount. Jamnagar-specific numbers are not in the cited company releases.",
       "claim_type": "inference",
       "evidence_level": "plausible",
       "sources": [
@@ -252,7 +252,7 @@
     },
     {
       "id": "claim_concentration",
-      "text": "IEA notes AI data centres are geographically concentrated and can dominate local electricity growth; stacking 120 MW + 168 MW AI loads on one industrial coast is a concentration pathway that warrants monitoring even under renewable PPAs.",
+      "text": "The IEA notes that AI data centres are geographically concentrated and can dominate local electricity growth. Stacking a 120 MW phase with a 168 MW Meta load on one industrial coast is a concentration pathway that warrants monitoring, even under renewable power-purchase agreements.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -447,7 +447,7 @@
       "id": "t_announce",
       "bucket": "DAY 0",
       "label": "Meta × Reliance deal",
-      "detail": "10 June 2026, RIL press release: 168 MW AI data centre in Jamnagar, renewable power, desalinated seawater cooling.",
+      "detail": "On 10 June 2026, Reliance said it would build a 168 MW AI data centre in Jamnagar, with renewable power and desalinated seawater cooling.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_capacities"
@@ -457,7 +457,7 @@
       "id": "t_agm",
       "bucket": "DAYS",
       "label": "AGM sovereign AI backbone",
-      "detail": "19 June 2026, first 120 MW Reliance Intelligence capacity targeted by end-2026 on Kutch clean power.",
+      "detail": "On 19 June 2026, Reliance Intelligence said the first 120 MW of capacity is targeted by the end of 2026 on Kutch clean power.",
       "evidence_level": "observed",
       "claim_ids": [
         "claim_capacities"
@@ -467,7 +467,7 @@
       "id": "t_build",
       "bucket": "MONTHS",
       "label": "Construction & grid integration",
-      "detail": "Delivery window ~2 years for Meta facility; renewables and desal plants must keep pace with IT energisation.",
+      "detail": "The company describes a delivery window of about two years for the Meta facility. Renewables and desal plants would need to keep pace with IT energisation.",
       "evidence_level": "plausible",
       "claim_ids": [
         "claim_renewables"
@@ -477,7 +477,7 @@
       "id": "t_ops",
       "bucket": "YEARS",
       "label": "Operations footprint",
-      "detail": "Verify actual MWh, desal volumes, and brine with operational disclosures; until then use emerging trend bounds.",
+      "detail": "Actual megawatt-hours, desal volumes, and brine remain unverified until operational disclosures appear.",
       "evidence_level": "emerging",
       "claim_ids": [
         "claim_water_estimate"
@@ -486,8 +486,8 @@
   ],
   "knowledge_summary": {
     "what_we_know": [
-      "Reliance publicly committed to a 168 MW Meta-leased AI data centre in Jamnagar with renewable power and desalinated-seawater cooling.",
-      "Reliance Intelligence publicly targeted a first 120 MW sovereign AI phase in Jamnagar by end-2026 on Kutch clean power.",
+      "Reliance publicly committed to a 168 MW Meta-leased AI data centre in Jamnagar, saying it will use renewable power and desalinated-seawater cooling.",
+      "Reliance Intelligence publicly targeted a first 120 MW sovereign AI phase in Jamnagar by the end of 2026 on Kutch clean power.",
       "The IEA documents that AI data centres are power-hungry and geographically concentrated."
     ],
     "what_remains_uncertain": [

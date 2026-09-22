@@ -6,10 +6,13 @@ import { IconInfo } from './icons'
 export function EvidenceBadge({
   level,
   compact = false,
+  plain = false,
   meaning,
 }: {
   level: EvidenceLevel
   compact?: boolean
+  /** Label + info only, no boxed chip. Used in section kickers. */
+  plain?: boolean
   /** Override tooltip copy; defaults to shared plain-language meaning. */
   meaning?: string
 }) {
@@ -35,8 +38,17 @@ export function EvidenceBadge({
   }, [open])
 
   return (
-    <span className="evidence-badge-wrap" ref={wrapRef} data-compact={compact || undefined}>
-      <span className="evidence-badge" data-level={level} data-compact={compact}>
+    <span
+      className="evidence-badge-wrap"
+      ref={wrapRef}
+      data-compact={compact || undefined}
+      data-plain={plain || undefined}
+    >
+      <span
+        className={plain ? 'evidence-badge-plain' : 'evidence-badge'}
+        data-level={plain ? undefined : level}
+        data-compact={compact || undefined}
+      >
         {evidenceLabel(level)}
       </span>
       {tip ? (

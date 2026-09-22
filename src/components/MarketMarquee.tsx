@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
-import { IconMoon, IconSun } from './icons'
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode, type Ref } from 'react'
+import { Link } from 'react-router-dom'
+import { IconHome, IconMoon, IconSun } from './icons'
 import { useTheme } from '../lib/theme'
 
 type Market = 'India' | 'USA'
@@ -24,9 +25,11 @@ const INSTRUMENTS: Instrument[] = [
 ]
 
 const CACHE_KEY = 'ripple-market-quotes'
+const POLL_MS = 15_000
+const PX_PER_SEC = 72
 
 function chartPath(symbol: string) {
-  return `/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=5d`
+  return `/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1m&range=1d`
 }
 
 function quoteUrls(symbol: string): string[] {
@@ -103,6 +106,14 @@ function formatChange(value: number | null) {
   return `${sign}${value.toFixed(2)}%`
 }
 
+function Dot() {
+  return (
+    <span className="market-dot" aria-hidden="true">
+      ·
+    </span>
+  )
+}
+
 function QuoteChip({ quote }: { quote: Quote }) {
   const dir = quote.changePct == null ? 'flat' : quote.changePct > 0 ? 'up' : quote.changePct < 0 ? 'down' : 'flat'
   return (
@@ -116,22 +127,41 @@ function QuoteChip({ quote }: { quote: Quote }) {
   )
 }
 
-function MarketGroup({ market, quotes }: { market: Market; quotes: Quote[] }) {
-  const items = quotes.filter((q) => q.market === market)
-  if (!items.length) return null
+function TapeCopy({
+  quotes,
+  copyRef,
+  hidden,
+}: {
+  quotes: Quote[]
+  copyRef?: Ref<HTMLDivElement>
+  hidden?: boolean
+}) {
+  const parts: Array<{ key: string; node: ReactNode }> = quotes.map((quote) => ({
+    key: quote.symbol,
+    node: <QuoteChip quote={quote} />,
+  }))
+
   return (
-    <span className="market-group">
-      <span className="market-group-label">{market}</span>
-      {items.map((quote) => (
-        <QuoteChip key={quote.symbol} quote={quote} />
+    <div className="market-bar-copy" ref={copyRef} aria-hidden={hidden || undefined}>
+      {parts.map((part) => (
+        <span key={part.key} className="market-bar-item">
+          {part.node}
+          <Dot />
+        </span>
       ))}
-    </span>
+    </div>
   )
 }
 
 export function MarketMarquee() {
   const { theme, toggle } = useTheme()
-  const [quotes, setQuotes] = useState<Quote[]>(() => readCache() ?? INSTRUMENTS.map((i) => ({ ...i, price: null, changePct: null })))
+  const [quotes, setQuotes] = useState<Quote[]>(
+    () => readCache() ?? INSTRUMENTS.map((i) => ({ ...i, price: null, changePct: null })),
+  )
+  const [copies, setCopies] = useState(2)
+  const trackRef = useRef<HTMLDivElement>(null)
+  const copyRef = useRef<HTMLDivElement>(null)
+  const marqueeRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -151,31 +181,51 @@ export function MarketMarquee() {
     }
 
     void load()
-    const id = window.setInterval(() => void load(), 60_000)
+    const id = window.setInterval(() => void load(), POLL_MS)
     return () => {
       cancelled = true
       window.clearInterval(id)
     }
   }, [])
 
-  const tape = useMemo(
-    () => (
-      <>
-        <MarketGroup market="India" quotes={quotes} />
-        <MarketGroup market="USA" quotes={quotes} />
-      </>
-    ),
-    [quotes],
-  )
+  useLayoutEffect(() => {
+    const copy = copyRef.current
+    const track = trackRef.current
+    const marquee = marqueeRef.current
+    if (!copy || !track || !marquee) return
+
+    const apply = () => {
+      const copyW = copy.offsetWidth
+      const trackW = track.clientWidth
+      if (copyW < 8) return
+      const needed = Math.max(2, Math.ceil((trackW * 2) / copyW) + 1)
+      setCopies(needed)
+      marquee.style.setProperty('--copy-w', `${copyW}px`)
+      marquee.style.setProperty('--marquee-s', `${Math.max(16, copyW / PX_PER_SEC)}s`)
+    }
+
+    apply()
+    const ro = new ResizeObserver(apply)
+    ro.observe(copy)
+    ro.observe(track)
+    return () => ro.disconnect()
+  }, [quotes])
 
   return (
-    <div className="market-bar" role="region" aria-label="India and USA stock markets">
-      <div className="market-bar-track">
-        <div className="market-bar-marquee">
-          <div className="market-bar-copy">{tape}</div>
-          <div className="market-bar-copy" aria-hidden="true">
-            {tape}
-          </div>
+    <div className="market-bar" role="region" aria-label="Stock markets">
+      <Link className="market-bar-brand" to="/" aria-label="Ripple home">
+        <IconHome size={16} />
+      </Link>
+      <div className="market-bar-track" ref={trackRef}>
+        <div className="market-bar-marquee" ref={marqueeRef}>
+          {Array.from({ length: copies }, (_, i) => (
+            <TapeCopy
+              key={i}
+              quotes={quotes}
+              copyRef={i === 0 ? copyRef : undefined}
+              hidden={i > 0}
+            />
+          ))}
         </div>
       </div>
       <button
@@ -186,7 +236,7 @@ export function MarketMarquee() {
         title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
       >
         {theme === 'dark' ? <IconSun size={16} /> : <IconMoon size={16} />}
-        <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
+        <span className="theme-toggle-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
       </button>
     </div>
   )

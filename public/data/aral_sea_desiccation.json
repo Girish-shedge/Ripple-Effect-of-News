@@ -9,7 +9,7 @@
       "lat": 45,
       "lng": 60
     },
-    "summary": "From the 1960s, Soviet irrigation diverted the Amu Darya and Syr Darya. The Aral Sea lost most of its water, exposing a poisoned seabed, the Aralkum, that still launches salt-and-pesticide dust across Central Asia. UNEP and UNCCD documents show people are still breathing that legacy.",
+    "summary": "From the 1960s, Soviet irrigation diverted the Amu Darya and Syr Darya. The Aral Sea lost most of its water. The dry bed became a new desert, the Aralkum. It still launches salt-and-pesticide dust across Central Asia. UNEP and UNCCD documents show people are still breathing that legacy.",
     "hero": "They turned a sea into a desert that still storms our lungs.",
     "retrieved_at": "2026-09-21"
   },
@@ -54,7 +54,7 @@
       "id": "farmland",
       "type": "economy",
       "title": "Salt fallout still cuts farm productivity",
-      "description": "Uzbek assessments cited by UNCCD find atmospheric salt fallout cuts farmland bioproductivity about 5–10% and pastures 20–30%. The dust does not only enter lungs. It lands on fields."
+      "description": "Uzbek assessments cited by UNCCD find atmospheric salt fallout cuts farmland bioproductivity about 5-10%. Pastures lose about 20-30%. The dust does not only enter lungs. It lands on fields."
     },
     {
       "id": "today",
@@ -154,7 +154,7 @@
   "claims": [
     {
       "id": "c1",
-      "text": "From the 1960s, over-exploitation of the Amu Darya and Syr Darya for irrigation caused the Aral Sea to lose ~80% of its volume and shrink to about a third of its former area.",
+      "text": "From the 1960s, over-exploitation of the Amu Darya and Syr Darya for irrigation caused the Aral Sea to lose about 80% of its volume. The sea shrank to about a third of its former area.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -169,7 +169,7 @@
     },
     {
       "id": "c2",
-      "text": "The exposed seabed became a major dust source (Aralkum), with documented increases in local dust-storm activity.",
+      "text": "The exposed seabed became a major dust source known as the Aralkum. Local dust-storm activity increased as the bed dried.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -183,7 +183,7 @@
     },
     {
       "id": "c3",
-      "text": "Regional modelling (2024): Aralkum dust alone can exceed WHO daily PM10 (45 µg/m³) on ~29 days/year in Nukus, ~8 in Bukhara, ~2 in Tashkent.",
+      "text": "A 2024 regional model found that Aralkum dust alone can exceed the WHO daily PM10 limit of 45 µg/m³ on about 29 days a year in Nukus. The same dust can exceed that limit on about 8 days a year in Bukhara. In Tashkent it can do so on about 2 days a year.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -196,7 +196,7 @@
     },
     {
       "id": "c4",
-      "text": "UNCCD Central Asia SDS strategy: Aral disaster affected health of over 5 million people region-wide; disease rates in Aral districts reported far above national averages, peer-reviewed reviews caution dust is not the sole cause.",
+      "text": "UNCCD’s Central Asia sand and dust storm strategy reports that the Aral disaster affected the health of over 5 million people region-wide. Disease rates in Aral districts were reported far above national averages. Peer-reviewed reviews caution that dust is not the sole cause.",
       "claim_type": "context",
       "evidence_level": "strongly_supported",
       "sources": [
@@ -210,7 +210,7 @@
     },
     {
       "id": "c5",
-      "text": "UNCCD strategy: environmental disaster of the Aral Sea region led to displacement of more than 100,000 people.",
+      "text": "UNCCD reports that the environmental disaster of the Aral Sea region led to displacement of more than 100,000 people.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -223,7 +223,7 @@
     },
     {
       "id": "c6",
-      "text": "UNCCD citing Uzbek hydromet: salt fallout reduces farmland bioproductivity by 5–10% and pastures by 20–30%.",
+      "text": "UNCCD, citing Uzbek hydromet, reports that salt fallout reduces farmland bioproductivity by 5-10%. Pastures lose 20-30%.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -236,7 +236,7 @@
     },
     {
       "id": "c7",
-      "text": "UNEP (16 Dec 2025): sand and dust storms drive Uzbekistan’s worst urban air spikes; the highest daily PM spike in Termez was traced to a dust plume originating from the Aral Sea region ~900 km away.",
+      "text": "UNEP reported on 16 December 2025 that sand and dust storms drive Uzbekistan’s worst urban air spikes. The highest daily particle spike in Termez was traced to a dust plume originating from the Aral Sea region, about 900 km away.",
       "claim_type": "observation",
       "evidence_level": "observed",
       "sources": [
@@ -249,7 +249,7 @@
     },
     {
       "id": "c8",
-      "text": "Partial North Aral recovery exists, but South Aral dust, SDS risk, and health inequities remain active into the 2020s, a multi-generation ripple.",
+      "text": "Researchers are still studying how recovery will play out. Partial North Aral recovery exists. South Aral dust, sand-and-dust-storm risk, and health inequities remain active into the 2020s.",
       "claim_type": "prediction",
       "evidence_level": "emerging",
       "sources": [
@@ -415,7 +415,7 @@
       "id": "t0",
       "bucket": "1960s",
       "label": "Diversion begins",
-      "detail": "Irrigation expansions cut river inflow; sea level starts falling.",
+      "detail": "Irrigation expansions cut river inflow. Sea level starts falling.",
       "evidence_level": "observed",
       "claim_ids": [
         "c1"
@@ -425,7 +425,7 @@
       "id": "t1",
       "bucket": "1980s–2000s",
       "label": "Sea collapse",
-      "detail": "Volume loss ~80%; fisheries collapse; Aralkum expands.",
+      "detail": "The sea lost about 80% of its volume. Fisheries collapsed. The Aralkum expanded.",
       "evidence_level": "observed",
       "claim_ids": [
         "c2"
@@ -445,7 +445,7 @@
       "id": "t3",
       "bucket": "YEARS AHEAD",
       "label": "Generational recovery",
-      "detail": "SDS strategies run through 2030; health burdens lag physical restoration.",
+      "detail": "Sand and dust storm strategies run through 2030. Health burdens lag physical restoration.",
       "evidence_level": "emerging",
       "claim_ids": [
         "c8"
@@ -454,9 +454,9 @@
   ],
   "knowledge_summary": {
     "what_we_know": [
-      "Irrigation diversion collapsed the Aral Sea.",
-      "The dry bed still emits dust that can breach WHO air guidelines.",
-      "UN institutions still treat Aral-linked sand and dust storms as an active regional health threat in the 2020s."
+      "From the 1960s, irrigation diversions emptied most of the Aral Sea and created the Aralkum dust desert.",
+      "Models and UN agencies still document Aral-origin dust, health burdens, and farm losses.",
+      "A 2025 UNEP report traced an extreme Uzbekistan air spike to a plume from the Aral region hundreds of kilometres away."
     ],
     "what_remains_uncertain": [
       "The exact fraction of disease burden attributable to dust versus pesticides and poverty.",

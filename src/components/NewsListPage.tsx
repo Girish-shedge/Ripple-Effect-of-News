@@ -41,6 +41,48 @@ export function catalogYear(item: StoryCatalogItem): string {
   return item.date.slice(0, 4)
 }
 
+/**
+ * Editorial rank. Lower number is shown first and can take a featured tile.
+ * Explicit `rank` on the catalog item always wins.
+ *
+ * Fallback score (when rank is missing): recency first, then theme urgency
+ * (climate and pollution ahead of slower historical processes).
+ */
+export function catalogRank(item: StoryCatalogItem): number {
+  if (typeof item.rank === 'number' && Number.isFinite(item.rank)) return item.rank
+  const year = Number(catalogYear(item)) || 0
+  const recency = 3000 - year
+  const theme = catalogTheme(item)
+  const themeWeight: Record<string, number> = {
+    'Climate extremes': 0,
+    'Pollution & health': 12,
+    'Technology & energy': 18,
+    'Economy & food': 24,
+    'Water & land': 30,
+  }
+  return recency + (themeWeight[theme] ?? 36)
+}
+
+export function rankStories(items: StoryCatalogItem[]): StoryCatalogItem[] {
+  return [...items].sort((a, b) => {
+    const rank = catalogRank(a) - catalogRank(b)
+    if (rank !== 0) return rank
+    return b.date.localeCompare(a.date)
+  })
+}
+
+/** Map a ranked index onto the home bento: two featured tiles, then small cells. */
+export function catalogSlot(index: number, total: number): string {
+  if (total >= 8) {
+    if (index === 0) return 'hero-tl'
+    if (index === 1) return 'hero-br'
+    if (index === total - 1) return 'wide'
+    return 'small'
+  }
+  if (total >= 5 && index === 0) return 'hero-tl'
+  return 'small'
+}
+
 function uniqueSorted(values: string[]): string[] {
   return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b))
 }
@@ -61,8 +103,7 @@ export function NewsListPage() {
         return r.json() as Promise<StoryCatalogItem[]>
       })
       .then((items) => {
-        const sorted = [...items].sort((a, b) => b.date.localeCompare(a.date))
-        setCatalog(sorted)
+        setCatalog(rankStories(items))
       })
       .catch(() => setError('Could not load the news catalog.'))
   }, [])
@@ -78,12 +119,14 @@ export function NewsListPage() {
 
   const filtered = useMemo(() => {
     if (!catalog) return []
-    return catalog.filter((item) => {
-      if (filters.region !== ALL && catalogRegion(item) !== filters.region) return false
-      if (filters.theme !== ALL && catalogTheme(item) !== filters.theme) return false
-      if (filters.year !== ALL && catalogYear(item) !== filters.year) return false
-      return true
-    })
+    return rankStories(
+      catalog.filter((item) => {
+        if (filters.region !== ALL && catalogRegion(item) !== filters.region) return false
+        if (filters.theme !== ALL && catalogTheme(item) !== filters.theme) return false
+        if (filters.year !== ALL && catalogYear(item) !== filters.year) return false
+        return true
+      }),
+    )
   }, [catalog, filters])
 
   const activeCount = [filters.region, filters.theme, filters.year].filter((v) => v !== ALL).length
@@ -107,7 +150,6 @@ export function NewsListPage() {
   return (
     <div className="news-page">
       <header className="news-page-head">
-        <p className="brand">Ripple</p>
         <h1>Ripple Effects of News</h1>
         <p className="news-page-sub">
           Hand-traced causal chains behind the headlines, with evidence strength visible on every
@@ -146,17 +188,19 @@ export function NewsListPage() {
             Clear
           </button>
         ) : null}
-        <p className="news-filters-count" aria-live="polite">
-          {filtered.length} of {catalog.length}
-        </p>
       </div>
 
       {filtered.length === 0 ? (
         <p className="news-filters-empty">No stories match these filters.</p>
       ) : (
         <div className="news-page-grid" role="list">
-          {filtered.map((item) => (
-            <article key={item.id} className="news-page-card" role="listitem">
+          {filtered.map((item, index) => (
+            <article
+              key={item.id}
+              className="news-page-card"
+              role="listitem"
+              data-slot={catalogSlot(index, filtered.length)}
+            >
               <Link className="news-page-card-link" to={`/story/${item.id}`}>
                 <div className="news-card-img">
                   <img
@@ -202,18 +246,20 @@ function FilterSelect({
 }) {
   return (
     <label className="news-filter" htmlFor={id}>
-      <span className="news-filter-label">{label}</span>
       <span className="news-filter-control">
         <select
           id={id}
           className="news-filter-select"
           value={value}
+          aria-label={label}
           onChange={(e) => onChange(e.target.value)}
         >
-          <option value={ALL}>All</option>
+          <option value={ALL}>
+            {label}: All
+          </option>
           {options.map((opt) => (
             <option key={opt} value={opt}>
-              {opt}
+              {label}: {opt}
             </option>
           ))}
         </select>
