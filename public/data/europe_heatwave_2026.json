@@ -1,0 +1,699 @@
+{
+  "event": {
+    "id": "europe_heatwave_2026",
+    "title": "Western Europe June 2026 heatwave",
+    "date": "2026-06-18",
+    "location": {
+      "country": "Multi-country",
+      "region": "Western Europe (UK, France, Benelux and neighbouring areas)",
+      "lat": 48.8,
+      "lng": 2.3
+    },
+    "summary": "From about 18–29 June 2026, a severe heatwave gripped Western Europe. World Weather Attribution found heat like this would have been virtually impossible in 1976 and tens to hundreds of times less likely in 2003, driven by fossil-fuel warming.",
+    "hero": "Fossil-fuel heat is rewriting Europe’s summers.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "warming",
+      "type": "climate_driver",
+      "title": "Fossil fuels raised the climate baseline",
+      "description": "About 1.4°C of human-caused global warming made the same weather pattern deliver far more heat than it did decades ago. World Weather Attribution found heat like this would have been virtually impossible in 1976, and tens to hundreds of times less likely in 2003. Fossil-fuel warming is the driver of that shift."
+    },
+    {
+      "id": "circulation",
+      "type": "environment",
+      "title": "A familiar weather pattern now runs hotter",
+      "description": "Southerly flow like past analogues still arrived over Western Europe. It now sits on a warmer baseline, so temperatures spiked higher than mid-20th-century matches. The map of the high looks familiar. The thermometer does not."
+    },
+    {
+      "id": "heatwave",
+      "type": "hazard",
+      "title": "Day and night heat broke seasonal limits",
+      "description": "From about 18–29 June 2026, multi-day maxima and tropical nights stressed bodies that need cool nights to recover. June is warming fastest in the study region. People could not dump the day’s heat overnight."
+    },
+    {
+      "id": "heat_stress",
+      "type": "hazard",
+      "title": "Humid heat pushed cities past safe indoor thresholds",
+      "description": "Wet Bulb Globe Temperature analysis found about 45% of European cities breaking indoor-WBGT thresholds during the event. Indoor rooms stopped being a reliable refuge. That is a different kind of heat than a brief outdoor peak."
+    },
+    {
+      "id": "health_systems",
+      "type": "human_system",
+      "title": "Hospitals, transport, and schools felt the strain",
+      "description": "Reported impacts include hospital critical incidents, rail disruptions from expanding tracks, school closures, and rising emergency calls. Those systems fail in parallel when day and night heat persist."
+    },
+    {
+      "id": "energy_stress",
+      "type": "human_system",
+      "title": "Cooling demand and power plants came under pressure",
+      "description": "Air-conditioning peaks raise demand just as warm river water can weaken the cooling of nuclear plants. Heatwaves squeeze both ends of the power system. That pressure is a documented pattern in European summers, including this one."
+    },
+    {
+      "id": "ecosystems",
+      "type": "environment",
+      "title": "Drought, fire risk, and wildlife stress rose together",
+      "description": "Dry soils and heat raise wildfire danger. Rescue centres reported heat-stressed animals during the same season. The heatwave was not only a city story."
+    },
+    {
+      "id": "mortality",
+      "type": "human_system",
+      "title": "Heat remains Europe’s deadliest extreme",
+      "description": "Heatwaves kill more people in Europe than other natural hazards combined. Event-specific death totals for June 2026 were still being compiled when WWA published. The danger is established even while the final count is not."
+    },
+    {
+      "id": "economy",
+      "type": "economy",
+      "title": "Broader economic losses are not yet fully quantified",
+      "description": "Productivity, tourism, and energy-price effects are plausible. They are not established here as a single verified total for this heatwave. What is counted is the heat, the city stress, and the strained systems."
+    }
+  ],
+  "edges": [
+    {
+      "from": "warming",
+      "to": "circulation",
+      "relationship": "amplifies",
+      "relationship_label": "amplifies",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_warming_baseline"
+      ]
+    },
+    {
+      "from": "circulation",
+      "to": "heatwave",
+      "relationship": "triggers",
+      "relationship_label": "produces",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_pattern_heat"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "heat_stress",
+      "relationship": "causes",
+      "relationship_label": "intensifies",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_wbgt"
+      ]
+    },
+    {
+      "from": "heat_stress",
+      "to": "health_systems",
+      "relationship": "causes",
+      "relationship_label": "strains",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_health_infra"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "energy_stress",
+      "relationship": "causes",
+      "relationship_label": "pressures",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_energy"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "ecosystems",
+      "relationship": "increases_risk_of",
+      "relationship_label": "raises risk of",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_eco"
+      ]
+    },
+    {
+      "from": "heat_stress",
+      "to": "mortality",
+      "relationship": "causes",
+      "relationship_label": "contributes to",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "claim_mortality"
+      ]
+    },
+    {
+      "from": "health_systems",
+      "to": "economy",
+      "relationship": "potentially_affects",
+      "relationship_label": "may affect",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_economy"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_warming_baseline",
+      "text": "Human-caused warming made a June heat event of this intensity virtually impossible in a 1976-like climate (~1.1°C cooler) and tens to hundreds of times more likely than in 2003 (~0.6°C cooler).",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "Western Europe study region (WWA report No. 85)",
+      "temporal_scope": "June 2026 heatwave vs 1976 and 2003 climates",
+      "methodology_status": "peer-protocol WWA rapid attribution",
+      "last_verified": "2026-09-21",
+      "caveat": "Likelihood factors synthesise observations; circulation was similar to past analogues but on a warmer baseline."
+    },
+    {
+      "id": "claim_pattern_heat",
+      "text": "The June 2026 heatwave was the most severe ever recorded over the WWA study region for the indices analysed, with daytime heat about 3.5°C warmer than a similar June event in 1976.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "Western Europe study region",
+      "temporal_scope": "18–29 June 2026 (approx.)",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_wbgt",
+      "text": "During the heatwave, about 45% of European cities broke indoor Wet Bulb Globe Temperature thresholds in the WWA analysis.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "European cities analysed for indoor WBGT",
+      "temporal_scope": "18–29 June 2026",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_health_infra",
+      "text": "Reporting during the heatwave documented hospital critical incidents, rail disruptions, school closures, and elevated emergency medical demand in affected countries.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "UK, France, Italy, Belgium, Netherlands and neighbouring areas (as cited)",
+      "temporal_scope": "June 2026 heatwave period",
+      "last_verified": "2026-09-21",
+      "caveat": "Impact examples are drawn from contemporaneous reporting cited by WWA, not a single EU-wide registry."
+    },
+    {
+      "id": "claim_energy",
+      "text": "Extreme heat raised cooling demand and raised concerns about reduced output from river-cooled nuclear plants in France, with knock-on effects for regional power markets.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "France and interconnected European power system",
+      "temporal_scope": "June 2026",
+      "last_verified": "2026-09-21",
+      "caveat": "Plant-output restrictions are risk-based reporting, not a verified continent-wide outage total."
+    },
+    {
+      "id": "claim_eco",
+      "text": "The same heat season raised wildfire danger and produced reports of heat-stressed wildlife, while soil moisture approached seasonal lows in places.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "Western / Mediterranean Europe (as cited)",
+      "temporal_scope": "Summer 2026 heat season",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_mortality",
+      "text": "Heatwaves cause more deaths in Europe than all other natural hazards combined; prior extreme summers (e.g. 2022) recorded tens of thousands of heat-related deaths, with a large share attributable to climate change in peer-reviewed work.",
+      "claim_type": "context",
+      "evidence_level": "strongly_supported",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "Europe (multi-year evidence base)",
+      "temporal_scope": "Historical summers + 2026 context",
+      "last_verified": "2026-09-21",
+      "caveat": "June 2026 event-specific excess-death estimates were not final in the WWA scientific report used here."
+    },
+    {
+      "id": "claim_economy",
+      "text": "A single verified macroeconomic loss figure for the June 2026 heatwave is not established in the sources used for this build. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "geographic_scope": "Europe",
+      "temporal_scope": "2026",
+      "last_verified": "2026-09-21",
+      "caveat": "Shown as unknown rather than estimated.",
+      "methodology_status": "trend estimate pending primary macro assessment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_wwa_europe_heat_2026",
+      "organization": "World Weather Attribution",
+      "title": "Fossil fuel emissions have rapidly worsened European heatwaves in just a few decades (WWA scientific report No. 85)",
+      "url": "https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/",
+      "publication_date": "2026-06",
+      "source_type": "scientific_attribution_study",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_wwa_europe_heat_pdf",
+      "organization": "World Weather Attribution",
+      "title": "FINAL, WWA Scientific Report, European Heatwave (PDF)",
+      "url": "https://www.worldweatherattribution.org/wp-content/uploads/FINAL-WWA-Scientific-Report-European-Heatwave.pdf",
+      "publication_date": "2026-06",
+      "source_type": "scientific_attribution_study",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/wp-content/uploads/FINAL-WWA-Scientific-Report-European-Heatwave.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "impact_day_warming_since_1976",
+      "category": "climate",
+      "metric": "daytime_heat_increase",
+      "value": 3.5,
+      "unit": "°C",
+      "location": "Western Europe study region",
+      "date": "2026-06",
+      "source_id": "source_wwa_europe_heat_2026",
+      "status": "attribution_result",
+      "note": "Similar June heat ~3.5°C cooler in 1976"
+    },
+    {
+      "id": "impact_cities_wbgt",
+      "category": "health",
+      "metric": "cities_over_indoor_wbgt",
+      "value": 45,
+      "unit": "%",
+      "location": "European cities analysed",
+      "date": "2026-06",
+      "source_id": "source_wwa_europe_heat_2026",
+      "status": "preliminary"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t_day0",
+      "bucket": "DAY 0",
+      "label": "Heatwave intensifies",
+      "detail": "Mid–late June 2026, multi-day extreme daytime and nighttime heat across Western Europe.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_pattern_heat"
+      ]
+    },
+    {
+      "id": "t_days",
+      "bucket": "DAYS",
+      "label": "Health and infrastructure strain",
+      "detail": "Hospital, transport, school, and power-system stress reported during the peak period.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_health_infra"
+      ]
+    },
+    {
+      "id": "t_weeks",
+      "bucket": "WEEKS",
+      "label": "Attribution published",
+      "detail": "WWA report No. 85: virtually impossible in 1976; tens–hundreds× more likely than 2003.",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_warming_baseline"
+      ]
+    },
+    {
+      "id": "t_months",
+      "bucket": "MONTHS",
+      "label": "Mortality accounting",
+      "detail": "Full excess-death accounting for June 2026 was not final in the rapid report used here.",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_mortality"
+      ]
+    },
+    {
+      "id": "t_years",
+      "bucket": "YEARS",
+      "label": "Adaptation limits",
+      "detail": "WWA warns extreme heat at ~1.4°C warming already tests social coping capacity.",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "claim_warming_baseline"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "The June 2026 Western Europe heatwave was exceptionally severe for the World Weather Attribution study region.",
+      "Human-caused warming made comparable heat virtually impossible about 50 years ago, and far more likely than in 2003.",
+      "Cities, health systems, transport, and energy networks showed acute strain during the event."
+    ],
+    "what_remains_uncertain": [
+      "Final excess-death totals specifically for June 2026.",
+      "A single verified continent-wide economic loss figure for this heatwave.",
+      "How much of any later wildfire season was driven solely by this June episode versus the broader summer."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Evidence is still developing."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_europe_hero",
+      "url": "/media/wc-europe-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Fossil-fuel heat is rewriting Europe’s summers. (illustrative watercolor).",
+      "alt": "Watercolor for: Fossil-fuel heat is rewriting Europe’s summers.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_reach",
+      "url": "/media/wc-europe-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Western Europe (UK, France, Benelux and neighbouring areas), Multi-country",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_timeline",
+      "url": "/media/wc-europe-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Western Europe (UK, France, Benelux and neighbouring areas), Multi-country",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_predictions",
+      "url": "/media/wc-europe-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Western Europe (UK, France, Benelux and neighbouring areas), Multi-country",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_knowledge",
+      "url": "/media/wc-europe-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Western Europe (UK, France, Benelux and neighbouring areas), Multi-country",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_sources",
+      "url": "/media/wc-europe-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Western Europe (UK, France, Benelux and neighbouring areas), Multi-country",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_warming",
+      "url": "/media/wc-europe-warming.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Fossil fuels raised the climate baseline (illustrative watercolor).",
+      "alt": "Watercolor for: Fossil fuels raised the climate baseline",
+      "placement": "warming",
+      "node_ids": [
+        "warming"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_circulation",
+      "url": "/media/wc-europe-circulation.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A familiar weather pattern now runs hotter (illustrative watercolor).",
+      "alt": "Watercolor for: A familiar weather pattern now runs hotter",
+      "placement": "circulation",
+      "node_ids": [
+        "circulation"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_heatwave",
+      "url": "/media/wc-europe-heatwave.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Day and night heat broke seasonal limits (illustrative watercolor).",
+      "alt": "Watercolor for: Day and night heat broke seasonal limits",
+      "placement": "heatwave",
+      "node_ids": [
+        "heatwave"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_heat_stress",
+      "url": "/media/wc-europe-heat_stress.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Humid heat pushed cities past safe indoor thresholds (illustrative watercolor).",
+      "alt": "Watercolor for: Humid heat pushed cities past safe indoor thresholds",
+      "placement": "heat_stress",
+      "node_ids": [
+        "heat_stress"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_health_systems",
+      "url": "/media/wc-europe-health_systems.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Hospitals, transport, and schools felt the strain (illustrative watercolor).",
+      "alt": "Watercolor for: Hospitals, transport, and schools felt the strain",
+      "placement": "health_systems",
+      "node_ids": [
+        "health_systems"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_energy_stress",
+      "url": "/media/wc-europe-energy_stress.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Cooling demand and power plants came under pressure (illustrative watercolor).",
+      "alt": "Watercolor for: Cooling demand and power plants came under pressure",
+      "placement": "energy_stress",
+      "node_ids": [
+        "energy_stress"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_ecosystems",
+      "url": "/media/wc-europe-ecosystems.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Drought, fire risk, and wildlife stress rose together (illustrative watercolor).",
+      "alt": "Watercolor for: Drought, fire risk, and wildlife stress rose together",
+      "placement": "ecosystems",
+      "node_ids": [
+        "ecosystems"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_mortality",
+      "url": "/media/wc-europe-mortality.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Heat remains Europe’s deadliest extreme (illustrative watercolor).",
+      "alt": "Watercolor for: Heat remains Europe’s deadliest extreme",
+      "placement": "mortality",
+      "node_ids": [
+        "mortality"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_europe_economy",
+      "url": "/media/wc-europe-economy.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Broader economic losses are not yet fully quantified (illustrative watercolor).",
+      "alt": "Watercolor for: Broader economic losses are not yet fully quantified",
+      "placement": "economy",
+      "node_ids": [
+        "economy"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "day_delta",
+        "label": "Hotter vs 1976 June",
+        "value": 3.5,
+        "unit": "°C",
+        "source_id": "source_wwa_europe_heat_2026"
+      },
+      {
+        "id": "wbgt",
+        "label": "Cities over indoor WBGT",
+        "value": 45,
+        "unit": "%",
+        "source_id": "source_wwa_europe_heat_2026"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "attribution",
+        "count": 1
+      },
+      {
+        "level": "observed",
+        "count": 5
+      },
+      {
+        "level": "strongly_supported",
+        "count": 1
+      },
+      {
+        "level": "unknown",
+        "count": 1
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "id": "pred_economy_trend",
+      "node_id": "economy",
+      "title": "Trend-based recovery / loss bound (not site-audited)",
+      "method": "Where no primary macro loss exists, bound the gap using peer-reviewed or institutional analogues for similar hazard classes, and mark evidence_level=emerging until a primary assessment appears.",
+      "result_low": null,
+      "result_high": null,
+      "unit": "qualitative_bound",
+      "verified_against": [
+        "Prior event class literature cited in story sources"
+      ],
+      "source_ids": [
+        "source_wwa_europe_heat_2026"
+      ],
+      "confidence": "low",
+      "evidence_level": "emerging",
+      "caveat": "Placeholder structure, story-specific numeric bounds live in claims where available. Prefer primary RDNA/government totals when published."
+    }
+  ],
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

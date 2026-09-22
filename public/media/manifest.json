@@ -1,0 +1,107 @@
+{
+  "fetched_at": "2026-09-22T06:16:10.230Z",
+  "results": {
+    "langtang": "/media/Langtang_Lirung.jpg",
+    "langtang_himal": "/media/Langtang_Lirung_Himal.jpg",
+    "trishuli": "/media/Trishuli_river_nepal.jpg",
+    "gujarat": "/media/Gujarat_satellite_view.jpg",
+    "jamnagar": "/media/Jamnagar_Refinery.jpg",
+    "incendio": "/media/Incendio_forestal.jpg",
+    "heat_city": null,
+    "aral": null,
+    "dwh": null,
+    "bhopal": null,
+    "grain": null
+  },
+  "assets": [
+    {
+      "id": "langtang",
+      "file": "Langtang_Lirung.jpg",
+      "stories": [
+        "nepal_flood_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Langtang_Lirung.jpg"
+    },
+    {
+      "id": "langtang_himal",
+      "file": "Langtang_Lirung_Himal.jpg",
+      "stories": [
+        "nepal_flood_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Langtang_Lirung_Himal.jpg"
+    },
+    {
+      "id": "trishuli",
+      "file": "Trishuli_river_nepal.jpg",
+      "stories": [
+        "nepal_flood_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Trishuli_river_nepal.jpg"
+    },
+    {
+      "id": "gujarat",
+      "file": "Gujarat_satellite_view.jpg",
+      "stories": [
+        "south_asia_heat_2026",
+        "reliance_ai_datacentre_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Gujarat_satellite_view.jpg"
+    },
+    {
+      "id": "jamnagar",
+      "file": "Jamnagar_Refinery.jpg",
+      "stories": [
+        "reliance_ai_datacentre_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Jamnagar_Refinery.jpg"
+    },
+    {
+      "id": "incendio",
+      "file": "Incendio_forestal.jpg",
+      "stories": [
+        "iberia_wildfires_2025"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Incendio_forestal.jpg"
+    },
+    {
+      "id": "heat_city",
+      "file": "Heat_Paris_summer.jpg",
+      "stories": [
+        "europe_heatwave_2026"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Paris_Night.jpg"
+    },
+    {
+      "id": "aral",
+      "file": "Aral_Sea_comparison.jpg",
+      "stories": [
+        "aral_sea_desiccation"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/AralSea1989_2014.jpg"
+    },
+    {
+      "id": "dwh",
+      "file": "Deepwater_Horizon_slick.jpg",
+      "stories": [
+        "deepwater_horizon_2010"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Oil_Spill%2C_Gulf_of_Mexico%2C_May_2010.jpg"
+    },
+    {
+      "id": "bhopal",
+      "file": "Bhopal_memorial.jpg",
+      "stories": [
+        "bhopal_1984"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Bhopal_disaster_memorial.jpg"
+    },
+    {
+      "id": "grain",
+      "file": "Wheat_harvest.jpg",
+      "stories": [
+        "global_inflation_2022"
+      ],
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Wheat_close-up.jpg"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "stories": [
+    {
+      "id": "global_inflation_2022",
+      "cover": "/media/global-inflation-2022-cover.svg",
+      "kind": "svg"
+    },
+    {
+      "id": "reliance_ai_datacentre_2026",
+      "cover": "/media/Jamnagar_Refinery.jpg",
+      "kind": "photo"
+    },
+    {
+      "id": "nepal_flood_2026",
+      "cover": "/media/Langtang_Lirung.jpg",
+      "kind": "photo"
+    },
+    {
+      "id": "europe_heatwave_2026",
+      "cover": "/media/europe-heatwave-2026-cover.svg",
+      "kind": "svg"
+    },
+    {
+      "id": "iberia_wildfires_2025",
+      "cover": "/media/Incendio_forestal.jpg",
+      "kind": "photo"
+    },
+    {
+      "id": "south_asia_heat_2026",
+      "cover": "/media/Gujarat_satellite_view.jpg",
+      "kind": "photo"
+    },
+    {
+      "id": "aral_sea_desiccation",
+      "cover": "/media/aral-sea-desiccation-cover.svg",
+      "kind": "svg"
+    },
+    {
+      "id": "deepwater_horizon_2010",
+      "cover": "/media/deepwater-horizon-2010-cover.svg",
+      "kind": "svg"
+    },
+    {
+      "id": "bhopal_1984",
+      "cover": "/media/bhopal-1984-cover.svg",
+      "kind": "svg"
+    }
+  ]
+}

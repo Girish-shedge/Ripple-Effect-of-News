@@ -1,0 +1,23 @@
+{
+  "file": "iberia_wildfires_2025.json",
+  "sources": [
+    {
+      "id": "source_wwa_iberia_fires_2025",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.worldweatherattribution.org/extreme-fire-weather-conditions-in-spain-and-portugal-now-common-due-to-climate-change/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero_fire",
+      "ok": true,
+      "file": "Incendio_forestal.jpg",
+      "credit": "CristianoRonaldoPremiumSK · CC BY-SA 4.0"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:14.258Z"
+}

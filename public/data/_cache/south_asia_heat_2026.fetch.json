@@ -1,0 +1,23 @@
+{
+  "file": "south_asia_heat_2026.json",
+  "sources": [
+    {
+      "id": "source_wwa_south_asia_heat_2026",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.worldweatherattribution.org/climate-change-exposes-hundreds-of-millions-to-longer-and-deadlier-pre-monsoon-heat-in-south-asia/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero_heat",
+      "ok": true,
+      "file": "Gujarat_satellite_view.jpg",
+      "credit": "Public domain"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:39.318Z"
+}

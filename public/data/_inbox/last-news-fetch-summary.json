@@ -1,0 +1,70 @@
+{
+  "fetched_at": "2026-09-22T06:18:56.842Z",
+  "counts": {
+    "total": 81,
+    "tier1": 81,
+    "tier3_discovery": 0
+  },
+  "sample_titles": [
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Hurricane Polo"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Wildfire Round Prarie, Morehouse, Louisiana"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Tropical Storm Fay"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Tropical Storm Odalys"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Prescribed Fire D2 Dye RX, Coconino, Arizona"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Prescribed Fire D2 Vincent RX, Coconino, Arizona"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Wildfire Breezy, Starr, Texas"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Wildfire FLORISTON, Nevada, California"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Typhoon Dujuan"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Prescribed Fire RX CALV BU 104-108, Vernon, Louisiana"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Wildfire Clark, Edwards, Texas"
+    },
+    {
+      "tier": 1,
+      "org": "NASA EONET",
+      "title": "Wildfire Calvary Creek, Washita, Oklahoma"
+    }
+  ]
+}

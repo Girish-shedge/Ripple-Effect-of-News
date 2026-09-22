@@ -1,0 +1,699 @@
+{
+  "event": {
+    "id": "south_asia_heat_2026",
+    "title": "South Asia pre-monsoon heat, India & Pakistan 2026",
+    "date": "2026-04-15",
+    "location": {
+      "country": "India / Pakistan",
+      "region": "Northwestern India and Pakistan (pre-monsoon)",
+      "lat": 28.6,
+      "lng": 77.2
+    },
+    "summary": "From mid-April into May 2026, extreme pre-monsoon heat hit India and Pakistan, with many cities above 46°C. World Weather Attribution found human-caused climate change roughly tripled the chance of a comparable 15-day heatwave and made it about 0.9°C hotter.",
+    "hero": "Hundreds of millions faced a longer, deadlier heat season.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "warming",
+      "type": "climate_driver",
+      "title": "Greenhouse gases are stretching the heat season earlier",
+      "description": "World Weather Attribution finds April heat rising faster than May heat across South Asia. Dangerous temperatures now arrive earlier and last longer. That is a seasonal shift, not a single hot afternoon."
+    },
+    {
+      "id": "heatwave",
+      "type": "hazard",
+      "title": "A 15-day extreme heat spell gripped the region",
+      "description": "From mid-April into May 2026, many Indian cities saw daily maxima above 46°C. The analysed 15-day event was made about 3 times more likely, and about 0.9°C hotter, by human-caused climate change. Northwestern India and Pakistan sat inside that spell together."
+    },
+    {
+      "id": "humid_heat",
+      "type": "hazard",
+      "title": "Humidity made the heat more dangerous",
+      "description": "Irrigation and aerosols can offset some warming at the thermometer. They also raise humidity, so humid heat stress still climbs quickly. Bodies cool by sweating. Humid air takes that escape route away."
+    },
+    {
+      "id": "health",
+      "type": "human_system",
+      "title": "Heat killed and hospitalised the most exposed",
+      "description": "Reporting cited by WWA included at least 37 heat-related deaths in India and 10 in Karachi during the episode. Outdoor workers and people in poor housing face the highest risk. Those counts are preliminary, not a full excess-mortality estimate."
+    },
+    {
+      "id": "power",
+      "type": "human_system",
+      "title": "Electricity demand surged for cooling",
+      "description": "India saw record-high electricity demand as cooling needs spiked during the heat. Grids built for a shorter heat season now face a longer one. Peak load is part of the ripple, not a separate story."
+    },
+    {
+      "id": "agriculture",
+      "type": "human_system",
+      "title": "Agricultural drought compounded food risk",
+      "description": "GDACS-linked reporting cited agricultural drought conditions affecting over 1 million km². That stress arrived before monsoon rains, when fields and wages are already tight. Heat and drought hit livelihoods in the same weeks."
+    },
+    {
+      "id": "governance",
+      "type": "human_system",
+      "title": "Heat Action Plans help, but gaps remain",
+      "description": "India and Pakistan have Heat Action Plans that prevent deaths when they are used. Heat is often not a notified disaster, which limits relief funding. Daily-wage workers remain exposed even where a plan exists on paper."
+    },
+    {
+      "id": "livelihoods",
+      "type": "human_system",
+      "title": "Lost work days hit the poorest first",
+      "description": "When outdoor labour stops, household income drops immediately. That pathway is plausible even when national tallies lag. The people who cannot work indoors absorb the first economic hit."
+    },
+    {
+      "id": "economy",
+      "type": "economy",
+      "title": "Macroeconomic loss is not yet pinned to one figure here",
+      "description": "Productivity and power-system costs are real pressures. This build does not treat a single GDP loss number as verified. What is counted is the heat, the deaths reported, and the demand spike."
+    }
+  ],
+  "edges": [
+    {
+      "from": "warming",
+      "to": "heatwave",
+      "relationship": "increases_risk_of",
+      "relationship_label": "makes more likely",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_tripling"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "humid_heat",
+      "relationship": "compounds",
+      "relationship_label": "compounds with",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_humidity"
+      ]
+    },
+    {
+      "from": "humid_heat",
+      "to": "health",
+      "relationship": "causes",
+      "relationship_label": "harms",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_deaths"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "power",
+      "relationship": "causes",
+      "relationship_label": "drives",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_power"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "agriculture",
+      "relationship": "worsens",
+      "relationship_label": "worsens",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_ag"
+      ]
+    },
+    {
+      "from": "health",
+      "to": "governance",
+      "relationship": "reveals",
+      "relationship_label": "exposes gaps in",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_haps"
+      ]
+    },
+    {
+      "from": "agriculture",
+      "to": "livelihoods",
+      "relationship": "undermines",
+      "relationship_label": "undermines",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_livelihoods"
+      ]
+    },
+    {
+      "from": "livelihoods",
+      "to": "economy",
+      "relationship": "potentially_affects",
+      "relationship_label": "may affect",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_economy"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_tripling",
+      "text": "Combining observations and 19 validated climate models, WWA concludes human-caused climate change approximately tripled the probability of a 15-day heatwave like April 2026 and made a comparable event about 0.9°C hotter than in a pre-industrial climate.",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "Northwestern India and Pakistan study region",
+      "temporal_scope": "April 2026 15-day maximum temperatures",
+      "methodology_status": "WWA protocol (observations + models)",
+      "last_verified": "2026-09-21",
+      "caveat": "Uncertainty ranges are wide; synthesised factor ~3 (0.2 to 240)."
+    },
+    {
+      "id": "claim_humidity",
+      "text": "Aerosols and irrigation partially offset greenhouse warming but raise humidity, so dangerous humid heat continues to increase rapidly in the region.",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "South Asia / western India emphasis",
+      "temporal_scope": "Recent decades to 2026",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_deaths",
+      "text": "Contemporaneous reporting cited by WWA recorded at least 37 heat-related deaths in India and ten in Karachi during the episode; outdoor workers and people in poor-quality housing are disproportionately exposed.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "India and Karachi, Pakistan",
+      "temporal_scope": "April–May 2026 heat episode",
+      "last_verified": "2026-09-21",
+      "caveat": "Counts are preliminary media/agency figures, not a final excess-mortality study."
+    },
+    {
+      "id": "claim_power",
+      "text": "The heat drove record-high electricity demand across India as cooling needs surged.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "India",
+      "temporal_scope": "April–May 2026",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_ag",
+      "text": "Agricultural drought conditions affecting over 1 million km² were reported (GDACS, as cited by WWA), compounding risks to food production and livelihoods.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "Affected South Asian agricultural areas",
+      "temporal_scope": "2026 pre-monsoon",
+      "last_verified": "2026-09-21",
+      "caveat": "Drought extent is from GDACS-linked reporting cited by WWA."
+    },
+    {
+      "id": "claim_haps",
+      "text": "Heat Action Plans prevent deaths but often lack context-specific guidelines; because heatwaves are frequently not notified disasters, victims may be ineligible for disaster relief funding.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "India and Pakistan",
+      "temporal_scope": "2026 institutional context",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_livelihoods",
+      "text": "Daily-wage and outdoor workers lose income when extreme heat stops work, a scientifically reasonable pathway not quantified as a national income loss here.",
+      "claim_type": "inference",
+      "evidence_level": "plausible",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "Urban and rural outdoor labour force",
+      "temporal_scope": "2026 heat episode",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_economy",
+      "text": "No single verified macroeconomic loss figure for this 2026 South Asia heat episode is used in this build. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "geographic_scope": "India / Pakistan",
+      "temporal_scope": "2026",
+      "last_verified": "2026-09-21",
+      "caveat": null,
+      "methodology_status": "trend estimate pending primary macro assessment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_wwa_south_asia_heat_2026",
+      "organization": "World Weather Attribution",
+      "title": "Climate change exposes hundreds of millions to longer and deadlier pre-monsoon heat in South Asia",
+      "url": "https://www.worldweatherattribution.org/climate-change-exposes-hundreds-of-millions-to-longer-and-deadlier-pre-monsoon-heat-in-south-asia/",
+      "publication_date": "2026-04",
+      "source_type": "scientific_attribution_study",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/climate-change-exposes-hundreds-of-millions-to-longer-and-deadlier-pre-monsoon-heat-in-south-asia/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "impact_likelihood",
+      "category": "climate",
+      "metric": "heatwave_likelihood_factor",
+      "value": 3,
+      "unit": "×",
+      "location": "NW India & Pakistan study region",
+      "date": "2026-04",
+      "source_id": "source_wwa_south_asia_heat_2026",
+      "status": "attribution_result"
+    },
+    {
+      "id": "impact_intensity",
+      "category": "climate",
+      "metric": "heatwave_intensity_increase",
+      "value": 0.9,
+      "unit": "°C",
+      "location": "NW India & Pakistan study region",
+      "date": "2026-04",
+      "source_id": "source_wwa_south_asia_heat_2026",
+      "status": "attribution_result"
+    },
+    {
+      "id": "impact_deaths_india",
+      "category": "humanitarian",
+      "metric": "heat_deaths_reported",
+      "value": 37,
+      "unit": "people",
+      "location": "India",
+      "date": "2026-04",
+      "source_id": "source_wwa_south_asia_heat_2026",
+      "status": "preliminary"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t_day0",
+      "bucket": "DAY 0",
+      "label": "Heat intensifies",
+      "detail": "Mid-April 2026 onward, maxima above 46°C in many Indian cities; 15-day spell analysed by WWA.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_deaths"
+      ]
+    },
+    {
+      "id": "t_days",
+      "bucket": "DAYS",
+      "label": "Power and health stress",
+      "detail": "Record electricity demand; heat-related deaths and hospital pressure reported.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_power",
+        "claim_deaths"
+      ]
+    },
+    {
+      "id": "t_weeks",
+      "bucket": "WEEKS",
+      "label": "Attribution published",
+      "detail": "WWA: ~3× more likely and ~0.9°C hotter due to human-caused warming.",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_tripling"
+      ]
+    },
+    {
+      "id": "t_months",
+      "bucket": "MONTHS",
+      "label": "Farm and livelihood recovery",
+      "detail": "Agricultural drought stress and lost work days continue into the monsoon transition.",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_livelihoods"
+      ]
+    },
+    {
+      "id": "t_years",
+      "bucket": "YEARS",
+      "label": "Longer heat seasons ahead",
+      "detail": "With further warming, similar events become still more likely and hotter, HAPs alone are not enough.",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_tripling"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "April–May 2026 brought extreme pre-monsoon heat across northwestern India and Pakistan.",
+      "Climate change roughly tripled the odds of a comparable 15-day event and added about 0.9°C.",
+      "Health impacts, power demand spikes, and agricultural drought stress were documented during the episode."
+    ],
+    "what_remains_uncertain": [
+      "Final excess-mortality estimates beyond preliminary reported deaths.",
+      "Quantified household income losses for outdoor workers.",
+      "A single verified macroeconomic loss total for the episode."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Evidence is still developing."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_southasia_hero",
+      "url": "/media/wc-southasia-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Hundreds of millions faced a longer, deadlier heat season. (illustrative watercolor).",
+      "alt": "Watercolor for: Hundreds of millions faced a longer, deadlier heat season.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_reach",
+      "url": "/media/wc-southasia-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Northwestern India and Pakistan (pre-monsoon), India / Pakistan",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_timeline",
+      "url": "/media/wc-southasia-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Northwestern India and Pakistan (pre-monsoon), India / Pakistan",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_predictions",
+      "url": "/media/wc-southasia-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Northwestern India and Pakistan (pre-monsoon), India / Pakistan",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_knowledge",
+      "url": "/media/wc-southasia-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Northwestern India and Pakistan (pre-monsoon), India / Pakistan",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_sources",
+      "url": "/media/wc-southasia-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Northwestern India and Pakistan (pre-monsoon), India / Pakistan",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_warming",
+      "url": "/media/wc-southasia-warming.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Greenhouse gases are stretching the heat season earlier (illustrative watercolor).",
+      "alt": "Watercolor for: Greenhouse gases are stretching the heat season earlier",
+      "placement": "warming",
+      "node_ids": [
+        "warming"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_heatwave",
+      "url": "/media/wc-southasia-heatwave.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A 15-day extreme heat spell gripped the region (illustrative watercolor).",
+      "alt": "Watercolor for: A 15-day extreme heat spell gripped the region",
+      "placement": "heatwave",
+      "node_ids": [
+        "heatwave"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_humid_heat",
+      "url": "/media/wc-southasia-humid_heat.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Humidity made the heat more dangerous (illustrative watercolor).",
+      "alt": "Watercolor for: Humidity made the heat more dangerous",
+      "placement": "humid_heat",
+      "node_ids": [
+        "humid_heat"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_health",
+      "url": "/media/wc-southasia-health.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Heat killed and hospitalised the most exposed (illustrative watercolor).",
+      "alt": "Watercolor for: Heat killed and hospitalised the most exposed",
+      "placement": "health",
+      "node_ids": [
+        "health"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_power",
+      "url": "/media/wc-southasia-power.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Electricity demand surged for cooling (illustrative watercolor).",
+      "alt": "Watercolor for: Electricity demand surged for cooling",
+      "placement": "power",
+      "node_ids": [
+        "power"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_agriculture",
+      "url": "/media/wc-southasia-agriculture.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Agricultural drought compounded food risk (illustrative watercolor).",
+      "alt": "Watercolor for: Agricultural drought compounded food risk",
+      "placement": "agriculture",
+      "node_ids": [
+        "agriculture"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_governance",
+      "url": "/media/wc-southasia-governance.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Heat Action Plans help, but gaps remain (illustrative watercolor).",
+      "alt": "Watercolor for: Heat Action Plans help, but gaps remain",
+      "placement": "governance",
+      "node_ids": [
+        "governance"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_livelihoods",
+      "url": "/media/wc-southasia-livelihoods.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Lost work days hit the poorest first (illustrative watercolor).",
+      "alt": "Watercolor for: Lost work days hit the poorest first",
+      "placement": "livelihoods",
+      "node_ids": [
+        "livelihoods"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_southasia_economy",
+      "url": "/media/wc-southasia-economy.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Macroeconomic loss is not yet pinned to one figure here (illustrative watercolor).",
+      "alt": "Watercolor for: Macroeconomic loss is not yet pinned to one figure here",
+      "placement": "economy",
+      "node_ids": [
+        "economy"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "likelihood",
+        "label": "Heatwave more likely",
+        "value": 3,
+        "unit": "×",
+        "source_id": "source_wwa_south_asia_heat_2026"
+      },
+      {
+        "id": "intensity",
+        "label": "Hotter than pre-industrial",
+        "value": 0.9,
+        "unit": "°C",
+        "source_id": "source_wwa_south_asia_heat_2026"
+      },
+      {
+        "id": "deaths",
+        "label": "Reported deaths (India)",
+        "value": 37,
+        "unit": "people",
+        "source_id": "source_wwa_south_asia_heat_2026"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "attribution",
+        "count": 2
+      },
+      {
+        "level": "observed",
+        "count": 4
+      },
+      {
+        "level": "plausible",
+        "count": 1
+      },
+      {
+        "level": "unknown",
+        "count": 1
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "id": "pred_economy_trend",
+      "node_id": "economy",
+      "title": "Trend-based recovery / loss bound (not site-audited)",
+      "method": "Where no primary macro loss exists, bound the gap using peer-reviewed or institutional analogues for similar hazard classes, and mark evidence_level=emerging until a primary assessment appears.",
+      "result_low": null,
+      "result_high": null,
+      "unit": "qualitative_bound",
+      "verified_against": [
+        "Prior event class literature cited in story sources"
+      ],
+      "source_ids": [
+        "source_wwa_south_asia_heat_2026"
+      ],
+      "confidence": "low",
+      "evidence_level": "emerging",
+      "caveat": "Placeholder structure, story-specific numeric bounds live in claims where available. Prefer primary RDNA/government totals when published."
+    }
+  ],
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

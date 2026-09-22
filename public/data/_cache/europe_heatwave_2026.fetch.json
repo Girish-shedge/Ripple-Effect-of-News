@@ -1,0 +1,32 @@
+{
+  "file": "europe_heatwave_2026.json",
+  "sources": [
+    {
+      "id": "source_wwa_europe_heat_2026",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "source_wwa_europe_heat_pdf",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.worldweatherattribution.org/wp-content/uploads/FINAL-WWA-Scientific-Report-European-Heatwave.pdf",
+      "content_type": "application/pdf",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero_heat",
+      "ok": true,
+      "file": "Europe_feels_the_heat_beneath_our_feet_ESA523343.jpg",
+      "credit": "European Space Agency · Attribution"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:08.621Z"
+}

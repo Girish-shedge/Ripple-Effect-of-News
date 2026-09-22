@@ -1,0 +1,59 @@
+{
+  "file": "aral_sea_desiccation.json",
+  "sources": [
+    {
+      "id": "src_unep_uzbekistan_2025",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.unep.org/news-and-stories/press-release/regional-action-needed-protect-uzbekistan-sand-and-dust-storms-warns",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "src_unccd_sds",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.unccd.int/sites/default/files/2022-10/Regional%20strategy_SDS_%D0%B0%D0%BD%D0%B3%D0%BB_print.pdf",
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "id": "src_e3s_aralkum",
+      "ok": false,
+      "http_status": 403,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2024/105/e3sconf_caduc2024_04002.pdf",
+      "content_type": "text/html;charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "src_water_aral",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.mdpi.com/2073-4441/13/22/3196",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "src_ije_aral",
+      "ok": false,
+      "http_status": 403,
+      "checked_at": "2026-09-21",
+      "final_url": "https://academic.oup.com/ije/article-lookup/doi/10.1093/ije/dym195",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero",
+      "ok": false,
+      "file": "AralSea1985_1992.jpg",
+      "error": "Missing Commons file AralSea1985_1992.jpg"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:27:48.242Z"
+}

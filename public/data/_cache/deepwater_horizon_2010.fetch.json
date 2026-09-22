@@ -1,0 +1,50 @@
+{
+  "file": "deepwater_horizon_2010.json",
+  "sources": [
+    {
+      "id": "src_conbio_dolphin",
+      "ok": false,
+      "http_status": 403,
+      "checked_at": "2026-09-21",
+      "final_url": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.13878",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "src_frontiers_dolphin",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.975006/full",
+      "content_type": "text/html;charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "src_noaa_pelagic",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.fisheries.noaa.gov/resource/peer-reviewed-research/population-consequences-deepwater-horizon-oil-spill-pelagic",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "src_noaa_15yr",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.fisheries.noaa.gov/feature-story/reflecting-15-years-science-deepwater-horizon-monitoring-recovery",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero",
+      "ok": true,
+      "file": "Deepwater_Horizon_oil_spill_-_May_24,_2010_-_with_locator.jpg",
+      "credit": "NASA / GSFC , MODIS Rapid Response AND demis.nl AND FT2 · Public domain"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:01.590Z"
+}

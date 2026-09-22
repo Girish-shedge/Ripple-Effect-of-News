@@ -1,0 +1,680 @@
+{
+  "event": {
+    "id": "iberia_wildfires_2025",
+    "title": "Iberian Peninsula wildfires, Spain & Portugal 2025",
+    "date": "2025-08-03",
+    "location": {
+      "country": "Spain / Portugal",
+      "region": "Iberian Peninsula (peak fire weather with August heatwave)",
+      "lat": 40.4,
+      "lng": -3.7
+    },
+    "summary": "In August 2025, extreme fire weather during Spain’s most intense recorded heatwave drove the country’s worst wildfires in about 30 years. World Weather Attribution found the meteorological fire conditions roughly 40 times more likely in today’s climate than in a 1.3°C cooler world.",
+    "hero": "Record heat turned forests into tinder.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "warming",
+      "type": "climate_driver",
+      "title": "Human warming loaded the dice for fire weather",
+      "description": "The world is about 1.3°C warmer than a pre-industrial baseline. In that climate, extreme fire-weather conditions like those behind the Iberian fires are about 40 times more likely than in a cooler world. World Weather Attribution measured that shift for this season, not as a slogan."
+    },
+    {
+      "id": "heatwave",
+      "type": "hazard",
+      "title": "Spain’s most intense heatwave on record dried the fuels",
+      "description": "A 16-day heatwave from 3–18 August carried a +4.6°C anomaly. It included the hottest ten-day stretch since at least 1950. Vegetation dried under that heat until it was ready to burn."
+    },
+    {
+      "id": "fire_weather",
+      "type": "hazard",
+      "title": "Fire weather reached once-in-decades severity",
+      "description": "In today’s climate, conditions like these are expected about once every 15 years. Without warming, they would be expected less than once every 500 years. That is why the same weather pattern now produces fires on a different scale."
+    },
+    {
+      "id": "wildfires",
+      "type": "hazard",
+      "title": "Fires spread across Spain and Portugal",
+      "description": "Spain’s burned area almost quadrupled its recent annual average. Portugal burned about 2.3 times its long-term average. Together the fires covered more than 1% of Iberia’s surface during the country’s worst wildfire season in about 30 years."
+    },
+    {
+      "id": "ecosystems",
+      "type": "environment",
+      "title": "Forests and landscapes lost cover at scale",
+      "description": "Large burned extents remove canopy and raise erosion risk in the first rains that follow. Recovery years can favour fire-tolerant invasive plants. The landscape that grows back is not guaranteed to be the one that burned."
+    },
+    {
+      "id": "emergency_response",
+      "type": "human_system",
+      "title": "Firefighting systems were stretched thin",
+      "description": "Concurrent European fires activated the EU Civil Protection Mechanism repeatedly. Shared aircraft and crews cannot be in two countries at once. Simultaneous extremes turn a national fire into a continental logistics problem."
+    },
+    {
+      "id": "communities",
+      "type": "human_system",
+      "title": "Communities faced smoke, evacuation, and loss",
+      "description": "Heat plus smoke creates compounded health risk. Local evacuations and property losses were widely reported during the season. Those impacts are documented even where a single national casualty total is still being compiled."
+    },
+    {
+      "id": "livelihoods",
+      "type": "human_system",
+      "title": "Rural livelihoods and tourism can take years to recover",
+      "description": "Burned farmland, forestry, and visitor economies are typical knock-ons after a fire season of this size. Specific 2025 national loss totals are not locked in this build. Recovery for rural households can outlast the flames by years."
+    },
+    {
+      "id": "economy",
+      "type": "economy",
+      "title": "Full economic accounting remains incomplete here",
+      "description": "No single verified peninsula-wide GDP loss figure from a primary assessment is used in this story yet. Burned area and emergency response are already counted. The full economic ledger is not."
+    }
+  ],
+  "edges": [
+    {
+      "from": "warming",
+      "to": "heatwave",
+      "relationship": "increases_risk_of",
+      "relationship_label": "intensifies",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_warming_fireweather"
+      ]
+    },
+    {
+      "from": "heatwave",
+      "to": "fire_weather",
+      "relationship": "triggers",
+      "relationship_label": "drives",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_heatwave_record"
+      ]
+    },
+    {
+      "from": "fire_weather",
+      "to": "wildfires",
+      "relationship": "enables",
+      "relationship_label": "enables",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_burned_area"
+      ]
+    },
+    {
+      "from": "wildfires",
+      "to": "ecosystems",
+      "relationship": "causes",
+      "relationship_label": "damages",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_ecosystems"
+      ]
+    },
+    {
+      "from": "wildfires",
+      "to": "emergency_response",
+      "relationship": "strains",
+      "relationship_label": "strains",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_response"
+      ]
+    },
+    {
+      "from": "wildfires",
+      "to": "communities",
+      "relationship": "causes",
+      "relationship_label": "harms",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_communities"
+      ]
+    },
+    {
+      "from": "communities",
+      "to": "livelihoods",
+      "relationship": "leads_to",
+      "relationship_label": "undermines",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_livelihoods"
+      ]
+    },
+    {
+      "from": "livelihoods",
+      "to": "economy",
+      "relationship": "potentially_affects",
+      "relationship_label": "may affect",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_economy"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_warming_fireweather",
+      "text": "Extreme fire-weather conditions that drove the recent Iberian wildfires are about 40 times more likely in today’s ~1.3°C warmer climate, and about 30% more intense, than in a pre-industrial climate, implying less than once per 500 years without climate change.",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Spain–Portugal study region (WWA)",
+      "temporal_scope": "2025 fire season / August heatwave window",
+      "methodology_status": "WWA rapid attribution",
+      "last_verified": "2026-09-21",
+      "caveat": "Attribution is to fire-weather conditions, not to each ignition source."
+    },
+    {
+      "id": "claim_heatwave_record",
+      "text": "The fires coincided with Spain’s most intense heatwave on record: 16 days (3–18 August) with a +4.6°C anomaly and the hottest ten-day period since at least 1950.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Spain (AEMET, as cited by WWA)",
+      "temporal_scope": "3–18 August 2025",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_burned_area",
+      "text": "Spain’s 2025 fires were the worst in 30 years, almost quadrupling the average annual area burned over the prior period; Portugal’s burned area was about 2.3× its average since 1980; together more than 1% of the Iberian Peninsula burned.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Iberian Peninsula",
+      "temporal_scope": "2025 fire season",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_ecosystems",
+      "text": "Large burned extents remove forest cover and alter recovery pathways; WWA notes elevated Mediterranean fire danger under heat and drought compounding.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Iberian / Mediterranean forests",
+      "temporal_scope": "2025",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_response",
+      "text": "Simultaneous European wildfires repeatedly activated the EU Civil Protection Mechanism, illustrating strain on shared firefighting capacity at 1.3°C warming.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "European Union response system",
+      "temporal_scope": "2025 fire season",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_communities",
+      "text": "Heat plus wildfire smoke creates compounded health hazards; evacuations and local destruction were part of the season’s documented impacts.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Affected Iberian communities",
+      "temporal_scope": "August 2025",
+      "last_verified": "2026-09-21",
+      "caveat": "Peninsula-wide casualty and displacement totals vary by reporting cut-off."
+    },
+    {
+      "id": "claim_livelihoods",
+      "text": "Rural forestry, farming, and tourism livelihoods are typically hit after megafires, but a verified livelihood-loss ledger for 2025 Iberia is not attached in this build.",
+      "claim_type": "inference",
+      "evidence_level": "plausible",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Rural Iberia",
+      "temporal_scope": "2025–2026 recovery window",
+      "last_verified": "2026-09-21",
+      "caveat": "Plausible pathway, not a measured national livelihood survey."
+    },
+    {
+      "id": "claim_economy",
+      "text": "No primary, verified macroeconomic loss total for the 2025 Iberian fire season is used in this story. Trend check: similar events historically show multi-month livelihood and local-market disruption even when national GDP prints are small, treat as emerging until a primary assessment is published.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "geographic_scope": "Spain / Portugal",
+      "temporal_scope": "2025",
+      "last_verified": "2026-09-21",
+      "caveat": null,
+      "methodology_status": "trend estimate pending primary macro assessment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_wwa_iberia_fires_2025",
+      "organization": "World Weather Attribution",
+      "title": "Extreme fire weather conditions in Spain and Portugal now common due to climate change",
+      "url": "https://www.worldweatherattribution.org/extreme-fire-weather-conditions-in-spain-and-portugal-now-common-due-to-climate-change/",
+      "publication_date": "2025-08",
+      "source_type": "scientific_attribution_study",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/extreme-fire-weather-conditions-in-spain-and-portugal-now-common-due-to-climate-change/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "impact_likelihood",
+      "category": "climate",
+      "metric": "fire_weather_likelihood_factor",
+      "value": 40,
+      "unit": "×",
+      "location": "Iberian study region",
+      "date": "2025-08",
+      "source_id": "source_wwa_iberia_fires_2025",
+      "status": "attribution_result"
+    },
+    {
+      "id": "impact_intensity",
+      "category": "climate",
+      "metric": "fire_weather_intensity_increase",
+      "value": 30,
+      "unit": "%",
+      "location": "Iberian study region",
+      "date": "2025-08",
+      "source_id": "source_wwa_iberia_fires_2025",
+      "status": "attribution_result"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t_day0",
+      "bucket": "DAY 0",
+      "label": "Heatwave peaks",
+      "detail": "3–18 August 2025, Spain’s most intense heatwave on record coincides with extreme fire weather.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_heatwave_record"
+      ]
+    },
+    {
+      "id": "t_days",
+      "bucket": "DAYS",
+      "label": "Fires expand",
+      "detail": "Large burned areas across Spain and Portugal; emergency response escalates.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_burned_area"
+      ]
+    },
+    {
+      "id": "t_weeks",
+      "bucket": "WEEKS",
+      "label": "Attribution study",
+      "detail": "WWA: fire weather ~40× more likely; ~30% more intense vs pre-industrial.",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_warming_fireweather"
+      ]
+    },
+    {
+      "id": "t_months",
+      "bucket": "MONTHS",
+      "label": "Landscape recovery starts",
+      "detail": "Erosion risk, invasive plants, and forestry losses play out over seasons.",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_livelihoods"
+      ]
+    },
+    {
+      "id": "t_years",
+      "bucket": "YEARS",
+      "label": "Adaptation limits",
+      "detail": "Concurrent European fires show shared firefighting capacity can be exhausted as warming continues.",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "claim_response"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "The 2025 Iberian fires burned far above recent averages during a record Spanish heatwave.",
+      "Climate change made the extreme fire-weather conditions about 40 times more likely.",
+      "EU-level firefighting mutual aid was heavily used during concurrent European fires."
+    ],
+    "what_remains_uncertain": [
+      "Final peninsula-wide death, displacement, and insured-loss totals, which depend on reporting cut-offs.",
+      "Household livelihood recovery trajectories after the season.",
+      "A single verified macroeconomic loss figure for the season."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Evidence is still developing."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_iberia_hero",
+      "url": "/media/wc-iberia-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Record heat turned forests into tinder. (illustrative watercolor).",
+      "alt": "Watercolor for: Record heat turned forests into tinder.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_reach",
+      "url": "/media/wc-iberia-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Iberian Peninsula (peak fire weather with August heatwave), Spain / Portugal",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_timeline",
+      "url": "/media/wc-iberia-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Iberian Peninsula (peak fire weather with August heatwave), Spain / Portugal",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_predictions",
+      "url": "/media/wc-iberia-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Iberian Peninsula (peak fire weather with August heatwave), Spain / Portugal",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_knowledge",
+      "url": "/media/wc-iberia-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Iberian Peninsula (peak fire weather with August heatwave), Spain / Portugal",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_sources",
+      "url": "/media/wc-iberia-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Iberian Peninsula (peak fire weather with August heatwave), Spain / Portugal",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_warming",
+      "url": "/media/wc-iberia-warming.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Human warming loaded the dice for fire weather (illustrative watercolor).",
+      "alt": "Watercolor for: Human warming loaded the dice for fire weather",
+      "placement": "warming",
+      "node_ids": [
+        "warming"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_heatwave",
+      "url": "/media/wc-iberia-heatwave.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Spain’s most intense heatwave on record dried the fuels (illustrative watercolor).",
+      "alt": "Watercolor for: Spain’s most intense heatwave on record dried the fuels",
+      "placement": "heatwave",
+      "node_ids": [
+        "heatwave"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_fire_weather",
+      "url": "/media/wc-iberia-fire_weather.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Fire weather reached once-in-decades severity (illustrative watercolor).",
+      "alt": "Watercolor for: Fire weather reached once-in-decades severity",
+      "placement": "fire_weather",
+      "node_ids": [
+        "fire_weather"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_wildfires",
+      "url": "/media/wc-iberia-wildfires.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Fires spread across Spain and Portugal (illustrative watercolor).",
+      "alt": "Watercolor for: Fires spread across Spain and Portugal",
+      "placement": "wildfires",
+      "node_ids": [
+        "wildfires"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_ecosystems",
+      "url": "/media/wc-iberia-ecosystems.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Forests and landscapes lost cover at scale (illustrative watercolor).",
+      "alt": "Watercolor for: Forests and landscapes lost cover at scale",
+      "placement": "ecosystems",
+      "node_ids": [
+        "ecosystems"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_emergency_response",
+      "url": "/media/wc-iberia-emergency_response.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Firefighting systems were stretched thin (illustrative watercolor).",
+      "alt": "Watercolor for: Firefighting systems were stretched thin",
+      "placement": "emergency_response",
+      "node_ids": [
+        "emergency_response"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_communities",
+      "url": "/media/wc-iberia-communities.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Communities faced smoke, evacuation, and loss (illustrative watercolor).",
+      "alt": "Watercolor for: Communities faced smoke, evacuation, and loss",
+      "placement": "communities",
+      "node_ids": [
+        "communities"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_livelihoods",
+      "url": "/media/wc-iberia-livelihoods.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Rural livelihoods and tourism can take years to recover (illustrative watercolor).",
+      "alt": "Watercolor for: Rural livelihoods and tourism can take years to recover",
+      "placement": "livelihoods",
+      "node_ids": [
+        "livelihoods"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_iberia_economy",
+      "url": "/media/wc-iberia-economy.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Full economic accounting remains incomplete here (illustrative watercolor).",
+      "alt": "Watercolor for: Full economic accounting remains incomplete here",
+      "placement": "economy",
+      "node_ids": [
+        "economy"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "likelihood",
+        "label": "Fire weather more likely",
+        "value": 40,
+        "unit": "×",
+        "source_id": "source_wwa_iberia_fires_2025"
+      },
+      {
+        "id": "intensity",
+        "label": "Fire weather more intense",
+        "value": 30,
+        "unit": "%",
+        "source_id": "source_wwa_iberia_fires_2025"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "attribution",
+        "count": 1
+      },
+      {
+        "level": "observed",
+        "count": 5
+      },
+      {
+        "level": "plausible",
+        "count": 1
+      },
+      {
+        "level": "unknown",
+        "count": 1
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "id": "pred_economy_trend",
+      "node_id": "economy",
+      "title": "Trend-based recovery / loss bound (not site-audited)",
+      "method": "Where no primary macro loss exists, bound the gap using peer-reviewed or institutional analogues for similar hazard classes, and mark evidence_level=emerging until a primary assessment appears.",
+      "result_low": null,
+      "result_high": null,
+      "unit": "qualitative_bound",
+      "verified_against": [
+        "Prior event class literature cited in story sources"
+      ],
+      "source_ids": [
+        "source_wwa_iberia_fires_2025"
+      ],
+      "confidence": "low",
+      "evidence_level": "emerging",
+      "caveat": "Placeholder structure, story-specific numeric bounds live in claims where available. Prefer primary RDNA/government totals when published."
+    }
+  ],
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

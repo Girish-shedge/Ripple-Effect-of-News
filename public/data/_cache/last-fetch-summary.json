@@ -1,0 +1,399 @@
+[
+  {
+    "file": "aral_sea_desiccation.json",
+    "sources": [
+      {
+        "id": "src_unep_uzbekistan_2025",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.unep.org/news-and-stories/press-release/regional-action-needed-protect-uzbekistan-sand-and-dust-storms-warns",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "src_unccd_sds",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.unccd.int/sites/default/files/2022-10/Regional%20strategy_SDS_%D0%B0%D0%BD%D0%B3%D0%BB_print.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      },
+      {
+        "id": "src_e3s_aralkum",
+        "ok": false,
+        "http_status": 403,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2024/105/e3sconf_caduc2024_04002.pdf",
+        "content_type": "text/html;charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "src_water_aral",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.mdpi.com/2073-4441/13/22/3196",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "src_ije_aral",
+        "ok": false,
+        "http_status": 403,
+        "checked_at": "2026-09-21",
+        "final_url": "https://academic.oup.com/ije/article-lookup/doi/10.1093/ije/dym195",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero",
+        "ok": false,
+        "file": "AralSea1985_1992.jpg",
+        "error": "Missing Commons file AralSea1985_1992.jpg"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:27:48.242Z"
+  },
+  {
+    "file": "bhopal_1984.json",
+    "sources": [
+      {
+        "id": "src_amnesty_bhopal",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.amnesty.org/en/documents/asa20/7817/2024/en/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "src_cgwa_ngt",
+        "ok": false,
+        "http_status": 403,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/REPORT%20IN%20O.A.03-2024.pdf",
+        "content_type": "text/html; charset=iso-8859-1",
+        "error": null
+      },
+      {
+        "id": "src_outlook_cgwa",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.outlookindia.com/national/bhopal-gas-tragedy-new-govt-study-shows-high-groundwater-contamination-in-some-areas",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero",
+        "ok": false,
+        "file": "Bhopal_memorial_for_those_killed_and_disabled_by_the_1984_toxic_gas_leak.jpg",
+        "error": "Missing Commons file Bhopal_memorial_for_those_killed_and_disabled_by_the_1984_toxic_gas_leak.jpg"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:27:54.683Z"
+  },
+  {
+    "file": "deepwater_horizon_2010.json",
+    "sources": [
+      {
+        "id": "src_conbio_dolphin",
+        "ok": false,
+        "http_status": 403,
+        "checked_at": "2026-09-21",
+        "final_url": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.13878",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "src_frontiers_dolphin",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.975006/full",
+        "content_type": "text/html;charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "src_noaa_pelagic",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fisheries.noaa.gov/resource/peer-reviewed-research/population-consequences-deepwater-horizon-oil-spill-pelagic",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "src_noaa_15yr",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fisheries.noaa.gov/feature-story/reflecting-15-years-science-deepwater-horizon-monitoring-recovery",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero",
+        "ok": true,
+        "file": "Deepwater_Horizon_oil_spill_-_May_24,_2010_-_with_locator.jpg",
+        "credit": "NASA / GSFC , MODIS Rapid Response AND demis.nl AND FT2 · Public domain"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:01.590Z"
+  },
+  {
+    "file": "europe_heatwave_2026.json",
+    "sources": [
+      {
+        "id": "source_wwa_europe_heat_2026",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/fossil-fuel-emissions-have-rapidly-worsened-european-heatwaves-in-just-a-few-decades/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "source_wwa_europe_heat_pdf",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/wp-content/uploads/FINAL-WWA-Scientific-Report-European-Heatwave.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero_heat",
+        "ok": true,
+        "file": "Europe_feels_the_heat_beneath_our_feet_ESA523343.jpg",
+        "credit": "European Space Agency · Attribution"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:08.621Z"
+  },
+  {
+    "file": "iberia_wildfires_2025.json",
+    "sources": [
+      {
+        "id": "source_wwa_iberia_fires_2025",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/extreme-fire-weather-conditions-in-spain-and-portugal-now-common-due-to-climate-change/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero_fire",
+        "ok": true,
+        "file": "Incendio_forestal.jpg",
+        "credit": "CristianoRonaldoPremiumSK · CC BY-SA 4.0"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:14.258Z"
+  },
+  {
+    "file": "nepal_flood_2026.json",
+    "sources": [
+      {
+        "id": "source_wwa_2026",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/rapid-warming-in-the-himalaya-exacerbates-geohazard-cascades-beyond-adaptation-limits/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "source_undp_press_2026_09_01",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.undp.org/nepal/press-releases/nepal-floods-hit-vulnerable-communities-undp-estimates-22-million-tonnes-debris",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "source_undp_nepal_floods_hub",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.undp.org/asia-pacific/nepal-floods-2026",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "source_fao_2026_09_10",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fao.org/newsroom/detail/nepal-floods-damage-1-800-hectares-of-crops-and-kill-thousands-of-livestock/en",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "source_reliefweb_fao_2026",
+        "ok": true,
+        "http_status": 202,
+        "checked_at": "2026-09-21",
+        "final_url": "https://reliefweb.int/report/nepal/nepal-floods-damage-1800-hectares-crops-and-kill-thousands-livestock",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "source_hirisk_rha_np3",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://hirisk.org/wp-content/uploads/2026/08/RHA_NP3_RasuwaFlood.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      },
+      {
+        "id": "source_geopera_reconstruction",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://geopera.com/blog/bhote-koshi-flood-2026-satellite-analysis",
+        "content_type": "text/html",
+        "error": null
+      },
+      {
+        "id": "source_bbc_wwa_coverage",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.bbc.com/news/articles/cmlyrzve5pwzo",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "source_rdna_secondary_note",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://english.nepalnews.com/s/nation/agricultural-sector-incurs-loss-over-rs-one-billion-from-bhote-koshi-flood-rs-1-11-billion-losses-in-livestock/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero_mountain",
+        "ok": true,
+        "file": "Langtang_Lirung.jpg",
+        "credit": "John C Sill · CC BY-SA 3.0"
+      },
+      {
+        "id": "glacier_context",
+        "ok": true,
+        "file": "Langtang_Lirung_Himal.jpg",
+        "credit": "Rajivkilanashrestha · CC BY-SA 4.0"
+      },
+      {
+        "id": "river_corridor",
+        "ok": true,
+        "file": "Trishuli_river_nepal.jpg",
+        "credit": "Ps29 · CC BY-SA 4.0"
+      },
+      {
+        "id": "valley_farming",
+        "ok": true,
+        "file": "Rice_terraces_in_Annapurna_region_-_panoramio.jpg",
+        "credit": "Maris Teteris · CC BY 3.0"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:17.972Z"
+  },
+  {
+    "file": "reliance_ai_datacentre_2026.json",
+    "sources": [
+      {
+        "id": "source_ril_meta_pdf_2026_06_10",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.ril.com/sites/default/files/2026-06/10062026_MR_Reliance_and_Meta_to_Develop_AI-Enabled_Data_Centre_in_Jamnagar_Gujarat.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      },
+      {
+        "id": "source_et_reliance_120mw_2026",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/reliance-plans-to-launch-120-mw-ai-infrastructure-in-jamnagar-by-2026/131855391",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      },
+      {
+        "id": "source_iea_energy_ai",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      },
+      {
+        "id": "source_cell_dc_water_2025",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12827721/",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero_gujarat",
+        "ok": true,
+        "file": "Gujarat_satellite_view.jpg",
+        "credit": "Public domain"
+      },
+      {
+        "id": "campus_context",
+        "ok": true,
+        "file": "Jamnagar_Refinery.jpg",
+        "credit": "Reliance Industries · CC BY-SA 4.0"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:33.861Z"
+  },
+  {
+    "file": "south_asia_heat_2026.json",
+    "sources": [
+      {
+        "id": "source_wwa_south_asia_heat_2026",
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/climate-change-exposes-hundreds-of-millions-to-longer-and-deadlier-pre-monsoon-heat-in-south-asia/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    ],
+    "media": [
+      {
+        "id": "hero_heat",
+        "ok": true,
+        "file": "Gujarat_satellite_view.jpg",
+        "credit": "Public domain"
+      }
+    ],
+    "fetched_at": "2026-09-21T13:28:39.318Z"
+  }
+]

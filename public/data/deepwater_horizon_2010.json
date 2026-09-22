@@ -1,0 +1,724 @@
+{
+  "event": {
+    "id": "deepwater_horizon_2010",
+    "title": "Deepwater Horizon, dolphins still haven’t recovered",
+    "date": "2010-04-20",
+    "location": {
+      "country": "United States",
+      "region": "Northern Gulf of Mexico / Barataria Bay",
+      "lat": 28.74,
+      "lng": -88.37
+    },
+    "summary": "On 20 April 2010 the Deepwater Horizon rig exploded, releasing about 490,000 m³ of oil into the Gulf. Fifteen years later NOAA and peer-reviewed studies still track injured dolphin populations, Barataria Bay bottlenose dolphins fell ~45% and may need ~35 years to recover.",
+    "hero": "One spill. Decades of sick lungs in the Gulf.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "blowout",
+      "type": "hazard",
+      "title": "The well blew out and oil poured for months",
+      "description": "On 20 April 2010 the Deepwater Horizon rig exploded. The blowout released about 490,000 m³ of oil into the northern Gulf of Mexico. The spill ran for months, not hours. That volume is the starting fact for everything that follows."
+    },
+    {
+      "id": "exposure",
+      "type": "hazard",
+      "title": "Coastal and offshore mammals swam through the footprint",
+      "description": "Estuarine bottlenose dolphins and pelagic cetaceans were exposed across a vast oil footprint. Barataria Bay sat in the path. Offshore whales swam through the same oil in deeper water."
+    },
+    {
+      "id": "lungs",
+      "type": "human_system",
+      "title": "Dolphins developed chronic lung disease",
+      "description": "Barataria Bay dolphins showed progressive respiratory injury years after the spill. The lungs did not bounce back when the well was capped. Chronic disease is the observed pathway from oil to population loss."
+    },
+    {
+      "id": "population",
+      "type": "environment",
+      "title": "The local dolphin population crashed ~45%",
+      "description": "Population models that integrate health assessments estimate a 45% decline versus baseline in Barataria Bay bottlenose dolphins. That is not a one-year dip. It is a collapsed local population still being tracked."
+    },
+    {
+      "id": "recovery_clock",
+      "type": "environment",
+      "title": "Recovery may take ~35 years",
+      "description": "The same models estimate about 35 years, with a range of 18–67, to return to 95% of baseline numbers. Fifteen years after the spill, the clock is still running. Recovery is a generation of dolphins, not a cleanup season."
+    },
+    {
+      "id": "offshore",
+      "type": "environment",
+      "title": "Offshore whales also lost “cetacean years”",
+      "description": "NOAA analyses quantified lost cetacean-years across sperm whales, beaked whales, and dolphins. The injury is not only the inshore bay. It reaches animals that never beach on Louisiana mud."
+    },
+    {
+      "id": "monitoring",
+      "type": "human_system",
+      "title": "15 years on, monitoring still finds declines",
+      "description": "NOAA’s 15-year science update reports acoustic declines that can exceed early predictions. The monitoring has not been able to close the book. Some signals look worse than the first models allowed for."
+    },
+    {
+      "id": "humans",
+      "type": "human_system",
+      "title": "Human oil exposure shares the lung pathway",
+      "description": "Dolphin findings parallel human oil-exposure respiratory literature. The animals are a sentinel, not a substitute for human epidemiology. Shared lung injury is the warning, not a completed human tally."
+    },
+    {
+      "id": "still",
+      "type": "economy",
+      "title": "Restoration is underway, injury is not over",
+      "description": "NRDA-funded restoration continues while populations sit near modelled minima. Money is being spent. The injury is not over. Those two facts can be true at the same time."
+    }
+  ],
+  "edges": [
+    {
+      "from": "blowout",
+      "to": "exposure",
+      "relationship": "causes",
+      "relationship_label": "exposes",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d1"
+      ]
+    },
+    {
+      "from": "exposure",
+      "to": "lungs",
+      "relationship": "injures",
+      "relationship_label": "injures",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d2"
+      ]
+    },
+    {
+      "from": "lungs",
+      "to": "population",
+      "relationship": "reduces",
+      "relationship_label": "shrinks",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d3"
+      ]
+    },
+    {
+      "from": "population",
+      "to": "recovery_clock",
+      "relationship": "implies",
+      "relationship_label": "implies",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "d4"
+      ]
+    },
+    {
+      "from": "exposure",
+      "to": "offshore",
+      "relationship": "harms",
+      "relationship_label": "harms",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d5"
+      ]
+    },
+    {
+      "from": "population",
+      "to": "monitoring",
+      "relationship": "confirmed_by",
+      "relationship_label": "is tracked by",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d6"
+      ]
+    },
+    {
+      "from": "lungs",
+      "to": "humans",
+      "relationship": "parallels",
+      "relationship_label": "parallels",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "d7"
+      ]
+    },
+    {
+      "from": "recovery_clock",
+      "to": "still",
+      "relationship": "extends_into",
+      "relationship_label": "extends into",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "d4"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1",
+      "text": "Deepwater Horizon released about 490,000 m³ of oil into the northern Gulf of Mexico.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_noaa_pelagic"
+      ],
+      "geographic_scope": "N. Gulf of Mexico",
+      "temporal_scope": "2010",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "d2",
+      "text": "Frontiers in Marine Science (2022): Barataria Bay bottlenose dolphins showed chronic and potentially progressive respiratory injury eight years after the spill.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_frontiers_dolphin"
+      ],
+      "geographic_scope": "Barataria Bay",
+      "temporal_scope": "2010–2018",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "d3",
+      "text": "Conservation Biology (2022): Barataria Bay dolphin population declined ~45% (95% CI 14–74) relative to baseline; 78% of assessed 2018 dolphins had guarded/poor/grave prognosis.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_conbio_dolphin"
+      ],
+      "geographic_scope": "Barataria Bay",
+      "temporal_scope": "post-spill modelling",
+      "last_verified": "2026-09-21",
+      "caveat": "Model + expert elicitation."
+    },
+    {
+      "id": "d4",
+      "text": "Same study: estimated 35 years (18–67) to recover to 95% of baseline; ~30,148 lost cetacean-years.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "src_conbio_dolphin"
+      ],
+      "geographic_scope": "Barataria Bay",
+      "temporal_scope": "multi-decade forward",
+      "methodology_status": "population dynamics model",
+      "last_verified": "2026-09-21",
+      "caveat": "Depends on restoration and future stressors."
+    },
+    {
+      "id": "d5",
+      "text": "NOAA Fisheries: exposure fractions and lost cetacean-years quantified across sperm whales, beaked whales, and 11 delphinid species.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_noaa_pelagic"
+      ],
+      "geographic_scope": "Oceanic Gulf",
+      "temporal_scope": "post-2010",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "d6",
+      "text": "NOAA 15-year science update: acoustic declines include sperm whales (up to 31%), beaked whales (up to 83%), small delphinids (up to 43%); some declines exceed early injury-model predictions and are not all conclusively linked to oil alone.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_noaa_15yr"
+      ],
+      "geographic_scope": "Gulf acoustic moorings",
+      "temporal_scope": "decade after spill",
+      "last_verified": "2026-09-21",
+      "caveat": "NOAA notes non-oil stressors may contribute."
+    },
+    {
+      "id": "d7",
+      "text": "Dolphin respiratory findings are consistent with human oil-exposure lung literature cited in the studies, a plausible shared toxic pathway.",
+      "claim_type": "inference",
+      "evidence_level": "plausible",
+      "sources": [
+        "src_frontiers_dolphin"
+      ],
+      "geographic_scope": "comparative medicine",
+      "temporal_scope": "post-spill literature",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    }
+  ],
+  "predictions": [
+    {
+      "id": "pred_recovery",
+      "node_id": "recovery_clock",
+      "title": "Barataria Bay dolphin recovery horizon",
+      "method": "Publish the peer-reviewed model’s central estimate and CI as the verified prediction bound.",
+      "result_low": 18,
+      "result_high": 67,
+      "unit": "years",
+      "verified_against": [
+        "Conservation Biology 2022 population model"
+      ],
+      "source_ids": [
+        "src_conbio_dolphin"
+      ],
+      "confidence": "medium",
+      "evidence_level": "emerging",
+      "caveat": "Central estimate 35 years."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_conbio_dolphin",
+      "organization": "Conservation Biology",
+      "title": "Modeling population effects of the Deepwater Horizon oil spill on a long-lived species",
+      "url": "https://doi.org/10.1111/cobi.13878",
+      "publication_date": "2022",
+      "source_type": "peer_reviewed",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": false,
+        "http_status": 403,
+        "checked_at": "2026-09-21",
+        "final_url": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.13878",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    },
+    {
+      "id": "src_frontiers_dolphin",
+      "organization": "Frontiers in Marine Science",
+      "title": "Poor pulmonary health in Barataria Bay dolphins eight years after Deepwater Horizon",
+      "url": "https://doi.org/10.3389/fmars.2022.975006",
+      "publication_date": "2022",
+      "source_type": "peer_reviewed",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.975006/full",
+        "content_type": "text/html;charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "src_noaa_pelagic",
+      "organization": "NOAA Fisheries",
+      "title": "Population Consequences of the Deepwater Horizon Oil Spill on Pelagic Cetaceans",
+      "url": "https://www.fisheries.noaa.gov/resource/peer-reviewed-research/population-consequences-deepwater-horizon-oil-spill-pelagic",
+      "publication_date": "2022",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fisheries.noaa.gov/resource/peer-reviewed-research/population-consequences-deepwater-horizon-oil-spill-pelagic",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "src_noaa_15yr",
+      "organization": "NOAA Fisheries",
+      "title": "Reflecting on 15 Years of Science Since Deepwater Horizon",
+      "url": "https://www.fisheries.noaa.gov/feature-story/reflecting-15-years-science-deepwater-horizon-monitoring-recovery",
+      "publication_date": "2025",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fisheries.noaa.gov/feature-story/reflecting-15-years-science-deepwater-horizon-monitoring-recovery",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "i_oil",
+      "category": "pollution",
+      "metric": "oil_released",
+      "value": 490000,
+      "unit": "m3",
+      "location": "N. Gulf of Mexico",
+      "date": "2010",
+      "source_id": "src_noaa_pelagic",
+      "status": "observed"
+    },
+    {
+      "id": "i_decline",
+      "category": "wildlife",
+      "metric": "dolphin_population_decline",
+      "value": 45,
+      "unit": "%",
+      "location": "Barataria Bay",
+      "date": "2022",
+      "source_id": "src_conbio_dolphin",
+      "status": "modelled"
+    },
+    {
+      "id": "i_years",
+      "category": "wildlife",
+      "metric": "years_to_95pct_recovery",
+      "value": 35,
+      "unit": "years",
+      "location": "Barataria Bay",
+      "date": "2022",
+      "source_id": "src_conbio_dolphin",
+      "status": "modelled"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t0",
+      "bucket": "DAY 0",
+      "label": "Blowout",
+      "detail": "20 April 2010, Deepwater Horizon explosion; months of oil release.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d1"
+      ]
+    },
+    {
+      "id": "t1",
+      "bucket": "YEARS",
+      "label": "Chronic lung disease",
+      "detail": "Health assessments through 2018 show progressive respiratory injury.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d2"
+      ]
+    },
+    {
+      "id": "t2",
+      "bucket": "TODAY",
+      "label": "Still below baseline",
+      "detail": "Population ~45% down; NOAA still monitoring 15 years on.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "d3",
+        "d6"
+      ]
+    },
+    {
+      "id": "t3",
+      "bucket": "DECADES",
+      "label": "~35-year recovery clock",
+      "detail": "Modelled return to 95% baseline if stressors ease.",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "d4"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "The 2010 spill released about 490,000 m³ of oil into the Gulf of Mexico.",
+      "Barataria Bay dolphins suffered chronic lung disease and an estimated 45% population drop.",
+      "NOAA continues Gulf mammal monitoring 15 years later."
+    ],
+    "what_remains_uncertain": [
+      "How much of later acoustic declines are oil versus cumulative noise and other stressors.",
+      "The exact calendar year of recovery under changing Gulf conditions."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Trend-based estimate verified against trusted baselines, not yet fully settled."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_dwh_hero",
+      "url": "/media/wc-dwh-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "One spill. Decades of sick lungs in the Gulf. (illustrative watercolor).",
+      "alt": "Watercolor for: One spill. Decades of sick lungs in the Gulf.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_reach",
+      "url": "/media/wc-dwh-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Northern Gulf of Mexico / Barataria Bay, United States",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_timeline",
+      "url": "/media/wc-dwh-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Northern Gulf of Mexico / Barataria Bay, United States",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_predictions",
+      "url": "/media/wc-dwh-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Northern Gulf of Mexico / Barataria Bay, United States",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_knowledge",
+      "url": "/media/wc-dwh-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Northern Gulf of Mexico / Barataria Bay, United States",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_sources",
+      "url": "/media/wc-dwh-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Northern Gulf of Mexico / Barataria Bay, United States",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_blowout",
+      "url": "/media/wc-dwh-blowout.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The well blew out and oil poured for months (illustrative watercolor).",
+      "alt": "Watercolor for: The well blew out and oil poured for months",
+      "placement": "blowout",
+      "node_ids": [
+        "blowout"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_exposure",
+      "url": "/media/wc-dwh-exposure.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Coastal and offshore mammals swam through the footprint (illustrative watercolor).",
+      "alt": "Watercolor for: Coastal and offshore mammals swam through the footprint",
+      "placement": "exposure",
+      "node_ids": [
+        "exposure"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_lungs",
+      "url": "/media/wc-dwh-lungs.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Dolphins developed chronic lung disease (illustrative watercolor).",
+      "alt": "Watercolor for: Dolphins developed chronic lung disease",
+      "placement": "lungs",
+      "node_ids": [
+        "lungs"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_population",
+      "url": "/media/wc-dwh-population.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The local dolphin population crashed ~45% (illustrative watercolor).",
+      "alt": "Watercolor for: The local dolphin population crashed ~45%",
+      "placement": "population",
+      "node_ids": [
+        "population"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_recovery_clock",
+      "url": "/media/wc-dwh-recovery_clock.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Recovery may take ~35 years (illustrative watercolor).",
+      "alt": "Watercolor for: Recovery may take ~35 years",
+      "placement": "recovery_clock",
+      "node_ids": [
+        "recovery_clock"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_offshore",
+      "url": "/media/wc-dwh-offshore.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Offshore whales also lost “cetacean years” (illustrative watercolor).",
+      "alt": "Watercolor for: Offshore whales also lost “cetacean years”",
+      "placement": "offshore",
+      "node_ids": [
+        "offshore"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_monitoring",
+      "url": "/media/wc-dwh-monitoring.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "15 years on, monitoring still finds declines (illustrative watercolor).",
+      "alt": "Watercolor for: 15 years on, monitoring still finds declines",
+      "placement": "monitoring",
+      "node_ids": [
+        "monitoring"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_humans",
+      "url": "/media/wc-dwh-humans.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Human oil exposure shares the lung pathway (illustrative watercolor).",
+      "alt": "Watercolor for: Human oil exposure shares the lung pathway",
+      "placement": "humans",
+      "node_ids": [
+        "humans"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_dwh_still",
+      "url": "/media/wc-dwh-still.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Restoration is underway, injury is not over (illustrative watercolor).",
+      "alt": "Watercolor for: Restoration is underway, injury is not over",
+      "placement": "still",
+      "node_ids": [
+        "still"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "oil",
+        "label": "Oil released",
+        "value": 490000,
+        "unit": "m3",
+        "source_id": "src_noaa_pelagic"
+      },
+      {
+        "id": "dec",
+        "label": "Dolphin population decline",
+        "value": 45,
+        "unit": "%",
+        "source_id": "src_conbio_dolphin"
+      },
+      {
+        "id": "rec",
+        "label": "Years to 95% recovery",
+        "value": 35,
+        "unit": "years",
+        "source_id": "src_conbio_dolphin"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "observed",
+        "count": 5
+      },
+      {
+        "level": "emerging",
+        "count": 2
+      },
+      {
+        "level": "plausible",
+        "count": 1
+      }
+    ]
+  },
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

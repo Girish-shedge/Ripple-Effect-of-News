@@ -1,0 +1,41 @@
+{
+  "file": "bhopal_1984.json",
+  "sources": [
+    {
+      "id": "src_amnesty_bhopal",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.amnesty.org/en/documents/asa20/7817/2024/en/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "src_cgwa_ngt",
+      "ok": false,
+      "http_status": 403,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/REPORT%20IN%20O.A.03-2024.pdf",
+      "content_type": "text/html; charset=iso-8859-1",
+      "error": null
+    },
+    {
+      "id": "src_outlook_cgwa",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.outlookindia.com/national/bhopal-gas-tragedy-new-govt-study-shows-high-groundwater-contamination-in-some-areas",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero",
+      "ok": false,
+      "file": "Bhopal_memorial_for_those_killed_and_disabled_by_the_1984_toxic_gas_leak.jpg",
+      "error": "Missing Commons file Bhopal_memorial_for_those_killed_and_disabled_by_the_1984_toxic_gas_leak.jpg"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:27:54.683Z"
+}

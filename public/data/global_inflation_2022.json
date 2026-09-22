@@ -1,0 +1,691 @@
+{
+  "event": {
+    "id": "global_inflation_2022",
+    "title": "2022 global food & energy price spike",
+    "date": "2022-02-24",
+    "location": {
+      "country": "Global",
+      "region": "Worldwide markets (food, energy, finance)",
+      "lat": 0,
+      "lng": 0
+    },
+    "summary": "Russia’s full-scale invasion of Ukraine in February 2022 hit two of the world’s major grain and energy exporters. FAO’s food price index and IMF analyses show a sharp jump in food and energy prices that pushed up consumer inflation, interest rates, and hunger risks, with poorer households still absorbing the aftershocks years later.",
+    "hero": "A war inland moved the price of bread on every shelf.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "shock",
+      "type": "hazard",
+      "title": "War hit major grain and energy exporters",
+      "description": "Russia’s full-scale invasion of Ukraine in February 2022 hit two of the world’s major grain and energy exporters. Ukraine and Russia were pivotal to global wheat, maize, sunflower oil, and fossil-fuel trade. A war inland moved the price of bread and fuel on shelves far from the front."
+    },
+    {
+      "id": "commodities",
+      "type": "economy",
+      "title": "Commodity prices spiked on world markets",
+      "description": "FAO’s Food Price Index and energy benchmarks jumped as Black Sea trade and energy flows were disrupted. Those are wholesale signals, not rumours. The shock showed up first in commodities, then in shops."
+    },
+    {
+      "id": "goods",
+      "type": "economy",
+      "title": "Food and fuel got more expensive for households",
+      "description": "Higher farm-gate and wholesale prices passed into retail baskets. Food and energy make up a large share of consumer price indexes, especially for poorer households. The pass-through was fast where those shares are high."
+    },
+    {
+      "id": "inflation",
+      "type": "economy",
+      "title": "Consumer inflation surged across countries",
+      "description": "The IMF documented a broad inflation wave in 2022 driven heavily by food and energy. This was not one country’s CPI story. It was a synchronized jump in the cost of living."
+    },
+    {
+      "id": "rates",
+      "type": "economy",
+      "title": "Central banks hiked interest rates",
+      "description": "To cool inflation, major central banks tightened policy. Borrowing costs rose for households and firms. The medicine for high prices was more expensive credit."
+    },
+    {
+      "id": "hunger",
+      "type": "human_system",
+      "title": "Hunger and food insecurity worsened",
+      "description": "Higher food prices hit import-dependent and low-income countries hardest. WFP and FAO tracked elevated acute food insecurity. The people who already spent most of their money on food absorbed the steepest cut."
+    },
+    {
+      "id": "markets",
+      "type": "economy",
+      "title": "Equity and bond markets repriced risk",
+      "description": "Rate hikes and inflation volatility drove drawdowns and rotations across stock and bond markets. Investors repriced a world of dearer food, energy, and money at the same time."
+    },
+    {
+      "id": "still",
+      "type": "human_system",
+      "title": "The cost-of-living hangover continues",
+      "description": "Even as some indexes cooled, food price levels and debt-service burdens remained elevated for many households. A falling inflation rate is not the same as cheaper groceries. The aftershock lasted years."
+    },
+    {
+      "id": "future",
+      "type": "economy",
+      "title": "Geopolitical food–energy risk stays priced in",
+      "description": "Markets now treat Black Sea and energy geopolitics as a standing inflation risk. Another disruption does not start from a calm baseline. The 2022 shock taught that lesson in prices."
+    }
+  ],
+  "edges": [
+    {
+      "from": "shock",
+      "to": "commodities",
+      "relationship": "triggers",
+      "relationship_label": "spikes",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p1"
+      ]
+    },
+    {
+      "from": "commodities",
+      "to": "goods",
+      "relationship": "passes_into",
+      "relationship_label": "passes into",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p2"
+      ]
+    },
+    {
+      "from": "goods",
+      "to": "inflation",
+      "relationship": "drives",
+      "relationship_label": "drives",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p3"
+      ]
+    },
+    {
+      "from": "inflation",
+      "to": "rates",
+      "relationship": "triggers",
+      "relationship_label": "triggers",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p4"
+      ]
+    },
+    {
+      "from": "goods",
+      "to": "hunger",
+      "relationship": "worsens",
+      "relationship_label": "worsens",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p5"
+      ]
+    },
+    {
+      "from": "rates",
+      "to": "markets",
+      "relationship": "reprices",
+      "relationship_label": "reprices",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p6"
+      ]
+    },
+    {
+      "from": "inflation",
+      "to": "still",
+      "relationship": "lingers_as",
+      "relationship_label": "lingers as",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "p7"
+      ]
+    },
+    {
+      "from": "still",
+      "to": "future",
+      "relationship": "embeds",
+      "relationship_label": "embeds",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "p8"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "p1",
+      "text": "FAO: the FAO Food Price Index averaged 143.7 points in 2022, the highest annual average on record in the series, after rising sharply around the onset of the war in Ukraine.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_fao_ffpi"
+      ],
+      "geographic_scope": "Global commodity markets",
+      "temporal_scope": "2022",
+      "last_verified": "2026-09-21",
+      "caveat": "Index mixes multiple food commodities; composition weights matter."
+    },
+    {
+      "id": "p2",
+      "text": "World Bank / commodity monitors documented simultaneous spikes in energy and food prices in 2022 as Black Sea exports and energy markets were disrupted.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_wb_commodities"
+      ],
+      "geographic_scope": "Global",
+      "temporal_scope": "2022",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "p3",
+      "text": "IMF analyses of 2022 inflation attribute a large share of the surge in many economies to food and energy price shocks cascading into headline CPI.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_imf_inflation"
+      ],
+      "geographic_scope": "Cross-country",
+      "temporal_scope": "2021–2023",
+      "last_verified": "2026-09-21",
+      "caveat": "Pandemic recovery demand and earlier supply shocks also contributed."
+    },
+    {
+      "id": "p4",
+      "text": "Major central banks (Fed, ECB, and peers) delivered rapid policy-rate hiking cycles in 2022–2023 in response to elevated inflation.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_imf_inflation"
+      ],
+      "geographic_scope": "Advanced and many emerging economies",
+      "temporal_scope": "2022–2023",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "p5",
+      "text": "FAO/WFP reporting linked high food prices and conflict to elevated acute food insecurity for tens of millions, especially in import-dependent countries.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_fao_ffpi",
+        "src_wfp_hunger"
+      ],
+      "geographic_scope": "Food-insecure / import-dependent countries",
+      "temporal_scope": "2022–2023",
+      "last_verified": "2026-09-21",
+      "caveat": "Conflict and climate shocks co-drive hunger tallies."
+    },
+    {
+      "id": "p6",
+      "text": "Equity and fixed-income markets experienced sharp 2022 drawdowns as inflation and rate expectations were repriced (widely documented in IMF Global Financial Stability discussions).",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "src_imf_gfsr"
+      ],
+      "geographic_scope": "Global financial markets",
+      "temporal_scope": "2022",
+      "last_verified": "2026-09-21",
+      "caveat": "Not every index moved identically; sector dispersion was large."
+    },
+    {
+      "id": "p7",
+      "text": "Even after the FAO index retreated from its 2022 peak, food price levels stayed historically elevated and real incomes for poorer households recovered unevenly, a lasting cost-of-living ripple.",
+      "claim_type": "context",
+      "evidence_level": "strongly_supported",
+      "sources": [
+        "src_fao_ffpi",
+        "src_imf_inflation"
+      ],
+      "geographic_scope": "Global, uneven by country",
+      "temporal_scope": "2023–2025",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "p8",
+      "text": "Geopolitical risk to food and energy corridors remains an emerging structural inflation factor in IMF/World Bank risk discussions.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "src_imf_inflation",
+        "src_wb_commodities"
+      ],
+      "geographic_scope": "Global",
+      "temporal_scope": "2024–2026 outlooks",
+      "methodology_status": "institutional risk framing",
+      "last_verified": "2026-09-21",
+      "caveat": "Forward-looking, not a price forecast."
+    }
+  ],
+  "predictions": [
+    {
+      "id": "pred_food_level",
+      "node_id": "still",
+      "title": "Food price level stays above pre-war baseline",
+      "method": "Compare FAO Food Price Index peak year 2022 vs subsequent years: even after declines from peak, the level remains well above 2019–2020 averages in FAO releases.",
+      "result_low": 1,
+      "result_high": 1,
+      "unit": "qualitative_bound",
+      "verified_against": [
+        "FAO Food Price Index annual averages"
+      ],
+      "source_ids": [
+        "src_fao_ffpi"
+      ],
+      "confidence": "medium",
+      "evidence_level": "emerging",
+      "caveat": "Exact gap depends on the comparison year chosen."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_fao_ffpi",
+      "organization": "FAO",
+      "title": "FAO Food Price Index (2022 record annual average)",
+      "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/",
+      "publication_date": "2022",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21"
+    },
+    {
+      "id": "src_imf_inflation",
+      "organization": "IMF",
+      "title": "World Economic Outlook, inflation and the 2022 price shock",
+      "url": "https://www.imf.org/en/Publications/WEO",
+      "publication_date": "2022",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21"
+    },
+    {
+      "id": "src_wb_commodities",
+      "organization": "World Bank",
+      "title": "Commodity Markets Outlook, food and energy price spikes",
+      "url": "https://www.worldbank.org/en/research/commodity-markets",
+      "publication_date": "2022",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21"
+    },
+    {
+      "id": "src_imf_gfsr",
+      "organization": "IMF",
+      "title": "Global Financial Stability Report, market repricing under inflation",
+      "url": "https://www.imf.org/en/Publications/GFSR",
+      "publication_date": "2022",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21"
+    },
+    {
+      "id": "src_wfp_hunger",
+      "organization": "WFP / FAO",
+      "title": "Global Report on Food Crises / hunger hotspot monitoring (2022–23)",
+      "url": "https://www.wfp.org/publications/global-report-food-crises-2023",
+      "publication_date": "2023",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21"
+    }
+  ],
+  "impacts": [
+    {
+      "id": "i_ffpi",
+      "category": "prices",
+      "metric": "fao_food_price_index_2022",
+      "value": 143.7,
+      "unit": "index",
+      "location": "Global",
+      "date": "2022",
+      "source_id": "src_fao_ffpi",
+      "status": "observed",
+      "note": "Highest annual average in FAO series (as reported for 2022)"
+    },
+    {
+      "id": "i_year",
+      "category": "temporal",
+      "metric": "shock_year",
+      "value": 2022,
+      "unit": "year",
+      "location": "Global",
+      "date": "2022",
+      "source_id": "src_imf_inflation",
+      "status": "observed"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t0",
+      "bucket": "24 Feb 2022",
+      "label": "Invasion shock",
+      "detail": "Full-scale war disrupts Black Sea agriculture and energy geopolitics.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p1"
+      ]
+    },
+    {
+      "id": "t1",
+      "bucket": "2022",
+      "label": "Record food price index",
+      "detail": "FAO Food Price Index hits record annual average; energy prices spike.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "id": "t2",
+      "bucket": "2022–23",
+      "label": "Inflation → rate hikes",
+      "detail": "CPI surges; central banks hike; markets reprice.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "p3",
+        "p4",
+        "p6"
+      ]
+    },
+    {
+      "id": "t3",
+      "bucket": "TODAY",
+      "label": "Cost-of-living hangover",
+      "detail": "Food price levels and debt costs remain painful for many households.",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "p7"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "FAO recorded a historic 2022 food price index average after the Ukraine war shock.",
+      "Food and energy prices fed a global inflation wave and a rate-hiking cycle.",
+      "Hunger and food-insecurity risks rose for import-dependent populations."
+    ],
+    "what_remains_uncertain": [
+      "Exact household-level welfare loss by country without microdata.",
+      "How much of later disinflation is permanent versus temporary base effects."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Trend-based estimate verified against trusted baselines."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_inflation_hero",
+      "url": "/media/wc-inflation-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A war inland moved the price of bread on every shelf. (illustrative watercolor).",
+      "alt": "Watercolor for: A war inland moved the price of bread on every shelf.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_reach",
+      "url": "/media/wc-inflation-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Worldwide markets (food, energy, finance), Global",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_timeline",
+      "url": "/media/wc-inflation-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Worldwide markets (food, energy, finance), Global",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_predictions",
+      "url": "/media/wc-inflation-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Worldwide markets (food, energy, finance), Global",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_knowledge",
+      "url": "/media/wc-inflation-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Worldwide markets (food, energy, finance), Global",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_sources",
+      "url": "/media/wc-inflation-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Worldwide markets (food, energy, finance), Global",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_shock",
+      "url": "/media/wc-inflation-shock.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "War hit major grain and energy exporters (illustrative watercolor).",
+      "alt": "Watercolor for: War hit major grain and energy exporters",
+      "placement": "shock",
+      "node_ids": [
+        "shock"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_commodities",
+      "url": "/media/wc-inflation-commodities.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Commodity prices spiked on world markets (illustrative watercolor).",
+      "alt": "Watercolor for: Commodity prices spiked on world markets",
+      "placement": "commodities",
+      "node_ids": [
+        "commodities"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_goods",
+      "url": "/media/wc-inflation-goods.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Food and fuel got more expensive for households (illustrative watercolor).",
+      "alt": "Watercolor for: Food and fuel got more expensive for households",
+      "placement": "goods",
+      "node_ids": [
+        "goods"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_inflation",
+      "url": "/media/wc-inflation-inflation.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consumer inflation surged across countries (illustrative watercolor).",
+      "alt": "Watercolor for: Consumer inflation surged across countries",
+      "placement": "inflation",
+      "node_ids": [
+        "inflation"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_rates",
+      "url": "/media/wc-inflation-rates.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Central banks hiked interest rates (illustrative watercolor).",
+      "alt": "Watercolor for: Central banks hiked interest rates",
+      "placement": "rates",
+      "node_ids": [
+        "rates"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_hunger",
+      "url": "/media/wc-inflation-hunger.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Hunger and food insecurity worsened (illustrative watercolor).",
+      "alt": "Watercolor for: Hunger and food insecurity worsened",
+      "placement": "hunger",
+      "node_ids": [
+        "hunger"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_markets",
+      "url": "/media/wc-inflation-markets.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Equity and bond markets repriced risk (illustrative watercolor).",
+      "alt": "Watercolor for: Equity and bond markets repriced risk",
+      "placement": "markets",
+      "node_ids": [
+        "markets"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_still",
+      "url": "/media/wc-inflation-still.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The cost-of-living hangover continues (illustrative watercolor).",
+      "alt": "Watercolor for: The cost-of-living hangover continues",
+      "placement": "still",
+      "node_ids": [
+        "still"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_inflation_future",
+      "url": "/media/wc-inflation-future.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Geopolitical food–energy risk stays priced in (illustrative watercolor).",
+      "alt": "Watercolor for: Geopolitical food–energy risk stays priced in",
+      "placement": "future",
+      "node_ids": [
+        "future"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "ffpi",
+        "label": "FAO Food Price Index 2022",
+        "value": 143.7,
+        "unit": "index",
+        "source_id": "src_fao_ffpi"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "observed",
+        "count": 6
+      },
+      {
+        "level": "strongly_supported",
+        "count": 1
+      },
+      {
+        "level": "emerging",
+        "count": 1
+      }
+    ]
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

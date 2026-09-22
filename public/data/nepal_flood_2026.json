@@ -1,0 +1,973 @@
+{
+  "event": {
+    "id": "nepal_flood_2026",
+    "title": "Nepal flash flood, Bhote Koshi–Trishuli corridor",
+    "date": "2026-08-26",
+    "location": {
+      "country": "Nepal",
+      "region": "Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream)",
+      "lat": 28.29,
+      "lng": 85.53
+    },
+    "summary": "On 26 August 2026, ice and rock broke from Langtang Lirung on the Nepal–China border. Within minutes the surge became a debris flood, then a flash flood racing down the Bhote Koshi–Trishuli rivers, destroying towns, farms, and power plants, and leaving thousands dead or missing.",
+    "hero": "A mountain collapsed. The flood that followed reshaped lives downstream.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "warming",
+      "type": "climate_driver",
+      "title": "The Himalaya is warming because of us",
+      "description": "Human greenhouse gases made the July–August warmth around the failure site about 1.5°C hotter than a pre-industrial climate would have. That extra heat sits on a longer Himalayan warming trend that thins glaciers and degrades permafrost. Climate change is a destabilising factor on a slope that already had geological weaknesses, not the sole cause of the collapse."
+    },
+    {
+      "id": "mountain_instability",
+      "type": "environment",
+      "title": "Ice and frozen ground were already loosening the slope",
+      "description": "Glaciers in the region have been thinning by more than half a metre of ice-equivalent a year. Permafrost thaw and a rising rain–snow line weaken ice-bonded fractures in the rock. The 2015 Gorkha earthquake may also have preconditioned the slope, though its specific role in the 2026 failure is not confirmed."
+    },
+    {
+      "id": "collapse",
+      "type": "hazard",
+      "title": "A slab of mountain broke free",
+      "description": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung, around 5,150 m. The mass fell about 1,400 m and produced seismic waves first mistaken for an earthquake. It slammed into the Lhende catchment and became a debris flood."
+    },
+    {
+      "id": "debris_cascade",
+      "type": "hazard",
+      "title": "The fall became a wall of mud, rock, and water",
+      "description": "The avalanche turned into a debris flood in the Lhende catchment. Early reconstructions put the surge at Rasuwagadhi in about seven minutes. A brief river choke of minutes is possible. A long-lived dam burst is not what the arrival timing shows."
+    },
+    {
+      "id": "flood",
+      "type": "hazard",
+      "title": "A flash flood tore down the river corridor",
+      "description": "The surge reached the Nepal–China border in minutes and kept destroying towns, bridges, and power sites far down the Bhote Koshi–Trishuli system. WWA, citing government and UNDP figures, reports over 1,300 confirmed deaths in Nepal, over 5,000 missing, and about 84,270 people affected across six districts."
+    },
+    {
+      "id": "infrastructure_ag_damage",
+      "type": "human_system",
+      "title": "Power plants went dark and farms were buried",
+      "description": "UNDP’s preliminary RAPIDA assessment estimated at least 2.2 million tonnes of debris in analysed areas. Eleven hydropower stations and one solar plant totalling 431.1 MW stopped operating. About 10,451 people had been rescued by 1 September. Debris buried buildings and fields. Rescue work ran for days."
+    },
+    {
+      "id": "food_production_loss",
+      "type": "human_system",
+      "title": "Rice and other crops were wiped out",
+      "description": "FAO’s preliminary assessment found about 1,800 hectares of crops damaged, mostly paddy, with production losses approaching 7,700 tonnes. Livestock, fishponds, food stocks, and farm infrastructure were also hit. Restoring land, irrigation, and seeds before the next planting season is the immediate agricultural task."
+    },
+    {
+      "id": "livelihoods",
+      "type": "human_system",
+      "title": "Farming families lost more than one harvest",
+      "description": "When fields, animals, and food stocks go at once, household income and food security take longer to recover than the flood itself. FAO says farming families face that longer squeeze even after the water recedes. Household-level income losses for this event are not yet fully quantified."
+    },
+    {
+      "id": "economic_effects",
+      "type": "economy",
+      "title": "Wider economic fallout is still unproven",
+      "description": "National GDP or market-wide losses from this specific flood have not been established in a verified primary assessment used here. Documented damage to power, crops, and homes is already large. The next economic layer is still being counted."
+    }
+  ],
+  "edges": [
+    {
+      "from": "warming",
+      "to": "mountain_instability",
+      "relationship": "contributing_factor",
+      "relationship_label": "contributes to",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_warming_instability"
+      ]
+    },
+    {
+      "from": "mountain_instability",
+      "to": "collapse",
+      "relationship": "increases_risk_of",
+      "relationship_label": "increases risk of",
+      "evidence_level": "attribution",
+      "claim_ids": [
+        "claim_instability_collapse"
+      ]
+    },
+    {
+      "from": "collapse",
+      "to": "debris_cascade",
+      "relationship": "triggers",
+      "relationship_label": "triggers",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_collapse_debris"
+      ]
+    },
+    {
+      "from": "debris_cascade",
+      "to": "flood",
+      "relationship": "triggers",
+      "relationship_label": "triggers",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_debris_flood"
+      ]
+    },
+    {
+      "from": "flood",
+      "to": "infrastructure_ag_damage",
+      "relationship": "causes",
+      "relationship_label": "causes",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_flood_damage"
+      ]
+    },
+    {
+      "from": "infrastructure_ag_damage",
+      "to": "food_production_loss",
+      "relationship": "results_in",
+      "relationship_label": "results in",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_damage_food_loss"
+      ]
+    },
+    {
+      "from": "food_production_loss",
+      "to": "livelihoods",
+      "relationship": "potentially_affects",
+      "relationship_label": "potentially affects",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_food_loss_livelihoods"
+      ]
+    },
+    {
+      "from": "livelihoods",
+      "to": "economic_effects",
+      "relationship": "uncertain_relationship",
+      "relationship_label": "uncertain link",
+      "evidence_level": "unknown",
+      "claim_ids": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_warming_instability",
+      "text": "Human-caused climate change made the July–August warmth at and around the failure site about 1.5°C hotter than a pre-industrial baseline would have, part of a longer Himalayan warming trend that thins glaciers and degrades permafrost.",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_2026"
+      ],
+      "geographic_scope": "Langtang Lirung / wider Himalayan region",
+      "temporal_scope": "July–August 2026 (event context); multi-decade trends",
+      "methodology_status": "peer-reviewed-style rapid attribution synthesis (WWA)",
+      "last_verified": "2026-09-21",
+      "caveat": "Climate change is described as a destabilising factor on a pre-existing geological predisposition, not the sole or fundamental cause of the slope failure."
+    },
+    {
+      "id": "claim_instability_collapse",
+      "text": "Glacier thinning (more than half a metre of ice-equivalent loss per year regionally), accelerated Langtang–Lirung glacier recession, permafrost thaw, and a rising rain–snow line likely weakened ice-bonded fractures and rock–ice contacts before the collapse. The 2015 Gorkha earthquake may also have preconditioned the slope, though its specific contribution to the 2026 failure is not confirmed.",
+      "claim_type": "attribution",
+      "evidence_level": "attribution",
+      "sources": [
+        "source_wwa_2026",
+        "source_bbc_wwa_coverage"
+      ],
+      "geographic_scope": "Langtang Lirung massif, Nepal–China border",
+      "temporal_scope": "decades leading to 26 August 2026",
+      "methodology_status": "expert synthesis; not a single-event binary attribution",
+      "last_verified": "2026-09-21",
+      "caveat": "WWA did not assess whether this specific avalanche would have occurred without human-induced warming."
+    },
+    {
+      "id": "claim_collapse_debris",
+      "text": "On 26 August 2026 at about 08:37 NPT, roughly 2 km² of rock wall and glacier ice failed on Langtang Lirung (~5,150 m), fell ~1,400 m, and produced seismic waves initially mistaken for an earthquake. The mass flow entered the Lhende catchment and became a debris flood.",
+      "claim_type": "observed",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_2026",
+        "source_hirisk_rha_np3"
+      ],
+      "geographic_scope": "Lirung massif / Lhende catchment",
+      "temporal_scope": "2026-08-26",
+      "methodology_status": "multi-source observational reconstruction (seismic + satellite + field reports)",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_debris_flood",
+      "text": "The debris flood / flood surge reached Rasuwagadhi within about seven minutes (~188 km/h average in early reconstructions) and continued as a destructive flood far down the Bhote Koshi–Trishuli system. HiRisk notes the Lhende Khola may have been dammed only for minutes; independent open-data work finds a sustained dam-and-breach sequence inconsistent with arrival timing, while a blockage lasting only minutes cannot be ruled out.",
+      "claim_type": "observed",
+      "evidence_level": "observed",
+      "sources": [
+        "source_wwa_2026",
+        "source_hirisk_rha_np3",
+        "source_geopera_reconstruction"
+      ],
+      "geographic_scope": "Bhote Koshi–Trishuli corridor",
+      "temporal_scope": "2026-08-26",
+      "methodology_status": "observed impacts; mechanism details still refining",
+      "last_verified": "2026-09-21",
+      "caveat": "Do not treat a long-lived barrier-lake breach as established for the initial surge; secondary upstream lakes were reported in following days as a separate concern."
+    },
+    {
+      "id": "claim_flood_damage",
+      "text": "UNDP’s preliminary RAPIDA assessment estimated at least 2.2 million tonnes of debris in analysed areas, with ~556,200 tonnes from building debris across 2,359 assessed buildings. Eleven hydropower stations and one solar plant totalling 431.1 MW stopped operating; 15 projects under construction (470 MW planned) were also damaged. About 10,451 people had been rescued at the time of the 1 September press release. WWA (citing government and UNDP figures as of mid-September) reports over 1,300 confirmed deaths in Nepal, over 5,000 missing, and an estimated 84,270 people affected across six districts.",
+      "claim_type": "observed",
+      "evidence_level": "observed",
+      "sources": [
+        "source_undp_press_2026_09_01",
+        "source_undp_nepal_floods_hub",
+        "source_wwa_2026"
+      ],
+      "geographic_scope": "Bhote Koshi–Trishuli corridor; Rasuwa, Nuwakot, Dhading, Gorkha, Chitwan, Tanahu",
+      "temporal_scope": "August–September 2026 (preliminary)",
+      "methodology_status": "preliminary, satellite damage mapping + engineering estimates; figures may rise",
+      "last_verified": "2026-09-21",
+      "caveat": "Debris and casualty figures are preliminary and were still being updated after publication."
+    },
+    {
+      "id": "claim_damage_food_loss",
+      "text": "FAO’s preliminary assessment indicated around 1,800 hectares of crops, mostly paddy, damaged, with production losses approaching 7,700 tonnes, plus livestock losses and damage to farmland, fisheries, food stocks, and agricultural infrastructure.",
+      "claim_type": "observed",
+      "evidence_level": "observed",
+      "sources": [
+        "source_fao_2026_09_10",
+        "source_reliefweb_fao_2026"
+      ],
+      "geographic_scope": "Affected agricultural areas along the Bhote Koshi–Trishuli corridor",
+      "temporal_scope": "August–September 2026",
+      "methodology_status": "preliminary institutional assessment",
+      "last_verified": "2026-09-21",
+      "caveat": "A later national RDNA (NPC/NDRRMA), as reported in Nepali media, gave more granular paddy figures (e.g. 1,669 ha / 5,843 tonnes rice; ~NPR 1.09 billion crop losses). Those RDNA numbers are not yet tied here to a retrieved primary PDF, see internal note in sources."
+    },
+    {
+      "id": "claim_food_loss_livelihoods",
+      "text": "FAO stated that damage to crops, livestock, fishponds, food stocks, and agricultural infrastructure threatens food security and incomes of farming families well beyond the immediate emergency, and that restoring farmland, irrigation, seeds, and veterinary support before the next planting season is critical.",
+      "claim_type": "plausible",
+      "evidence_level": "plausible",
+      "sources": [
+        "source_fao_2026_09_10"
+      ],
+      "geographic_scope": "Affected farming communities, Nepal",
+      "temporal_scope": "weeks to seasons after August 2026",
+      "methodology_status": "institutional qualitative assessment grounded in observed agricultural damage",
+      "last_verified": "2026-09-21",
+      "caveat": "Household-level income and food-security outcomes for this specific event are not yet fully quantified in the sources used here."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_wwa_2026",
+      "organization": "World Weather Attribution",
+      "title": "Rapid Warming in the Himalaya Exacerbates Geohazard Cascades Beyond Adaptation Limits",
+      "url": "https://www.worldweatherattribution.org/rapid-warming-in-the-himalaya-exacerbates-geohazard-cascades-beyond-adaptation-limits/",
+      "publication_date": "2026-09-17",
+      "source_type": "scientific_attribution_study",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.worldweatherattribution.org/rapid-warming-in-the-himalaya-exacerbates-geohazard-cascades-beyond-adaptation-limits/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_undp_press_2026_09_01",
+      "organization": "UNDP",
+      "title": "Nepal floods hit vulnerable communities as UNDP estimates 2.2 million tonnes of debris",
+      "url": "https://www.undp.org/nepal/press-releases/nepal-floods-hit-vulnerable-communities-undp-estimates-22-million-tonnes-debris",
+      "publication_date": "2026-09-01",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.undp.org/nepal/press-releases/nepal-floods-hit-vulnerable-communities-undp-estimates-22-million-tonnes-debris",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_undp_nepal_floods_hub",
+      "organization": "UNDP",
+      "title": "Nepal Floods 2026 (RAPIDA hub)",
+      "url": "https://www.undp.org/asia-pacific/nepal-floods-2026",
+      "publication_date": "2026-09",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.undp.org/asia-pacific/nepal-floods-2026",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_fao_2026_09_10",
+      "organization": "FAO",
+      "title": "Nepal floods damage 1,800 hectares of crops and kill thousands of livestock",
+      "url": "https://www.fao.org/newsroom/detail/nepal-floods-damage-1-800-hectares-of-crops-and-kill-thousands-of-livestock/en",
+      "publication_date": "2026-09-10",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.fao.org/newsroom/detail/nepal-floods-damage-1-800-hectares-of-crops-and-kill-thousands-of-livestock/en",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_reliefweb_fao_2026",
+      "organization": "ReliefWeb / FAO",
+      "title": "Nepal floods damage 1,800 hectares of crops and kill thousands of livestock",
+      "url": "https://reliefweb.int/report/nepal/nepal-floods-damage-1800-hectares-crops-and-kill-thousands-livestock",
+      "publication_date": "2026-09-11",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 202,
+        "checked_at": "2026-09-21",
+        "final_url": "https://reliefweb.int/report/nepal/nepal-floods-damage-1800-hectares-crops-and-kill-thousands-livestock",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_hirisk_rha_np3",
+      "organization": "HiRisk / Rapid Hazard Assessment",
+      "title": "RHA Report No. NP3, Lirung massif, Lhende Catchment, Upper Trishuli Watershed",
+      "url": "https://hirisk.org/wp-content/uploads/2026/08/RHA_NP3_RasuwaFlood.pdf",
+      "publication_date": "2026-08",
+      "source_type": "technical_hazard_assessment",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://hirisk.org/wp-content/uploads/2026/08/RHA_NP3_RasuwaFlood.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      }
+    },
+    {
+      "id": "source_geopera_reconstruction",
+      "organization": "GeoOpera",
+      "title": "Bhote Koshi Flood 2026: A Reconstruction from Open Satellite Data",
+      "url": "https://geopera.com/blog/bhote-koshi-flood-2026-satellite-analysis",
+      "publication_date": "2026-08",
+      "source_type": "open_data_reconstruction",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://geopera.com/blog/bhote-koshi-flood-2026-satellite-analysis",
+        "content_type": "text/html",
+        "error": null
+      }
+    },
+    {
+      "id": "source_bbc_wwa_coverage",
+      "organization": "BBC",
+      "title": "Nepal floods: Climate change contributed to glacier collapse, study finds",
+      "url": "https://www.bbc.com/news/articles/cmlyrzve5pwzo",
+      "publication_date": "2026-09-17",
+      "source_type": "reputable_journalism",
+      "credibility_class": "tier_3",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.bbc.com/news/articles/cmlyrzve5pwzo",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_rdna_secondary_note",
+      "organization": "NPC / NDRRMA (as reported)",
+      "title": "Rapid Damage and Needs Assessment figures reported in Nepali media (primary RDNA PDF not retrieved for this build)",
+      "url": "https://english.nepalnews.com/s/nation/agricultural-sector-incurs-loss-over-rs-one-billion-from-bhote-koshi-flood-rs-1-11-billion-losses-in-livestock/",
+      "publication_date": "2026-09-14",
+      "source_type": "secondary_report_of_government_assessment",
+      "credibility_class": "tier_3",
+      "retrieved_at": "2026-09-21",
+      "internal_note": "Contains NPR 1.09 billion / 5,843 tonnes rice / 1,669 ha paddy. Not used as primary numeric claims in public UI until primary RDNA is retrieved.",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://english.nepalnews.com/s/nation/agricultural-sector-incurs-loss-over-rs-one-billion-from-bhote-koshi-flood-rs-1-11-billion-losses-in-livestock/",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "impact_crop_area_fao",
+      "category": "agriculture",
+      "metric": "crop_area_damaged",
+      "value": 1800,
+      "unit": "hectares",
+      "location": "Nepal, flood-affected corridor",
+      "date": "2026-09",
+      "source_id": "source_fao_2026_09_10",
+      "status": "preliminary",
+      "note": "Mostly paddy (FAO)"
+    },
+    {
+      "id": "impact_crop_tonnes_fao",
+      "category": "agriculture",
+      "metric": "crop_production_loss",
+      "value": 7700,
+      "unit": "tonnes",
+      "location": "Nepal, flood-affected corridor",
+      "date": "2026-09",
+      "source_id": "source_fao_2026_09_10",
+      "status": "preliminary",
+      "note": "FAO: production losses approaching 7,700 tonnes"
+    },
+    {
+      "id": "impact_hydropower_offline",
+      "category": "energy",
+      "metric": "power_generation_stopped",
+      "value": 431.1,
+      "unit": "MW",
+      "location": "Nepal",
+      "date": "2026-09-01",
+      "source_id": "source_undp_press_2026_09_01",
+      "status": "preliminary"
+    },
+    {
+      "id": "impact_debris_total",
+      "category": "debris",
+      "metric": "debris_mass",
+      "value": 2200000,
+      "unit": "tonnes",
+      "location": "Analysed areas, Bhote Koshi–Trishuli system",
+      "date": "2026-09-01",
+      "source_id": "source_undp_press_2026_09_01",
+      "status": "preliminary"
+    },
+    {
+      "id": "impact_people_affected",
+      "category": "humanitarian",
+      "metric": "people_affected",
+      "value": 84270,
+      "unit": "people",
+      "location": "17 local levels across six districts",
+      "date": "2026-09",
+      "source_id": "source_wwa_2026",
+      "status": "preliminary",
+      "note": "Cited by WWA from UNDP / MOHA reporting"
+    },
+    {
+      "id": "impact_rescued",
+      "category": "humanitarian",
+      "metric": "people_rescued",
+      "value": 10451,
+      "unit": "people",
+      "location": "Nepal",
+      "date": "2026-09-01",
+      "source_id": "source_undp_press_2026_09_01",
+      "status": "preliminary"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t_day0",
+      "bucket": "DAY 0",
+      "label": "Flash flood occurs",
+      "detail": "26 August 2026 ~08:37 NPT, Langtang Lirung rock–ice collapse; debris flood reaches Rasuwagadhi within minutes.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_collapse_debris",
+        "claim_debris_flood"
+      ]
+    },
+    {
+      "id": "t_day1_7",
+      "bucket": "DAY 1–7",
+      "label": "Infrastructure disruption",
+      "detail": "Hydropower stations offline (431.1 MW cited by UNDP); search and rescue ongoing; debris and access constraints.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_flood_damage"
+      ]
+    },
+    {
+      "id": "t_weeks",
+      "bucket": "WEEKS",
+      "label": "Damage assessments published",
+      "detail": "UNDP RAPIDA debris/energy figures (1 Sep); FAO agricultural assessment (~10 Sep); WWA climate–hazard synthesis (17 Sep).",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_flood_damage",
+        "claim_damage_food_loss",
+        "claim_warming_instability"
+      ]
+    },
+    {
+      "id": "t_months",
+      "bucket": "MONTHS",
+      "label": "Supply-chain / local economy",
+      "detail": "Not yet established with a verified primary macroeconomic assessment for this event in this build.",
+      "evidence_level": "unknown",
+      "claim_ids": []
+    },
+    {
+      "id": "t_years",
+      "bucket": "YEARS",
+      "label": "Long-term ecosystem / recovery",
+      "detail": "Not yet established, recovery and ecosystem trajectories remain open questions.",
+      "evidence_level": "unknown",
+      "claim_ids": []
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "A rock–ice avalanche on Langtang Lirung on 26 August 2026 triggered a debris flood down the Bhote Koshi–Trishuli corridor.",
+      "Human-caused warming made the surrounding season about 1.5°C hotter and is a contributing factor alongside geology, not the sole cause.",
+      "Preliminary assessments document major debris volumes, hydropower outages, crop damage, and large humanitarian impacts."
+    ],
+    "what_remains_uncertain": [
+      "Whether a short-lived river choke lasted only minutes versus a purely continuous debris-flood pulse.",
+      "Whether this exact avalanche would have occurred without human-induced warming.",
+      "Household livelihood outcomes and broader economic effects beyond documented damage.",
+      "Final death, missing, and debris totals, which were still being revised."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Evidence is still developing."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "news": [
+    {
+      "id": "news_collapse",
+      "date": "2026-08-26",
+      "headline": "Rock–ice collapse starts a flash flood",
+      "subheading": "Langtang Lirung fails; debris race down the Bhote Koshi–Trishuli corridor within minutes.",
+      "organization": "HiRisk / Rapid Hazard Assessment",
+      "url": "https://hirisk.org/wp-content/uploads/2026/08/RHA_NP3_RasuwaFlood.pdf",
+      "source_id": "source_hirisk_rha_np3",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Langtang_Lirung.jpg/640px-Langtang_Lirung.jpg",
+      "image_alt": "Langtang Lirung mountain peak"
+    },
+    {
+      "id": "news_satellite",
+      "date": "2026-08-28",
+      "headline": "Satellites reconstruct the flood path",
+      "subheading": "Open satellite analysis maps how the surge moved through the Bhote Koshi system.",
+      "organization": "GeoOpera",
+      "url": "https://geopera.com/blog/bhote-koshi-flood-2026-satellite-analysis",
+      "source_id": "source_geopera_reconstruction",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Trishuli_river_nepal.jpg/640px-Trishuli_river_nepal.jpg",
+      "image_alt": "Trishuli River valley in Nepal"
+    },
+    {
+      "id": "news_undp_debris",
+      "date": "2026-09-01",
+      "headline": "UNDP counts millions of tonnes of debris",
+      "subheading": "About 2.2 million tonnes of debris estimated; 431 MW of hydropower offline; thousands rescued.",
+      "organization": "UNDP",
+      "url": "https://www.undp.org/nepal/press-releases/nepal-floods-hit-vulnerable-communities-undp-estimates-22-million-tonnes-debris",
+      "source_id": "source_undp_press_2026_09_01",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Trishuli_river_nepal.jpg/640px-Trishuli_river_nepal.jpg",
+      "image_alt": "River corridor downstream of the flood"
+    },
+    {
+      "id": "news_fao_crops",
+      "date": "2026-09-10",
+      "headline": "FAO: 1,800 hectares of crops damaged",
+      "subheading": "Nearly 7,700 tonnes of production lost, mostly paddy, along the flood corridor.",
+      "organization": "FAO",
+      "url": "https://www.fao.org/newsroom/detail/nepal-floods-damage-1-800-hectares-of-crops-and-kill-thousands-of-livestock/en",
+      "source_id": "source_fao_2026_09_10",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Rice_terraces_in_Annapurna_region_-_panoramio.jpg",
+      "image_alt": "Rice terraces in Nepal"
+    },
+    {
+      "id": "news_reliefweb",
+      "date": "2026-09-11",
+      "headline": "Relief agencies circulate the crop-loss tally",
+      "subheading": "ReliefWeb republishes FAO’s agricultural damage figures for responders.",
+      "organization": "ReliefWeb / FAO",
+      "url": "https://reliefweb.int/report/nepal/nepal-floods-damage-1800-hectares-crops-and-kill-thousands-livestock",
+      "source_id": "source_reliefweb_fao_2026",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Rice_terraces_in_Annapurna_region_-_panoramio.jpg",
+      "image_alt": "Agricultural terraces in Nepal"
+    },
+    {
+      "id": "news_rdna_note",
+      "date": "2026-09-14",
+      "headline": "Government damage figures still secondary here",
+      "subheading": "Nepali media cite RDNA farm losses; primary PDF not yet retrieved for this build.",
+      "organization": "NPC / NDRRMA (as reported)",
+      "url": "https://english.nepalnews.com/s/nation/agricultural-sector-incurs-loss-over-rs-one-billion-from-bhote-koshi-flood-rs-1-11-billion-losses-in-livestock/",
+      "source_id": "source_rdna_secondary_note",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Langtang_Lirung_Himal.jpg/640px-Langtang_Lirung_Himal.jpg",
+      "image_alt": "High Himalayan ridges"
+    },
+    {
+      "id": "news_wwa",
+      "date": "2026-09-17",
+      "headline": "Warming made the Himalaya hotter before the collapse",
+      "subheading": "World Weather Attribution finds human-caused heat contributed to slope stress, not as the sole cause.",
+      "organization": "World Weather Attribution",
+      "url": "https://www.worldweatherattribution.org/rapid-warming-in-the-himalaya-exacerbates-geohazard-cascades-beyond-adaptation-limits/",
+      "source_id": "source_wwa_2026",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Langtang_Lirung_Himal.jpg/640px-Langtang_Lirung_Himal.jpg",
+      "image_alt": "Ice and rock near Langtang Lirung"
+    },
+    {
+      "id": "news_bbc",
+      "date": "2026-09-17",
+      "headline": "BBC: climate change contributed to the glacier collapse",
+      "subheading": "News coverage of the WWA study explaining how warming fits into the disaster chain.",
+      "organization": "BBC",
+      "url": "https://www.bbc.com/news/articles/cmlyrzve5pwzo",
+      "source_id": "source_bbc_wwa_coverage",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Langtang_Lirung.jpg/640px-Langtang_Lirung.jpg",
+      "image_alt": "Langtang Lirung mountain"
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_nepal_hero",
+      "url": "/media/wc-nepal-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A mountain collapsed. The flood that followed reshaped lives downstream. (illustrative watercolor).",
+      "alt": "Watercolor for: A mountain collapsed. The flood that followed reshaped lives downstream.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_reach",
+      "url": "/media/wc-nepal-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream), Nepal",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_timeline",
+      "url": "/media/wc-nepal-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream), Nepal",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_predictions",
+      "url": "/media/wc-nepal-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream), Nepal",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_knowledge",
+      "url": "/media/wc-nepal-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream), Nepal",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_sources",
+      "url": "/media/wc-nepal-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Langtang Lirung / Lhende–Bhote Koshi–Trishuli corridor (Rasuwa and downstream), Nepal",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_warming",
+      "url": "/media/wc-nepal-warming.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The Himalaya is warming because of us (illustrative watercolor).",
+      "alt": "Watercolor for: The Himalaya is warming because of us",
+      "placement": "warming",
+      "node_ids": [
+        "warming"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_mountain_instability",
+      "url": "/media/wc-nepal-instability.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Ice and frozen ground were already loosening the slope (illustrative watercolor).",
+      "alt": "Watercolor for: Ice and frozen ground were already loosening the slope",
+      "placement": "mountain_instability",
+      "node_ids": [
+        "mountain_instability"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_collapse",
+      "url": "/media/wc-nepal-collapse.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A slab of mountain broke free (illustrative watercolor).",
+      "alt": "Watercolor for: A slab of mountain broke free",
+      "placement": "collapse",
+      "node_ids": [
+        "collapse"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_debris_cascade",
+      "url": "/media/wc-nepal-debris.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The fall became a wall of mud, rock, and water (illustrative watercolor).",
+      "alt": "Watercolor for: The fall became a wall of mud, rock, and water",
+      "placement": "debris_cascade",
+      "node_ids": [
+        "debris_cascade"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_flood",
+      "url": "/media/wc-nepal-flood.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A flash flood tore down the river corridor (illustrative watercolor).",
+      "alt": "Watercolor for: A flash flood tore down the river corridor",
+      "placement": "flood",
+      "node_ids": [
+        "flood"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_infrastructure_ag_damage",
+      "url": "/media/wc-nepal-infrastructure.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Power plants went dark and farms were buried (illustrative watercolor).",
+      "alt": "Watercolor for: Power plants went dark and farms were buried",
+      "placement": "infrastructure_ag_damage",
+      "node_ids": [
+        "infrastructure_ag_damage"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_food_production_loss",
+      "url": "/media/wc-nepal-crops.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Rice and other crops were wiped out (illustrative watercolor).",
+      "alt": "Watercolor for: Rice and other crops were wiped out",
+      "placement": "food_production_loss",
+      "node_ids": [
+        "food_production_loss"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_livelihoods",
+      "url": "/media/wc-nepal-livelihoods.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Farming families lost more than one harvest (illustrative watercolor).",
+      "alt": "Watercolor for: Farming families lost more than one harvest",
+      "placement": "livelihoods",
+      "node_ids": [
+        "livelihoods"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_nepal_economic_effects",
+      "url": "/media/wc-nepal-economy.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Wider economic fallout is still unproven (illustrative watercolor).",
+      "alt": "Watercolor for: Wider economic fallout is still unproven",
+      "placement": "economic_effects",
+      "node_ids": [
+        "economic_effects"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "people",
+        "label": "People affected",
+        "value": 84270,
+        "unit": "people",
+        "source_id": "source_wwa_2026"
+      },
+      {
+        "id": "rescued",
+        "label": "People rescued",
+        "value": 10451,
+        "unit": "people",
+        "source_id": "source_undp_press_2026_09_01"
+      },
+      {
+        "id": "crops_ha",
+        "label": "Crops damaged",
+        "value": 1800,
+        "unit": "hectares",
+        "source_id": "source_fao_2026_09_10"
+      },
+      {
+        "id": "power",
+        "label": "Power offline",
+        "value": 431.1,
+        "unit": "MW",
+        "source_id": "source_undp_press_2026_09_01"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "attribution",
+        "count": 2
+      },
+      {
+        "level": "observed",
+        "count": 4
+      },
+      {
+        "level": "plausible",
+        "count": 1
+      },
+      {
+        "level": "unknown",
+        "count": 1
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "id": "pred_economy_trend",
+      "node_id": "economy",
+      "title": "Trend-based recovery / loss bound (not site-audited)",
+      "method": "Where no primary macro loss exists, bound the gap using peer-reviewed or institutional analogues for similar hazard classes, and mark evidence_level=emerging until a primary assessment appears.",
+      "result_low": null,
+      "result_high": null,
+      "unit": "qualitative_bound",
+      "verified_against": [
+        "Prior event class literature cited in story sources"
+      ],
+      "source_ids": [
+        "source_wwa_2026"
+      ],
+      "confidence": "low",
+      "evidence_level": "emerging",
+      "caveat": "Placeholder structure, story-specific numeric bounds live in claims where available. Prefer primary RDNA/government totals when published."
+    }
+  ],
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}

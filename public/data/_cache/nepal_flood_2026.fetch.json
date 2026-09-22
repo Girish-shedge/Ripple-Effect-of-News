@@ -1,0 +1,113 @@
+{
+  "file": "nepal_flood_2026.json",
+  "sources": [
+    {
+      "id": "source_wwa_2026",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.worldweatherattribution.org/rapid-warming-in-the-himalaya-exacerbates-geohazard-cascades-beyond-adaptation-limits/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "source_undp_press_2026_09_01",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.undp.org/nepal/press-releases/nepal-floods-hit-vulnerable-communities-undp-estimates-22-million-tonnes-debris",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "source_undp_nepal_floods_hub",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.undp.org/asia-pacific/nepal-floods-2026",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "source_fao_2026_09_10",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.fao.org/newsroom/detail/nepal-floods-damage-1-800-hectares-of-crops-and-kill-thousands-of-livestock/en",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "source_reliefweb_fao_2026",
+      "ok": true,
+      "http_status": 202,
+      "checked_at": "2026-09-21",
+      "final_url": "https://reliefweb.int/report/nepal/nepal-floods-damage-1800-hectares-crops-and-kill-thousands-livestock",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "source_hirisk_rha_np3",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://hirisk.org/wp-content/uploads/2026/08/RHA_NP3_RasuwaFlood.pdf",
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "id": "source_geopera_reconstruction",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://geopera.com/blog/bhote-koshi-flood-2026-satellite-analysis",
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "id": "source_bbc_wwa_coverage",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.bbc.com/news/articles/cmlyrzve5pwzo",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "source_rdna_secondary_note",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://english.nepalnews.com/s/nation/agricultural-sector-incurs-loss-over-rs-one-billion-from-bhote-koshi-flood-rs-1-11-billion-losses-in-livestock/",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero_mountain",
+      "ok": true,
+      "file": "Langtang_Lirung.jpg",
+      "credit": "John C Sill · CC BY-SA 3.0"
+    },
+    {
+      "id": "glacier_context",
+      "ok": true,
+      "file": "Langtang_Lirung_Himal.jpg",
+      "credit": "Rajivkilanashrestha · CC BY-SA 4.0"
+    },
+    {
+      "id": "river_corridor",
+      "ok": true,
+      "file": "Trishuli_river_nepal.jpg",
+      "credit": "Ps29 · CC BY-SA 4.0"
+    },
+    {
+      "id": "valley_farming",
+      "ok": true,
+      "file": "Rice_terraces_in_Annapurna_region_-_panoramio.jpg",
+      "credit": "Maris Teteris · CC BY 3.0"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:17.972Z"
+}

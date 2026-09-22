@@ -1,0 +1,33 @@
+{
+  "name": "ripple-mvp-nepal",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "fetch:stories": "node scripts/fetch-all.mjs",
+    "fetch:news": "node scripts/fetch-news-pipeline.mjs",
+    "media:cache": "node scripts/cache-images.mjs",
+    "media:ensure": "node scripts/ensure-local-media.mjs",
+    "media:sync": "node scripts/cache-images.mjs && node scripts/ensure-local-media.mjs",
+    "pipeline": "node scripts/fetch-news-pipeline.mjs && node scripts/cache-images.mjs && node scripts/ensure-local-media.mjs && node scripts/fetch-all.mjs",
+    "media:watercolor": "node scripts/apply-watercolor-media.mjs"
+  },
+  "dependencies": {
+    "@hugeicons/core-free-icons": "^4.3.5",
+    "@hugeicons/react": "^1.1.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

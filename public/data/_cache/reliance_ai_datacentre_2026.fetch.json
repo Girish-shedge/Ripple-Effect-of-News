@@ -1,0 +1,56 @@
+{
+  "file": "reliance_ai_datacentre_2026.json",
+  "sources": [
+    {
+      "id": "source_ril_meta_pdf_2026_06_10",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.ril.com/sites/default/files/2026-06/10062026_MR_Reliance_and_Meta_to_Develop_AI-Enabled_Data_Centre_in_Jamnagar_Gujarat.pdf",
+      "content_type": "application/pdf",
+      "error": null
+    },
+    {
+      "id": "source_et_reliance_120mw_2026",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/reliance-plans-to-launch-120-mw-ai-infrastructure-in-jamnagar-by-2026/131855391",
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "id": "source_iea_energy_ai",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "id": "source_cell_dc_water_2025",
+      "ok": true,
+      "http_status": 200,
+      "checked_at": "2026-09-21",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12827721/",
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    }
+  ],
+  "media": [
+    {
+      "id": "hero_gujarat",
+      "ok": true,
+      "file": "Gujarat_satellite_view.jpg",
+      "credit": "Public domain"
+    },
+    {
+      "id": "campus_context",
+      "ok": true,
+      "file": "Jamnagar_Refinery.jpg",
+      "credit": "Reliance Industries · CC BY-SA 4.0"
+    }
+  ],
+  "fetched_at": "2026-09-21T13:28:33.861Z"
+}

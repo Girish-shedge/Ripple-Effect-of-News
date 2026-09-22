@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+tmp/
+.vercel
+.cursor
+tsconfig.tsbuildinfo
+*.log

@@ -1,0 +1,796 @@
+{
+  "event": {
+    "id": "reliance_ai_datacentre_2026",
+    "title": "Reliance AI data centres, Jamnagar, Gujarat",
+    "date": "2026-06-10",
+    "location": {
+      "country": "India",
+      "region": "Jamnagar, Gujarat (Reliance complex / Kutch renewables link)",
+      "lat": 22.35,
+      "lng": 69.87
+    },
+    "summary": "In June 2026 Reliance announced hyperscale AI compute at Jamnagar: a 168 MW Meta-leased AI data centre (renewable power, desalinated-seawater cooling) and, at its AGM, a separate Reliance Intelligence sovereign AI backbone targeting a first 120 MW by end-2026 on Kutch solar power.",
+    "hero": "A coastal industrial hub is being wired for hyperscale AI.",
+    "retrieved_at": "2026-09-21"
+  },
+  "nodes": [
+    {
+      "id": "announcement",
+      "type": "human_system",
+      "title": "Reliance commits to Jamnagar AI compute",
+      "description": "In June 2026 Reliance announced hyperscale AI compute at Jamnagar. Primary company disclosures set capacity, partners, power, and cooling claims for the new facilities. Those disclosures are the observed starting point, not an independent audit."
+    },
+    {
+      "id": "compute_build",
+      "type": "human_system",
+      "title": "Hundreds of megawatts of AI load are planned",
+      "description": "A 168 MW Meta-leased AI data centre plus a first 120 MW Reliance Intelligence phase, using an NVIDIA GB300 fleet, put Jamnagar among the largest AI sites under construction. The numbers come from company announcements. They describe planned load, not metered use."
+    },
+    {
+      "id": "renewable_power",
+      "type": "environment",
+      "title": "The pitch is clean power from Gujarat renewables",
+      "description": "Reliance says the Meta facility and the sovereign AI backbone will run on renewable electricity, including Kutch solar for Reliance Intelligence. That is a power-purchase claim. Hourly matching versus annual contracts is not yet demonstrated in the sources used here."
+    },
+    {
+      "id": "cooling_water",
+      "type": "environment",
+      "title": "Cooling shifts stress from freshwater to the sea",
+      "description": "Meta’s Jamnagar centre is to use desalinated seawater for cooling. That cuts freshwater draw. It adds desalination energy and brine-discharge questions that are not settled by the announcement itself."
+    },
+    {
+      "id": "grid_pressure",
+      "type": "human_system",
+      "title": "AI loads still reshape local power systems",
+      "description": "Even with renewable power-purchase agreements, large continuous AI loads change when and where electricity must be delivered. The IEA documents that pattern globally. A coastal industrial hub absorbing hundreds of megawatts is the local version of it."
+    },
+    {
+      "id": "water_energy_nexus",
+      "type": "environment",
+      "title": "Trend models estimate the hidden water–energy cost",
+      "description": "Where facility water-use effectiveness is undisclosed, peer-reviewed and IEA intensities let us bound likely footprints. Those bounds are labelled as verified trend estimates, not meter readings from Jamnagar."
+    },
+    {
+      "id": "connectivity",
+      "type": "human_system",
+      "title": "Cables and fibre turn Jamnagar into an AI landing point",
+      "description": "Reliance cites western submarine cable landings and Jio fibre as location advantages. Global AI traffic would land on a Gujarat industrial coast. Connectivity is part of why the compute is being sited here."
+    },
+    {
+      "id": "economy_jobs",
+      "type": "economy",
+      "title": "Construction and digital services can lift local activity",
+      "description": "Hyperscale builds typically bring temporary construction demand and longer-lived operations roles. Magnitudes for Jamnagar are not yet audited publicly. The jobs claim stays qualitative until someone counts them."
+    },
+    {
+      "id": "long_term_risks",
+      "type": "economy",
+      "title": "Concentration risk follows the compute",
+      "description": "The IEA warns that AI data centres cluster geographically. Local grids, water systems, and land use absorb shocks if many megawatts land in one place. Jamnagar’s industrial coast is being asked to absorb that concentration."
+    }
+  ],
+  "edges": [
+    {
+      "from": "announcement",
+      "to": "compute_build",
+      "relationship": "commits_to",
+      "relationship_label": "commits to",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_capacities"
+      ]
+    },
+    {
+      "from": "compute_build",
+      "to": "renewable_power",
+      "relationship": "requires",
+      "relationship_label": "is powered by",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_renewables"
+      ]
+    },
+    {
+      "from": "compute_build",
+      "to": "cooling_water",
+      "relationship": "requires",
+      "relationship_label": "is cooled by",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_desal_cooling"
+      ]
+    },
+    {
+      "from": "renewable_power",
+      "to": "grid_pressure",
+      "relationship": "still_affects",
+      "relationship_label": "still shapes",
+      "evidence_level": "strongly_supported",
+      "claim_ids": [
+        "claim_iea_load"
+      ]
+    },
+    {
+      "from": "cooling_water",
+      "to": "water_energy_nexus",
+      "relationship": "implies",
+      "relationship_label": "implies",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_water_estimate"
+      ]
+    },
+    {
+      "from": "compute_build",
+      "to": "connectivity",
+      "relationship": "depends_on",
+      "relationship_label": "depends on",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_location"
+      ]
+    },
+    {
+      "from": "compute_build",
+      "to": "economy_jobs",
+      "relationship": "may_cause",
+      "relationship_label": "may stimulate",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_jobs"
+      ]
+    },
+    {
+      "from": "grid_pressure",
+      "to": "long_term_risks",
+      "relationship": "increases_risk_of",
+      "relationship_label": "raises",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_concentration"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_capacities",
+      "text": "RIL’s 10 June 2026 press release: a 168 MW AI-enabled data centre for Meta in Jamnagar within two years, with option to scale. At the June 2026 AGM, Reliance Intelligence said the first 120 MW of sovereign AI infrastructure in Jamnagar is targeted by end-2026, with NVIDIA GB300 capacity described as >75,000 H100-equivalent for inference, scaling beyond 200,000 at full first-phase operation.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_ril_meta_pdf_2026_06_10",
+        "source_et_reliance_120mw_2026"
+      ],
+      "geographic_scope": "Jamnagar, Gujarat",
+      "temporal_scope": "Announced June 2026; Meta facility ~2 years; RI 120 MW by end-2026",
+      "methodology_status": "primary company disclosure + contemporaneous business press",
+      "last_verified": "2026-09-21",
+      "caveat": "AGM compute-equivalence figures are company statements, not third-party audited inventory."
+    },
+    {
+      "id": "claim_renewables",
+      "text": "RIL states the Meta Jamnagar data centre will be powered by renewable energy; Reliance Intelligence states its Jamnagar backbone will be powered entirely by clean energy from Reliance’s Kutch renewable/solar platform.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_ril_meta_pdf_2026_06_10",
+        "source_et_reliance_120mw_2026"
+      ],
+      "geographic_scope": "Gujarat (Jamnagar + Kutch renewables)",
+      "temporal_scope": "Project design claims as of June 2026",
+      "last_verified": "2026-09-21",
+      "caveat": "Additionality, hourly matching, and grid import shares are not disclosed in the cited releases."
+    },
+    {
+      "id": "claim_desal_cooling",
+      "text": "RIL states the Meta Jamnagar data centre will be cooled with desalinated seawater.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_ril_meta_pdf_2026_06_10"
+      ],
+      "geographic_scope": "Jamnagar coastal site",
+      "temporal_scope": "Design claim, June 2026",
+      "last_verified": "2026-09-21",
+      "caveat": "Desalination energy use, recovery rate, and brine management plans are not quantified in the press release."
+    },
+    {
+      "id": "claim_iea_load",
+      "text": "IEA Energy and AI (2025): data centres used ~415 TWh globally in 2024 (~1.5% of electricity); consumption has grown ~12%/year since 2017; a typical AI-focused data centre uses as much electricity as ~100,000 households, and the largest under construction can use ~20× that.",
+      "claim_type": "context",
+      "evidence_level": "strongly_supported",
+      "sources": [
+        "source_iea_energy_ai"
+      ],
+      "geographic_scope": "Global (applied as industry baseline for Jamnagar-scale AI loads)",
+      "temporal_scope": "IEA 2024–2030 analysis",
+      "last_verified": "2026-09-21",
+      "caveat": "Global averages, not a meter reading for Reliance’s sites."
+    },
+    {
+      "id": "claim_water_estimate",
+      "text": "Trend-based bound: peer-reviewed synthesis citing IEA finds global data centres used ~560 billion L of water in 2023; direct cooling WUE often ~0.1–0.6 L/kWh for many facilities, while electricity-generation water can dominate. For a seawater-desal cooled site, freshwater WUE for cooling may be near zero, but desalination typically costs on the order of a few kWh per m³, so water stress shifts toward marine discharge and electricity, not municipal freshwater. Facility-specific litres are not disclosed, this is an emerging, literature-verified bound.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "source_iea_energy_ai",
+        "source_cell_dc_water_2025",
+        "source_ril_meta_pdf_2026_06_10"
+      ],
+      "geographic_scope": "Applied to Jamnagar Meta facility design class",
+      "temporal_scope": "Literature 2023–2025 intensities × announced MW class",
+      "methodology_status": "trend estimate, verified against IEA + peer-reviewed DC water footprint paper; not site-audited",
+      "last_verified": "2026-09-21",
+      "caveat": "Not a Reliance disclosure. Seawater desal cooling changes the freshwater pathway; brine and desal energy remain open."
+    },
+    {
+      "id": "claim_location",
+      "text": "RIL cites Gujarat advantages: renewable energy, water availability, proximity to western submarine cable landings, and Jio’s fibre network.",
+      "claim_type": "observation",
+      "evidence_level": "observed",
+      "sources": [
+        "source_ril_meta_pdf_2026_06_10"
+      ],
+      "geographic_scope": "Gujarat coast / Jamnagar",
+      "temporal_scope": "June 2026",
+      "last_verified": "2026-09-21",
+      "caveat": null
+    },
+    {
+      "id": "claim_jobs",
+      "text": "Hyperscale data-centre construction historically creates temporary construction employment and smaller permanent operations headcount; Jamnagar-specific job tallies are not in the cited primary releases.",
+      "claim_type": "inference",
+      "evidence_level": "plausible",
+      "sources": [
+        "source_ril_meta_pdf_2026_06_10",
+        "source_iea_energy_ai"
+      ],
+      "geographic_scope": "Jamnagar labour market",
+      "temporal_scope": "Construction + operations phases",
+      "last_verified": "2026-09-21",
+      "caveat": "Analogical, verify when EIAs or filings publish headcount."
+    },
+    {
+      "id": "claim_concentration",
+      "text": "IEA notes AI data centres are geographically concentrated and can dominate local electricity growth; stacking 120 MW + 168 MW AI loads on one industrial coast is a concentration pathway that warrants monitoring even under renewable PPAs.",
+      "claim_type": "prediction",
+      "evidence_level": "emerging",
+      "sources": [
+        "source_iea_energy_ai",
+        "source_ril_meta_pdf_2026_06_10",
+        "source_et_reliance_120mw_2026"
+      ],
+      "geographic_scope": "Jamnagar / Gujarat grid interface",
+      "temporal_scope": "2026–2030 build-out window",
+      "methodology_status": "trend extrapolation from IEA clustering findings × announced MW",
+      "last_verified": "2026-09-21",
+      "caveat": "Predictive, verify against Gujarat DISCOM filings and commissioning reports."
+    }
+  ],
+  "predictions": [
+    {
+      "id": "pred_annual_energy_120mw",
+      "node_id": "grid_pressure",
+      "title": "Illustrative annual electricity for 120 MW AI IT load",
+      "method": "E_year ≈ MW_it × load_factor × 8760 h. Using load_factor 0.5–0.7 (industry operating range, not Reliance-disclosed).",
+      "inputs": {
+        "mw_it": 120,
+        "load_factor_low": 0.5,
+        "load_factor_high": 0.7,
+        "hours_per_year": 8760
+      },
+      "result_low": 525600,
+      "result_high": 735840,
+      "unit": "MWh/year",
+      "verified_against": [
+        "IEA Energy and AI, AI data centres draw factory-scale continuous loads; largest sites ≫ 100,000-household benchmark"
+      ],
+      "source_ids": [
+        "source_iea_energy_ai",
+        "source_et_reliance_120mw_2026"
+      ],
+      "confidence": "medium",
+      "evidence_level": "emerging",
+      "caveat": "IT load ≠ facility utility load (PUE > 1). Renewable PPAs may cover annual MWh without proving hourly matching."
+    },
+    {
+      "id": "pred_household_equivalent",
+      "node_id": "grid_pressure",
+      "title": "Household-equivalent scale check (IEA benchmark)",
+      "method": "IEA: typical AI-focused DC ≈ 100,000 households; largest under construction ≈ 20×. Map 120–168 MW class into that order-of-magnitude band.",
+      "result_low": 100000,
+      "result_high": 400000,
+      "unit": "households_equivalent_order_of_magnitude",
+      "verified_against": [
+        "IEA Energy and AI executive summary household benchmark"
+      ],
+      "source_ids": [
+        "source_iea_energy_ai"
+      ],
+      "confidence": "low_to_medium",
+      "evidence_level": "emerging",
+      "caveat": "Order-of-magnitude cross-check only, household kWh varies by country."
+    },
+    {
+      "id": "pred_freshwater_cooling",
+      "node_id": "water_energy_nexus",
+      "title": "Freshwater cooling demand if seawater-desal design holds",
+      "method": "If cooling water is desalinated seawater (RIL claim), direct freshwater WUE for cooling → ~0 L/kWh freshwater. Residual water footprint shifts to desal energy + brine. Contrast with literature direct WUE ~0.1–0.6 L/kWh for evaporative freshwater plants.",
+      "result_low": 0,
+      "result_high": 0,
+      "unit": "L_freshwater_per_kWh_cooling_design",
+      "verified_against": [
+        "RIL Meta press release desalinated seawater cooling",
+        "Peer-reviewed DC water footprint ranges for conventional freshwater cooling"
+      ],
+      "source_ids": [
+        "source_ril_meta_pdf_2026_06_10",
+        "source_cell_dc_water_2025"
+      ],
+      "confidence": "medium",
+      "evidence_level": "emerging",
+      "caveat": "Design claim, not operational meter data. Desal energy and marine brine still need facility disclosure."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source_ril_meta_pdf_2026_06_10",
+      "organization": "Reliance Industries Limited",
+      "title": "Reliance and Meta to Develop AI-Enabled Data Centre in Jamnagar, Gujarat (press release PDF)",
+      "url": "https://www.ril.com/sites/default/files/2026-06/10062026_MR_Reliance_and_Meta_to_Develop_AI-Enabled_Data_Centre_in_Jamnagar_Gujarat.pdf",
+      "publication_date": "2026-06-10",
+      "source_type": "primary_company_disclosure",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.ril.com/sites/default/files/2026-06/10062026_MR_Reliance_and_Meta_to_Develop_AI-Enabled_Data_Centre_in_Jamnagar_Gujarat.pdf",
+        "content_type": "application/pdf",
+        "error": null
+      }
+    },
+    {
+      "id": "source_et_reliance_120mw_2026",
+      "organization": "Economic Times / ETEnterpriseAI",
+      "title": "Reliance to commission first 120 MW AI infrastructure in Jamnagar by end-2026 (Akash Ambani AGM)",
+      "url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/reliance-plans-to-launch-120-mw-ai-infrastructure-in-jamnagar-by-2026/131855391",
+      "publication_date": "2026-06-19",
+      "source_type": "reputable_business_journalism",
+      "credibility_class": "tier_2",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://enterpriseai.economictimes.indiatimes.com/news/industry/reliance-plans-to-launch-120-mw-ai-infrastructure-in-jamnagar-by-2026/131855391",
+        "content_type": "text/html; charset=UTF-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_iea_energy_ai",
+      "organization": "International Energy Agency",
+      "title": "Energy and AI, Executive summary",
+      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+      "publication_date": "2025",
+      "source_type": "institutional_assessment",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    },
+    {
+      "id": "source_cell_dc_water_2025",
+      "organization": "Cell Reports Sustainability (PMC)",
+      "title": "The carbon and water footprints of data centers and what this could mean for artificial intelligence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12827721/",
+      "publication_date": "2025",
+      "source_type": "peer_reviewed",
+      "credibility_class": "tier_1",
+      "retrieved_at": "2026-09-21",
+      "fetch": {
+        "ok": true,
+        "http_status": 200,
+        "checked_at": "2026-09-21",
+        "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12827721/",
+        "content_type": "text/html; charset=utf-8",
+        "error": null
+      }
+    }
+  ],
+  "impacts": [
+    {
+      "id": "impact_meta_mw",
+      "category": "energy",
+      "metric": "meta_datacentre_capacity",
+      "value": 168,
+      "unit": "MW",
+      "location": "Jamnagar",
+      "date": "2026-06-10",
+      "source_id": "source_ril_meta_pdf_2026_06_10",
+      "status": "announced"
+    },
+    {
+      "id": "impact_ri_mw",
+      "category": "energy",
+      "metric": "reliance_intelligence_first_phase",
+      "value": 120,
+      "unit": "MW",
+      "location": "Jamnagar",
+      "date": "2026-06-19",
+      "source_id": "source_et_reliance_120mw_2026",
+      "status": "announced"
+    },
+    {
+      "id": "impact_pred_energy_mid",
+      "category": "energy",
+      "metric": "predicted_annual_energy_120mw_mid",
+      "value": 630720,
+      "unit": "MWh/year",
+      "location": "Jamnagar (illustrative 120 MW @ 60% load)",
+      "date": "2026-09-21",
+      "source_id": "source_iea_energy_ai",
+      "status": "trend_estimate",
+      "note": "Emerging prediction, see predictions[] for method and bounds"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t_announce",
+      "bucket": "DAY 0",
+      "label": "Meta × Reliance deal",
+      "detail": "10 June 2026, RIL press release: 168 MW AI data centre in Jamnagar, renewable power, desalinated seawater cooling.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_capacities"
+      ]
+    },
+    {
+      "id": "t_agm",
+      "bucket": "DAYS",
+      "label": "AGM sovereign AI backbone",
+      "detail": "19 June 2026, first 120 MW Reliance Intelligence capacity targeted by end-2026 on Kutch clean power.",
+      "evidence_level": "observed",
+      "claim_ids": [
+        "claim_capacities"
+      ]
+    },
+    {
+      "id": "t_build",
+      "bucket": "MONTHS",
+      "label": "Construction & grid integration",
+      "detail": "Delivery window ~2 years for Meta facility; renewables and desal plants must keep pace with IT energisation.",
+      "evidence_level": "plausible",
+      "claim_ids": [
+        "claim_renewables"
+      ]
+    },
+    {
+      "id": "t_ops",
+      "bucket": "YEARS",
+      "label": "Operations footprint",
+      "detail": "Verify actual MWh, desal volumes, and brine with operational disclosures; until then use emerging trend bounds.",
+      "evidence_level": "emerging",
+      "claim_ids": [
+        "claim_water_estimate"
+      ]
+    }
+  ],
+  "knowledge_summary": {
+    "what_we_know": [
+      "Reliance publicly committed to a 168 MW Meta-leased AI data centre in Jamnagar with renewable power and desalinated-seawater cooling.",
+      "Reliance Intelligence publicly targeted a first 120 MW sovereign AI phase in Jamnagar by end-2026 on Kutch clean power.",
+      "The IEA documents that AI data centres are power-hungry and geographically concentrated."
+    ],
+    "what_remains_uncertain": [
+      "Hourly renewable matching versus annual power-purchase agreements.",
+      "Site-metered water, desalination energy, and brine volumes.",
+      "Audited job and local GDP effects."
+    ]
+  },
+  "evidence_legend": [
+    {
+      "level": "observed",
+      "label": "Observed",
+      "meaning": "Directly documented by a trusted source for this event."
+    },
+    {
+      "level": "strongly_supported",
+      "label": "Strongly supported",
+      "meaning": "Multiple studies or established scientific understanding."
+    },
+    {
+      "level": "attribution",
+      "label": "Attribution",
+      "meaning": "A scientific study attributes a measurable contribution to a driver."
+    },
+    {
+      "level": "plausible",
+      "label": "Plausible",
+      "meaning": "Scientifically reasonable, not yet demonstrated for this specific outcome."
+    },
+    {
+      "level": "emerging",
+      "label": "Emerging",
+      "meaning": "Trend-based estimate verified against trusted baselines, not yet site-proven."
+    },
+    {
+      "level": "unknown",
+      "label": "Unknown",
+      "meaning": "Insufficient evidence, shown, never hidden."
+    }
+  ],
+  "media": [
+    {
+      "id": "wc_reliance_hero",
+      "url": "/media/wc-reliance-hero.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "A coastal industrial hub is being wired for hyperscale AI. (illustrative watercolor).",
+      "alt": "Watercolor for: A coastal industrial hub is being wired for hyperscale AI.",
+      "placement": "hero",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_reach",
+      "url": "/media/wc-reliance-reach.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reach figures for this story (illustrative watercolor).",
+      "alt": "Watercolor reach context, Jamnagar, Gujarat (Reliance complex / Kutch renewables link), India",
+      "placement": "impacts",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_timeline",
+      "url": "/media/wc-reliance-timeline.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Consequences over time (illustrative watercolor).",
+      "alt": "Watercolor timeline context, Jamnagar, Gujarat (Reliance complex / Kutch renewables link), India",
+      "placement": "timeline",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_predictions",
+      "url": "/media/wc-reliance-predictions.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Looking ahead (illustrative watercolor).",
+      "alt": "Watercolor looking ahead, Jamnagar, Gujarat (Reliance complex / Kutch renewables link), India",
+      "placement": "predictions",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_knowledge",
+      "url": "/media/wc-reliance-knowledge.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "What we know and what remains uncertain (illustrative watercolor).",
+      "alt": "Watercolor knowledge section, Jamnagar, Gujarat (Reliance complex / Kutch renewables link), India",
+      "placement": "knowledge",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_sources",
+      "url": "/media/wc-reliance-sources.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Source index context (illustrative watercolor).",
+      "alt": "Watercolor sources section, Jamnagar, Gujarat (Reliance complex / Kutch renewables link), India",
+      "placement": "sources",
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_announcement",
+      "url": "/media/wc-reliance-announcement.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Reliance commits to Jamnagar AI compute (illustrative watercolor).",
+      "alt": "Watercolor for: Reliance commits to Jamnagar AI compute",
+      "placement": "announcement",
+      "node_ids": [
+        "announcement"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_compute_build",
+      "url": "/media/wc-reliance-compute_build.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Hundreds of megawatts of AI load are planned (illustrative watercolor).",
+      "alt": "Watercolor for: Hundreds of megawatts of AI load are planned",
+      "placement": "compute_build",
+      "node_ids": [
+        "compute_build"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_renewable_power",
+      "url": "/media/wc-reliance-renewable_power.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "The pitch is clean power from Gujarat renewables (illustrative watercolor).",
+      "alt": "Watercolor for: The pitch is clean power from Gujarat renewables",
+      "placement": "renewable_power",
+      "node_ids": [
+        "renewable_power"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_cooling_water",
+      "url": "/media/wc-reliance-cooling_water.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Cooling shifts stress from freshwater to the sea (illustrative watercolor).",
+      "alt": "Watercolor for: Cooling shifts stress from freshwater to the sea",
+      "placement": "cooling_water",
+      "node_ids": [
+        "cooling_water"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_grid_pressure",
+      "url": "/media/wc-reliance-grid_pressure.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "AI loads still reshape local power systems (illustrative watercolor).",
+      "alt": "Watercolor for: AI loads still reshape local power systems",
+      "placement": "grid_pressure",
+      "node_ids": [
+        "grid_pressure"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_water_energy_nexus",
+      "url": "/media/wc-reliance-water_energy_nexus.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Trend models estimate the hidden water–energy cost (illustrative watercolor).",
+      "alt": "Watercolor for: Trend models estimate the hidden water–energy cost",
+      "placement": "water_energy_nexus",
+      "node_ids": [
+        "water_energy_nexus"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_connectivity",
+      "url": "/media/wc-reliance-connectivity.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Cables and fibre turn Jamnagar into an AI landing point (illustrative watercolor).",
+      "alt": "Watercolor for: Cables and fibre turn Jamnagar into an AI landing point",
+      "placement": "connectivity",
+      "node_ids": [
+        "connectivity"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_economy_jobs",
+      "url": "/media/wc-reliance-economy_jobs.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Construction and digital services can lift local activity (illustrative watercolor).",
+      "alt": "Watercolor for: Construction and digital services can lift local activity",
+      "placement": "economy_jobs",
+      "node_ids": [
+        "economy_jobs"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    },
+    {
+      "id": "wc_reliance_long_term_risks",
+      "url": "/media/wc-reliance-long_term_risks.png",
+      "credit": "Ripple watercolor illustration (AI-generated)",
+      "caption": "Concentration risk follows the compute (illustrative watercolor).",
+      "alt": "Watercolor for: Concentration risk follows the compute",
+      "placement": "long_term_risks",
+      "node_ids": [
+        "long_term_risks"
+      ],
+      "note": "AI-generated watercolor with grain. Converted or created for this section; not a raw event-day photograph.",
+      "imagery_type": "watercolor_illustration",
+      "fetched_from": "ripple_ai_watercolor",
+      "fetched_at": "2026-09-22"
+    }
+  ],
+  "chart": {
+    "impact_bars": [
+      {
+        "id": "meta",
+        "label": "Meta facility capacity",
+        "value": 168,
+        "unit": "MW",
+        "source_id": "source_ril_meta_pdf_2026_06_10"
+      },
+      {
+        "id": "ri",
+        "label": "RI first phase",
+        "value": 120,
+        "unit": "MW",
+        "source_id": "source_et_reliance_120mw_2026"
+      },
+      {
+        "id": "pred",
+        "label": "Pred. annual energy (120 MW mid)",
+        "value": 630720,
+        "unit": "MWh/year",
+        "source_id": "source_iea_energy_ai"
+      }
+    ],
+    "evidence_mix": [
+      {
+        "level": "observed",
+        "count": 4
+      },
+      {
+        "level": "strongly_supported",
+        "count": 1
+      },
+      {
+        "level": "emerging",
+        "count": 2
+      },
+      {
+        "level": "plausible",
+        "count": 1
+      }
+    ]
+  },
+  "provenance": {
+    "fetched_at": "2026-09-21",
+    "method": "scripts/fetch-all.mjs, live HEAD of sources + Commons imageinfo/extmetadata",
+    "note": "Claims remain hand-curated from named sources. Imagery credits are fetched live from Wikimedia when commons_file is set. Event-day photos are used only when a free-licensed near-event file exists; otherwise imagery_type=context."
+  },
+  "section_images": {
+    "impacts": "/media/section-impacts-cover.svg",
+    "charts": "/media/section-charts-cover.svg",
+    "predictions": "/media/section-predict-cover.svg",
+    "knowledge": "/media/section-know-cover.svg",
+    "sources": "/media/section-sources-cover.svg",
+    "timeline": "/media/section-timeline-cover.svg"
+  }
+}
