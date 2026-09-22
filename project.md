@@ -204,7 +204,8 @@ Types: `src/types.ts`.
 |------|--------|
 | GitHub (public) | https://github.com/Girish-shedge/Ripple-Effect-of-News |
 | Owner | [Girish-shedge](https://github.com/Girish-shedge) |
-| Production | (fill after first Vercel deploy — see README) |
+| Production | https://ripple-effect-of-news.vercel.app |
+| Vercel project | `ripple-effect-of-news` (team: Girish Shedge's projects) |
 | Build | `npm run build` → `dist/` |
 | Config | `vercel.json` — SPA fallback + `/api/yahoo/*` proxy to Yahoo Finance |
 

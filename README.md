@@ -2,7 +2,7 @@
 
 Hand-traced causal chains behind the headlines. Each story is a curated graph: event → drivers → response → human systems → economy, with evidence strength visible on every link.
 
-**Live:** (set after Vercel deploy)  
+**Live:** https://ripple-effect-of-news.vercel.app  
 **Repo:** https://github.com/Girish-shedge/Ripple-Effect-of-News
 
 ---
